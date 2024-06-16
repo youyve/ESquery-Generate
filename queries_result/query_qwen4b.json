@@ -1,0 +1,287 @@
+[
+    {
+        "question": {
+            "question": "近几个月agent系列决策文章。",
+            "type": "1"
+        },
+        "results": [
+            {
+                "文章ID": "0",
+                "标题": "A Literature Review on Length of Stay Prediction for Stroke Patients\n  using Machine Learning and Statistical Approaches",
+                "作者": " Ola Alkhatib,  Ayman Alahmar",
+                "发布日期": "2022-01-06",
+                "摘要": "  Hospital length of stay (LOS) is one of the most essential healthcare metrics\nthat reflects the hospital quality of service and helps improve hospital\nscheduling and management. LOS prediction helps in cost management because\npatients who remain in hospitals usually do so in hospital units where\nresources are severely limited. In this study, we reviewed papers on LOS\nprediction using machine learning and statistical approaches. Our literature\nreview considers research studies that focus on LOS prediction for stroke\npatients. Some of the surveyed studies revealed that authors reached\ncontradicting conclusions. For example, the age of the patient was considered\nan important predictor of LOS for stroke patients in some studies, while other\nstudies concluded that age was not a significant factor. Therefore, additional\nresearch is required in this domain to further understand the predictors of LOS\nfor stroke patients.\n",
+                "链接": "https://arxiv.org/abs/2201.00005"
+            },
+            {
+                "文章ID": "1",
+                "标题": "Leveraging Queue Length and Attention Mechanisms for Enhanced Traffic\n  Signal Control Optimization",
+                "作者": " Liang Zhang,  Shubin Xie,  Jianming Deng",
+                "发布日期": "2023-09-26",
+                "摘要": "  Reinforcement learning (RL) techniques for traffic signal control (TSC) have\ngained increasing popularity in recent years. However, most existing RL-based\nTSC methods tend to focus primarily on the RL model structure while neglecting\nthe significance of proper traffic state representation. Furthermore, some\nRL-based methods heavily rely on expert-designed traffic signal phase\ncompetition. In this paper, we present a novel approach to TSC that utilizes\nqueue length as an efficient state representation. We propose two new methods:\n(1) Max Queue-Length (M-QL), an optimization-based traditional method designed\nbased on the property of queue length; and (2) AttentionLight, an RL model that\nemploys the self-attention mechanism to capture the signal phase correlation\nwithout requiring human knowledge of phase relationships. Comprehensive\nexperiments on multiple real-world datasets demonstrate the effectiveness of\nour approach: (1) the M-QL method outperforms the latest RL-based methods; (2)\nAttentionLight achieves a new state-of-the-art performance; and (3) our results\nhighlight the significance of proper state representation, which is as crucial\nas neural network design in TSC methods. Our findings have important\nimplications for advancing the development of more effective and efficient TSC\nmethods. Our code is released on Github (https://github.\ncom/LiangZhang1996/AttentionLight).\n",
+                "链接": "https://arxiv.org/abs/2201.00006"
+            },
+            {
+                "文章ID": "2",
+                "标题": "Confidence-Aware Multi-Teacher Knowledge Distillation",
+                "作者": " Hailin Zhang,  Defang Chen,  Can Wang",
+                "发布日期": "2022-02-15",
+                "摘要": "  Knowledge distillation is initially introduced to utilize additional\nsupervision from a single teacher model for the student model training. To\nboost the student performance, some recent variants attempt to exploit diverse\nknowledge sources from multiple teachers. However, existing studies mainly\nintegrate knowledge from diverse sources by averaging over multiple teacher\npredictions or combining them using other various label-free strategies, which\nmay mislead student in the presence of low-quality teacher predictions. To\ntackle this problem, we propose Confidence-Aware Multi-teacher Knowledge\nDistillation (CA-MKD), which adaptively assigns sample-wise reliability for\neach teacher prediction with the help of ground-truth labels, with those\nteacher predictions close to one-hot labels assigned large weights. Besides,\nCA-MKD incorporates intermediate layers to stable the knowledge transfer\nprocess. Extensive experiments show that our CA-MKD consistently outperforms\nall compared state-of-the-art methods across various teacher-student\narchitectures.\n",
+                "链接": "https://arxiv.org/abs/2201.00007"
+            },
+            {
+                "文章ID": "3",
+                "标题": "A Lightweight and Accurate Spatial-Temporal Transformer for Traffic\n  Forecasting",
+                "作者": " Guanyao Li,  Shuhan Zhong,  S. -H. Gary Chan,  Ruiyuan Li,  Chih-Chieh Hung,  Wen-Chih Peng",
+                "发布日期": "2022-05-05",
+                "摘要": "  We study the forecasting problem for traffic with dynamic, possibly\nperiodical, and joint spatial-temporal dependency between regions. Given the\naggregated inflow and outflow traffic of regions in a city from time slots 0 to\nt-1, we predict the traffic at time t at any region. Prior arts in the area\noften consider the spatial and temporal dependencies in a decoupled manner or\nare rather computationally intensive in training with a large number of\nhyper-parameters to tune. We propose ST-TIS, a novel, lightweight, and accurate\nSpatial-Temporal Transformer with information fusion and region sampling for\ntraffic forecasting. ST-TIS extends the canonical Transformer with information\nfusion and region sampling. The information fusion module captures the complex\nspatial-temporal dependency between regions. The region sampling module is to\nimprove the efficiency and prediction accuracy, cutting the computation\ncomplexity for dependency learning from $O(n^2)$ to $O(n\\sqrt{n})$, where n is\nthe number of regions. With far fewer parameters than state-of-the-art models,\nthe offline training of our model is significantly faster in terms of tuning\nand computation (with a reduction of up to $90\\%$ on training time and network\nparameters). Notwithstanding such training efficiency, extensive experiments\nshow that ST-TIS is substantially more accurate in online prediction than\nstate-of-the-art approaches (with an average improvement of up to $9.5\\%$ on\nRMSE, and $12.4\\%$ on MAPE).\n",
+                "链接": "https://arxiv.org/abs/2201.00008"
+            },
+            {
+                "文章ID": "4",
+                "标题": "Improving Deep Neural Network Classification Confidence using\n  Heatmap-based eXplainable AI",
+                "作者": " Erico Tjoa,  Hong Jing Khok,  Tushar Chouhan,  Guan Cuntai",
+                "发布日期": "2023-01-24",
+                "摘要": "  This paper quantifies the quality of heatmap-based eXplainable AI (XAI)\nmethods w.r.t image classification problem. Here, a heatmap is considered\ndesirable if it improves the probability of predicting the correct classes.\nDifferent XAI heatmap-based methods are empirically shown to improve\nclassification confidence to different extents depending on the datasets, e.g.\nSaliency works best on ImageNet and Deconvolution on Chest X-Ray Pneumonia\ndataset. The novelty includes a new gap distribution that shows a stark\ndifference between correct and wrong predictions. Finally, the generative\naugmentative explanation is introduced, a method to generate heatmaps capable\nof improving predictive confidence to a high level.\n",
+                "链接": "https://arxiv.org/abs/2201.00009"
+            },
+            {
+                "文章ID": "5",
+                "标题": "An Efficient Federated Distillation Learning System for Multi-task Time\n  Series Classification",
+                "作者": " Huanlai Xing,  Zhiwen Xiao,  Rong Qu,  Zonghai Zhu,  Bowen Zhao",
+                "发布日期": "2022-01-04",
+                "摘要": "  This paper proposes an efficient federated distillation learning system\n(EFDLS) for multi-task time series classification (TSC). EFDLS consists of a\ncentral server and multiple mobile users, where different users may run\ndifferent TSC tasks. EFDLS has two novel components, namely a feature-based\nstudent-teacher (FBST) framework and a distance-based weights matching (DBWM)\nscheme. Within each user, the FBST framework transfers knowledge from its\nteacher's hidden layers to its student's hidden layers via knowledge\ndistillation, with the teacher and student having identical network structure.\nFor each connected user, its student model's hidden layers' weights are\nuploaded to the EFDLS server periodically. The DBWM scheme is deployed on the\nserver, with the least square distance used to measure the similarity between\nthe weights of two given models. This scheme finds a partner for each connected\nuser such that the user's and its partner's weights are the closest among all\nthe weights uploaded. The server exchanges and sends back the user's and its\npartner's weights to these two users which then load the received weights to\ntheir teachers' hidden layers. Experimental results show that the proposed\nEFDLS achieves excellent performance on a set of selected UCR2018 datasets\nregarding top-1 accuracy.\n",
+                "链接": "https://arxiv.org/abs/2201.00011"
+            },
+            {
+                "文章ID": "6",
+                "标题": "MORAL: Aligning AI with Human Norms through Multi-Objective Reinforced\n  Active Learning",
+                "作者": " Markus Peschl,  Arkady Zgonnikov,  Frans A. Oliehoek,  Luciano C. Siebert",
+                "发布日期": "2022-01-04",
+                "摘要": "  Inferring reward functions from demonstrations and pairwise preferences are\nauspicious approaches for aligning Reinforcement Learning (RL) agents with\nhuman intentions. However, state-of-the art methods typically focus on learning\na single reward model, thus rendering it difficult to trade off different\nreward functions from multiple experts. We propose Multi-Objective Reinforced\nActive Learning (MORAL), a novel method for combining diverse demonstrations of\nsocial norms into a Pareto-optimal policy. Through maintaining a distribution\nover scalarization weights, our approach is able to interactively tune a deep\nRL agent towards a variety of preferences, while eliminating the need for\ncomputing multiple policies. We empirically demonstrate the effectiveness of\nMORAL in two scenarios, which model a delivery and an emergency task that\nrequire an agent to act in the presence of normative conflicts. Overall, we\nconsider our research a step towards multi-objective RL with learned rewards,\nbridging the gap between current reward learning and machine ethics literature.\n",
+                "链接": "https://arxiv.org/abs/2201.00012"
+            },
+            {
+                "文章ID": "7",
+                "标题": "Exploiting Bi-directional Global Transition Patterns and Personal\n  Preferences for Missing POI Category Identification",
+                "作者": " Dongbo Xi,  Fuzhen Zhuang,  Yanchi Liu,  Hengshu Zhu,  Pengpeng Zhao,  Chang Tan,  Qing He",
+                "发布日期": "2022-01-04",
+                "摘要": "  Recent years have witnessed the increasing popularity of Location-based\nSocial Network (LBSN) services, which provides unparalleled opportunities to\nbuild personalized Point-of-Interest (POI) recommender systems. Existing POI\nrecommendation and location prediction tasks utilize past information for\nfuture recommendation or prediction from a single direction perspective, while\nthe missing POI category identification task needs to utilize the check-in\ninformation both before and after the missing category. Therefore, a\nlong-standing challenge is how to effectively identify the missing POI\ncategories at any time in the real-world check-in data of mobile users. To this\nend, in this paper, we propose a novel neural network approach to identify the\nmissing POI categories by integrating both bi-directional global non-personal\ntransition patterns and personal preferences of users. Specifically, we\ndelicately design an attention matching cell to model how well the check-in\ncategory information matches their non-personal transition patterns and\npersonal preferences. Finally, we evaluate our model on two real-world\ndatasets, which clearly validate its effectiveness compared with the\nstate-of-the-art baselines. Furthermore, our model can be naturally extended to\naddress next POI category recommendation and prediction tasks with competitive\nperformance.\n",
+                "链接": "https://arxiv.org/abs/2201.00014"
+            },
+            {
+                "文章ID": "8",
+                "标题": "TransLog: A Unified Transformer-based Framework for Log Anomaly\n  Detection",
+                "作者": " Hongcheng Guo,  Xingyu Lin,  Jian Yang,  Yi Zhuang,  Jiaqi Bai,  Tieqiao Zheng,  Bo Zhang,  Zhoujun Li",
+                "发布日期": "2022-01-19",
+                "摘要": "  Log anomaly detection is a key component in the field of artificial\nintelligence for IT operations (AIOps). Considering log data of variant\ndomains, retraining the whole network for unknown domains is inefficient in\nreal industrial scenarios especially for low-resource domains. However,\nprevious deep models merely focused on extracting the semantics of log sequence\nin the same domain, leading to poor generalization on multi-domain logs.\nTherefore, we propose a unified Transformer-based framework for log anomaly\ndetection (\\ourmethod{}), which is comprised of the pretraining and\nadapter-based tuning stage. Our model is first pretrained on the source domain\nto obtain shared semantic knowledge of log data. Then, we transfer the\npretrained model to the target domain via the adapter-based tuning. The\nproposed method is evaluated on three public datasets including one source\ndomain and two target domains. The experimental results demonstrate that our\nsimple yet efficient approach, with fewer trainable parameters and lower\ntraining costs in the target domain, achieves state-of-the-art performance on\nthree benchmarks.\n",
+                "链接": "https://arxiv.org/abs/2201.00016"
+            },
+            {
+                "文章ID": "9",
+                "标题": "Stochastic convex optimization for provably efficient apprenticeship\n  learning",
+                "作者": " Angeliki Kamoutsi,  Goran Banjac,  John Lygeros",
+                "发布日期": "2022-01-04",
+                "摘要": "  We consider large-scale Markov decision processes (MDPs) with an unknown cost\nfunction and employ stochastic convex optimization tools to address the problem\nof imitation learning, which consists of learning a policy from a finite set of\nexpert demonstrations.\n  We adopt the apprenticeship learning formalism, which carries the assumption\nthat the true cost function can be represented as a linear combination of some\nknown features. Existing inverse reinforcement learning algorithms come with\nstrong theoretical guarantees, but are computationally expensive because they\nuse reinforcement learning or planning algorithms as a subroutine. On the other\nhand, state-of-the-art policy gradient based algorithms (like IM-REINFORCE,\nIM-TRPO, and GAIL), achieve significant empirical success in challenging\nbenchmark tasks, but are not well understood in terms of theory. With an\nemphasis on non-asymptotic guarantees of performance, we propose a method that\ndirectly learns a policy from expert demonstrations, bypassing the intermediate\nstep of learning the cost function, by formulating the problem as a single\nconvex optimization problem over occupancy measures. We develop a\ncomputationally efficient algorithm and derive high confidence regret bounds on\nthe quality of the extracted policy, utilizing results from stochastic convex\noptimization and recent works in approximate linear programming for solving\nforward MDPs.\n",
+                "链接": "https://arxiv.org/abs/2201.00039"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "查找多语言情感分析的最新论文。",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "找一下最近关于大模型评测的论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找一下使用机器学习方法进行心理健康疾病研究的论文",
+            "type": "5"
+        },
+        "results": [
+            {
+                "文章ID": "67997",
+                "标题": "Machine Learning for Brain Disorders: Transformers and Visual\n  Transformers",
+                "作者": " Robin Courant,  Maika Edberg,  Nicolas Dufour,  Vicky Kalogeiton",
+                "发布日期": "2023-03-22",
+                "摘要": "  Transformers were initially introduced for natural language processing (NLP)\ntasks, but fast they were adopted by most deep learning fields, including\ncomputer vision. They measure the relationships between pairs of input tokens\n(words in the case of text strings, parts of images for visual Transformers),\ntermed attention. The cost is exponential with the number of tokens. For image\nclassification, the most common Transformer Architecture uses only the\nTransformer Encoder in order to transform the various input tokens. However,\nthere are also numerous other applications in which the decoder part of the\ntraditional Transformer Architecture is also used. Here, we first introduce the\nAttention mechanism (Section 1), and then the Basic Transformer Block including\nthe Vision Transformer (Section 2). Next, we discuss some improvements of\nvisual Transformers to account for small datasets or less computation(Section\n3). Finally, we introduce Visual Transformers applied to tasks other than image\nclassification, such as detection, segmentation, generation and training\nwithout labels (Section 4) and other domains, such as video or multimodality\nusing text or audio data (Section 5).\n",
+                "链接": "https://arxiv.org/abs/2303.12068"
+            },
+            {
+                "文章ID": "92012",
+                "标题": "Reproducibility in Machine Learning-Driven Research",
+                "作者": " Harald Semmelrock,  Simone Kopeinik,  Dieter Theiler,  Tony Ross-Hellauer,  Dominik Kowald",
+                "发布日期": "2023-07-21",
+                "摘要": "  Research is facing a reproducibility crisis, in which the results and\nfindings of many studies are difficult or even impossible to reproduce. This is\nalso the case in machine learning (ML) and artificial intelligence (AI)\nresearch. Often, this is the case due to unpublished data and/or source-code,\nand due to sensitivity to ML training conditions. Although different solutions\nto address this issue are discussed in the research community such as using ML\nplatforms, the level of reproducibility in ML-driven research is not increasing\nsubstantially. Therefore, in this mini survey, we review the literature on\nreproducibility in ML-driven research with three main aims: (i) reflect on the\ncurrent situation of ML reproducibility in various research fields, (ii)\nidentify reproducibility issues and barriers that exist in these research\nfields applying ML, and (iii) identify potential drivers such as tools,\npractices, and interventions that support ML reproducibility. With this, we\nhope to contribute to decisions on the viability of different solutions for\nsupporting ML reproducibility.\n",
+                "链接": "https://arxiv.org/abs/2307.10320"
+            },
+            {
+                "文章ID": "7753",
+                "标题": "Determining Research Priorities for Astronomy Using Machine Learning",
+                "作者": " Brian Thomas,  Harley Thronson,  Anthony Buonomo,  Louis Barbier",
+                "发布日期": "2022-03-03",
+                "摘要": "  We summarize the first exploratory investigation into whether Machine\nLearning techniques can augment science strategic planning. We find that an\napproach based on Latent Dirichlet Allocation using abstracts drawn from high\nimpact astronomy journals may provide a leading indicator of future interest in\na research topic. We show two topic metrics that correlate well with the\nhigh-priority research areas identified by the 2010 National Academies'\nAstronomy and Astrophysics Decadal Survey science frontier panels. One metric\nis based on a sum of the fractional contribution to each topic by all\nscientific papers (\"counts\") while the other is the Compound Annual Growth Rate\nof these counts. These same metrics also show the same degree of correlation\nwith the whitepapers submitted to the same Decadal Survey.\n  Our results suggest that the Decadal Survey may under-emphasize fast growing\nresearch. A preliminary version of our work was presented by Thronson et al.\n2021.\n",
+                "链接": "https://arxiv.org/abs/2203.00713"
+            },
+            {
+                "文章ID": "30382",
+                "标题": "Synthetic Dataset Generation for Adversarial Machine Learning Research",
+                "作者": " Xiruo Liu,  Shibani Singh,  Cory Cornelius,  Colin Busho,  Mike Tan,  Anindya Paul,  Jason Martin",
+                "发布日期": "2022-07-25",
+                "摘要": "  Existing adversarial example research focuses on digitally inserted\nperturbations on top of existing natural image datasets. This construction of\nadversarial examples is not realistic because it may be difficult, or even\nimpossible, for an attacker to deploy such an attack in the real-world due to\nsensing and environmental effects. To better understand adversarial examples\nagainst cyber-physical systems, we propose approximating the real-world through\nsimulation. In this paper we describe our synthetic dataset generation tool\nthat enables scalable collection of such a synthetic dataset with realistic\nadversarial examples. We use the CARLA simulator to collect such a dataset and\ndemonstrate simulated attacks that undergo the same environmental transforms\nand processing as real-world images. Our tools have been used to collect\ndatasets to help evaluate the efficacy of adversarial examples, and can be\nfound at https://github.com/carla-simulator/carla/pull/4992.\n",
+                "链接": "https://arxiv.org/abs/2207.10719"
+            },
+            {
+                "文章ID": "96281",
+                "标题": "Diagnosis of Scalp Disorders using Machine Learning and Deep Learning\n  Approach -- A Review",
+                "作者": " Hrishabh Tiwari,  Jatin Moolchandani,  Shamla Mantri",
+                "发布日期": "2023-08-15",
+                "摘要": "  The morbidity of scalp diseases is minuscule compared to other diseases, but\nthe impact on the patient's life is enormous. It is common for people to\nexperience scalp problems that include Dandruff, Psoriasis, Tinea-Capitis,\nAlopecia and Atopic-Dermatitis. In accordance with WHO research, approximately\n70% of adults have problems with their scalp. It has been demonstrated in\ndescriptive research that hair quality is impaired by impaired scalp, but these\nimpacts are reversible with early diagnosis and treatment. Deep Learning\nadvances have demonstrated the effectiveness of CNN paired with FCN in\ndiagnosing scalp and skin disorders. In one proposed Deep-Learning-based scalp\ninspection and diagnosis system, an imaging microscope and a trained model are\ncombined with an app that classifies scalp disorders accurately with an average\nprecision of 97.41%- 99.09%. Another research dealt with classifying the\nPsoriasis using the CNN with an accuracy of 82.9%. As part of another study, an\nML based algorithm was also employed. It accurately classified the healthy\nscalp and alopecia areata with 91.4% and 88.9% accuracy with SVM and KNN\nalgorithms. Using deep learning models to diagnose scalp related diseases has\nimproved due to advancements i computation capabilities and computer vision,\nbut there remains a wide horizon for further improvements.\n",
+                "链接": "https://arxiv.org/abs/2308.07052"
+            },
+            {
+                "文章ID": "104767",
+                "标题": "Identifying Risk Factors for Post-COVID-19 Mental Health Disorders: A\n  Machine Learning Perspective",
+                "作者": " Maitham G. Yousif,  Fadhil G. Al-Amran,  Hector J. Castro",
+                "发布日期": "2023-09-29",
+                "摘要": "  In this study, we leveraged machine learning techniques to identify risk\nfactors associated with post-COVID-19 mental health disorders. Our analysis,\nbased on data collected from 669 patients across various provinces in Iraq,\nyielded valuable insights. We found that age, gender, and geographical region\nof residence were significant demographic factors influencing the likelihood of\ndeveloping mental health disorders in post-COVID-19 patients. Additionally,\ncomorbidities and the severity of COVID-19 illness were important clinical\npredictors. Psychosocial factors, such as social support, coping strategies,\nand perceived stress levels, also played a substantial role. Our findings\nemphasize the complex interplay of multiple factors in the development of\nmental health disorders following COVID-19 recovery. Healthcare providers and\npolicymakers should consider these risk factors when designing targeted\ninterventions and support systems for individuals at risk. Machine\nlearning-based approaches can provide a valuable tool for predicting and\npreventing adverse mental health outcomes in post-COVID-19 patients. Further\nresearch and prospective studies are needed to validate these findings and\nenhance our understanding of the long-term psychological impact of the COVID-19\npandemic. This study contributes to the growing body of knowledge regarding the\nmental health consequences of the COVID-19 pandemic and underscores the\nimportance of a multidisciplinary approach to address the diverse needs of\nindividuals on the path to recovery. Keywords: COVID-19, mental health, risk\nfactors, machine learning, Iraq\n",
+                "链接": "https://arxiv.org/abs/2309.16055"
+            },
+            {
+                "文章ID": "32886",
+                "标题": "Research on restaurant recommendation using machine learning",
+                "作者": " Junan Pan,  Zhihao Zhao",
+                "发布日期": "2022-08-11",
+                "摘要": "  A recommender system is a system that helps users filter irrelevant\ninformation and create user interest models based on their historical records.\nWith the continuous development of Internet information, recommendation systems\nhave received widespread attention in the industry. In this era of ubiquitous\ndata and information, how to obtain and analyze these data has become the\nresearch topic of many people. In view of this situation, this paper makes some\nbrief overviews of machine learning-related recommendation systems. By\nanalyzing some technologies and ideas used by machine learning in recommender\nsystems, let more people understand what is Big data and what is machine\nlearning. The most important point is to let everyone understand the profound\nimpact of machine learning on our daily life.\n",
+                "链接": "https://arxiv.org/abs/2208.05113"
+            },
+            {
+                "文章ID": "60653",
+                "标题": "Towards Inferential Reproducibility of Machine Learning Research",
+                "作者": " Michael Hagmann,  Philipp Meier,  Stefan Riezler",
+                "发布日期": "2023-10-10",
+                "摘要": "  Reliability of machine learning evaluation -- the consistency of observed\nevaluation scores across replicated model training runs -- is affected by\nseveral sources of nondeterminism which can be regarded as measurement noise.\nCurrent tendencies to remove noise in order to enforce reproducibility of\nresearch results neglect inherent nondeterminism at the implementation level\nand disregard crucial interaction effects between algorithmic noise factors and\ndata properties. This limits the scope of conclusions that can be drawn from\nsuch experiments. Instead of removing noise, we propose to incorporate several\nsources of variance, including their interaction with data properties, into an\nanalysis of significance and reliability of machine learning evaluation, with\nthe aim to draw inferences beyond particular instances of trained models. We\nshow how to use linear mixed effects models (LMEMs) to analyze performance\nevaluation scores, and to conduct statistical inference with a generalized\nlikelihood ratio test (GLRT). This allows us to incorporate arbitrary sources\nof noise like meta-parameter variations into statistical significance testing,\nand to assess performance differences conditional on data properties.\nFurthermore, a variance component analysis (VCA) enables the analysis of the\ncontribution of noise sources to overall variance and the computation of a\nreliability coefficient by the ratio of substantial to total variance.\n",
+                "链接": "https://arxiv.org/abs/2302.04054"
+            },
+            {
+                "文章ID": "70141",
+                "标题": "Machine Learning for Economics Research: When What and How?",
+                "作者": " Ajit Desai",
+                "发布日期": "2023-04-21",
+                "摘要": "  This article provides a curated review of selected papers published in\nprominent economics journals that use machine learning (ML) tools for research\nand policy analysis. The review focuses on three key questions: (1) when ML is\nused in economics, (2) what ML models are commonly preferred, and (3) how they\nare used for economic applications. The review highlights that ML is\nparticularly used to process nontraditional and unstructured data, capture\nstrong nonlinearity, and improve prediction accuracy. Deep learning models are\nsuitable for nontraditional data, whereas ensemble learning models are\npreferred for traditional datasets. While traditional econometric models may\nsuffice for analyzing low-complexity data, the increasing complexity of\neconomic data due to rapid digitalization and the growing literature suggests\nthat ML is becoming an essential addition to the econometrician's toolbox.\n",
+                "链接": "https://arxiv.org/abs/2304.00086"
+            },
+            {
+                "文章ID": "6568",
+                "标题": "Continuous Speech for Improved Learning Pathological Voice Disorders",
+                "作者": " Syu-Siang Wang,  Chi-Te Wang,  Chih-Chung Lai,  Yu Tsao,  Shih-Hau Fang",
+                "发布日期": "2022-02-23",
+                "摘要": "  Goal: Numerous studies had successfully differentiated normal and abnormal\nvoice samples. Nevertheless, further classification had rarely been attempted.\nThis study proposes a novel approach, using continuous Mandarin speech instead\nof a single vowel, to classify four common voice disorders (i.e. functional\ndysphonia, neoplasm, phonotrauma, and vocal palsy). Methods: In the proposed\nframework, acoustic signals are transformed into mel-frequency cepstral\ncoefficients, and a bi-directional long-short term memory network (BiLSTM) is\nadopted to model the sequential features. The experiments were conducted on a\nlarge-scale database, wherein 1,045 continuous speech were collected by the\nspeech clinic of a hospital from 2012 to 2019. Results: Experimental results\ndemonstrated that the proposed framework yields significant accuracy and\nunweighted average recall improvements of 78.12-89.27% and 50.92-80.68%,\nrespectively, compared with systems that use a single vowel. Conclusions: The\nresults are consistent with other machine learning algorithms, including gated\nrecurrent units, random forest, deep neural networks, and LSTM. The\nsensitivities for each disorder were also analyzed, and the model capabilities\nwere visualized via principal component analysis. An alternative experiment\nbased on a balanced dataset again confirms the advantages of using continuous\nspeech for learning voice disorders.\n",
+                "链接": "https://arxiv.org/abs/2202.10777"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "强化学习在大语言模型领域中应用的相关论文",
+            "type": "5"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "2022年后与AI for Science相关的综述论文",
+            "type": "6"
+        },
+        "results": [
+            {
+                "文章ID": "24067",
+                "标题": "SAIBench: Benchmarking AI for Science",
+                "作者": " Yatao Li,  Jianfeng Zhan",
+                "发布日期": "2022-06-14",
+                "摘要": "  Scientific research communities are embracing AI-based solutions to target\ntractable scientific tasks and improve research workflows. However, the\ndevelopment and evaluation of such solutions are scattered across multiple\ndisciplines. We formalize the problem of scientific AI benchmarking, and\npropose a system called SAIBench in the hope of unifying the efforts and\nenabling low-friction on-boarding of new disciplines. The system approaches\nthis goal with SAIL, a domain-specific language to decouple research problems,\nAI models, ranking criteria, and software/hardware configuration into reusable\nmodules. We show that this approach is flexible and can adapt to problems, AI\nmodels, and evaluation methods defined in different perspectives. The project\nhomepage is https://www.computercouncil.org/SAIBench\n",
+                "链接": "https://arxiv.org/abs/2206.05418"
+            },
+            {
+                "文章ID": "19147",
+                "标题": "AI and Citizen Science for Serendipity",
+                "作者": " Marisa Ponti,  Anastasia Skarpeti,  Bruno Kestemont",
+                "发布日期": "2022-05-17",
+                "摘要": "  It has been argued that introducing AI to creative practices destroys\nspontaneity, intuition and serendipity. However, the design of systems that\nleverage complex interactions between citizen scientists (members of the public\nengaged in research tasks) and computational AI methods have the potential to\nfacilitate creative exploration and chance encounters. Drawing from theories\nand literature about serendipity and computation, this article points to three\ninterrelated aspects that support the emergence of serendipity in hybrid\ncitizen science systems: the task environment; the characteristics of citizen\nscientists; and anomalies and errors.\n",
+                "链接": "https://arxiv.org/abs/2205.06890"
+            },
+            {
+                "文章ID": "65341",
+                "标题": "AI for Science: An Emerging Agenda",
+                "作者": " Philipp Berens,  Kyle Cranmer,  Neil D. Lawrence,  Ulrike von Luxburg,  Jessica Montgomery",
+                "发布日期": "2023-03-09",
+                "摘要": "  This report documents the programme and the outcomes of Dagstuhl Seminar\n22382 \"Machine Learning for Science: Bridging Data-Driven and Mechanistic\nModelling\". Today's scientific challenges are characterised by complexity.\nInterconnected natural, technological, and human systems are influenced by\nforces acting across time- and spatial-scales, resulting in complex\ninteractions and emergent behaviours. Understanding these phenomena -- and\nleveraging scientific advances to deliver innovative solutions to improve\nsociety's health, wealth, and well-being -- requires new ways of analysing\ncomplex systems. The transformative potential of AI stems from its widespread\napplicability across disciplines, and will only be achieved through integration\nacross research domains. AI for science is a rendezvous point. It brings\ntogether expertise from $\\mathrm{AI}$ and application domains; combines\nmodelling knowledge with engineering know-how; and relies on collaboration\nacross disciplines and between humans and machines. Alongside technical\nadvances, the next wave of progress in the field will come from building a\ncommunity of machine learning researchers, domain experts, citizen scientists,\nand engineers working together to design and deploy effective AI tools. This\nreport summarises the discussions from the seminar and provides a roadmap to\nsuggest how different communities can collaborate to deliver a new wave of\nprogress in AI and its application for scientific discovery.\n",
+                "链接": "https://arxiv.org/abs/2303.04217"
+            },
+            {
+                "文章ID": "91376",
+                "标题": "Towards eXplainable AI for Mobility Data Science",
+                "作者": " Anahid Jalali,  Anita Graser,  Clemens Heistracher",
+                "发布日期": "2023-09-08",
+                "摘要": "  This paper presents our ongoing work towards XAI for Mobility Data Science\napplications, focusing on explainable models that can learn from dense\ntrajectory data, such as GPS tracks of vehicles and vessels using temporal\ngraph neural networks (GNNs) and counterfactuals. We review the existing GeoXAI\nstudies, argue the need for comprehensible explanations with human-centered\napproaches, and outline a research path toward XAI for Mobility Data Science.\n",
+                "链接": "https://arxiv.org/abs/2307.08461"
+            },
+            {
+                "文章ID": "110050",
+                "标题": "AI for Mathematics: A Cognitive Science Perspective",
+                "作者": " Cedegao E. Zhang,  Katherine M. Collins,  Adrian Weller,  Joshua B. Tenenbaum",
+                "发布日期": "2023-10-23",
+                "摘要": "  Mathematics is one of the most powerful conceptual systems developed and used\nby the human species. Dreams of automated mathematicians have a storied history\nin artificial intelligence (AI). Rapid progress in AI, particularly propelled\nby advances in large language models (LLMs), has sparked renewed, widespread\ninterest in building such systems. In this work, we reflect on these goals from\na \\textit{cognitive science} perspective. We call attention to several\nclassical and ongoing research directions from cognitive science, which we\nbelieve are valuable for AI practitioners to consider when seeking to build\ntruly human (or superhuman)-level mathematical systems. We close with open\ndiscussions and questions that we believe necessitate a multi-disciplinary\nperspective -- cognitive scientists working in tandem with AI researchers and\nmathematicians -- as we move toward better mathematical AI systems which not\nonly help us push the frontier of the mathematics, but also offer glimpses into\nhow we as humans are even capable of such great cognitive feats.\n",
+                "链接": "https://arxiv.org/abs/2310.13021"
+            },
+            {
+                "文章ID": "18235",
+                "标题": "The AI Index 2022 Annual Report",
+                "作者": " Daniel Zhang,  Nestor Maslej,  Erik Brynjolfsson,  John Etchemendy,  Terah Lyons,  James Manyika,  Helen Ngo,  Juan Carlos Niebles,  Michael Sellitto,  Ellie Sakhaee,  Yoav Shoham,  Jack Clark,  Raymond Perrault",
+                "发布日期": "2022-05-10",
+                "摘要": "  Welcome to the fifth edition of the AI Index Report! The latest edition\nincludes data from a broad set of academic, private, and nonprofit\norganizations as well as more self-collected data and original analysis than\nany previous editions, including an expanded technical performance chapter, a\nnew survey of robotics researchers around the world, data on global AI\nlegislation records in 25 countries, and a new chapter with an in-depth\nanalysis of technical AI ethics metrics.\n  The AI Index Report tracks, collates, distills, and visualizes data related\nto artificial intelligence. Its mission is to provide unbiased, rigorously\nvetted, and globally sourced data for policymakers, researchers, executives,\njournalists, and the general public to develop a more thorough and nuanced\nunderstanding of the complex field of AI. The report aims to be the world's\nmost credible and authoritative source for data and insights about AI.\n",
+                "链接": "https://arxiv.org/abs/2205.03468"
+            },
+            {
+                "文章ID": "91991",
+                "标题": "AI empowering research: 10 ways how science can benefit from AI",
+                "作者": " César França",
+                "发布日期": "2023-07-21",
+                "摘要": "  This article explores the transformative impact of artificial intelligence\n(AI) on scientific research. It highlights ten ways in which AI is\nrevolutionizing the work of scientists, including powerful referencing tools,\nimproved understanding of research problems, enhanced research question\ngeneration, optimized research design, stub data generation, data\ntransformation, advanced data analysis, and AI-assisted reporting. While AI\noffers numerous benefits, challenges such as bias, privacy concerns, and the\nneed for human-AI collaboration must be considered. The article emphasizes that\nAI can augment human creativity in science but not replace it.\n",
+                "链接": "https://arxiv.org/abs/2307.10265"
+            },
+            {
+                "文章ID": "71895",
+                "标题": "chatClimate: Grounding Conversational AI in Climate Science",
+                "作者": " Saeid Ashraf Vaghefi,  Qian Wang,  Veruska Muccione,  Jingwei Ni,  Mathias Kraus,  Julia Bingler,  Tobias Schimanski,  Chiara Colesanti-Senni,  Nicolas Webersinke,  Christrian Huggel,  Markus Leippold",
+                "发布日期": "2023-05-01",
+                "摘要": "  Large Language Models (LLMs) have made significant progress in recent years,\nachieving remarkable results in question-answering tasks (QA). However, they\nstill face two major challenges: hallucination and outdated information after\nthe training phase. These challenges take center stage in critical domains like\nclimate change, where obtaining accurate and up-to-date information from\nreliable sources in a limited time is essential and difficult. To overcome\nthese barriers, one potential solution is to provide LLMs with access to\nexternal, scientifically accurate, and robust sources (long-term memory) to\ncontinuously update their knowledge and prevent the propagation of inaccurate,\nincorrect, or outdated information. In this study, we enhanced GPT-4 by\nintegrating the information from the Sixth Assessment Report of the\nIntergovernmental (IPCC AR6), the most comprehensive, up-to-date, and reliable\nsource in this domain. We present our conversational AI prototype, available at\nwww.chatclimate.ai and demonstrate its ability to answer challenging questions\naccurately in three different QA scenarios: asking from 1) GPT-4, 2)\nchatClimate, and 3) hybrid chatClimate. The answers and their sources were\nevaluated by our team of IPCC authors, who used their expert knowledge to score\nthe accuracy of the answers from 1 (very-low) to 5 (very-high). The evaluation\nshowed that the hybrid chatClimate provided more accurate answers, highlighting\nthe effectiveness of our solution. This approach can be easily scaled for\nchatbots in specific domains, enabling the delivery of reliable and accurate\ninformation.\n",
+                "链接": "https://arxiv.org/abs/2304.05510"
+            },
+            {
+                "文章ID": "59052",
+                "标题": "Can an AI Win Ghana's National Science and Maths Quiz? An AI Grand\n  Challenge for Education",
+                "作者": " George Boateng,  Victor Kumbol,  Elsie Effah Kaufmann",
+                "发布日期": "2023-01-31",
+                "摘要": "  There is a lack of enough qualified teachers across Africa which hampers\nefforts to provide adequate learning support such as educational question\nanswering (EQA) to students. An AI system that can enable students to ask\nquestions via text or voice and get instant answers will make high-quality\neducation accessible. Despite advances in the field of AI, there exists no\nrobust benchmark or challenge to enable building such an (EQA) AI within the\nAfrican context. Ghana's National Science and Maths Quiz competition (NSMQ) is\nthe perfect competition to evaluate the potential of such an AI due to its wide\ncoverage of scientific fields, variety of question types, highly competitive\nnature, and live, real-world format. The NSMQ is a Jeopardy-style annual live\nquiz competition in which 3 teams of 2 students compete by answering questions\nacross biology, chemistry, physics, and math in 5 rounds over 5 progressive\nstages until a winning team is crowned for that year. In this position paper,\nwe propose the NSMQ AI Grand Challenge, an AI Grand Challenge for Education\nusing Ghana's National Science and Maths Quiz competition (NSMQ) as a case\nstudy. Our proposed grand challenge is to \"Build an AI to compete live in\nGhana's National Science and Maths Quiz (NSMQ) competition and win - performing\nbetter than the best contestants in all rounds and stages of the competition.\"\nWe describe the competition, and key technical challenges to address along with\nideas from recent advances in machine learning that could be leveraged to solve\nthis challenge. This position paper is a first step towards conquering such a\nchallenge and importantly, making advances in AI for education in the African\ncontext towards democratizing high-quality education across Africa.\n",
+                "链接": "https://arxiv.org/abs/2301.13089"
+            },
+            {
+                "文章ID": "119005",
+                "标题": "SAIBench: A Structural Interpretation of AI for Science Through\n  Benchmarks",
+                "作者": " Yatao Li,  Jianfeng Zhan",
+                "发布日期": "2023-11-30",
+                "摘要": "  Artificial Intelligence for Science (AI4S) is an emerging research field that\nutilizes machine learning advancements to tackle complex scientific\ncomputational issues, aiming to enhance computational efficiency and accuracy.\nHowever, the data-driven nature of AI4S lacks the correctness or accuracy\nassurances of conventional scientific computing, posing challenges when\ndeploying AI4S models in real-world applications. To mitigate these, more\ncomprehensive benchmarking procedures are needed to better understand AI4S\nmodels. This paper introduces a novel benchmarking approach, known as\nstructural interpretation, which addresses two key requirements: identifying\nthe trusted operating range in the problem space and tracing errors back to\ntheir computational components. This method partitions both the problem and\nmetric spaces, facilitating a structural exploration of these spaces. The\npractical utility and effectiveness of structural interpretation are\nillustrated through its application to three distinct AI4S workloads:\nmachine-learning force fields (MLFF), jet tagging, and precipitation\nnowcasting. The benchmarks effectively model the trusted operating range, trace\nerrors, and reveal novel perspectives for refining the model, training process,\nand data sampling strategy. This work is part of the SAIBench project, an AI4S\nbenchmarking suite.\n",
+                "链接": "https://arxiv.org/abs/2311.17869"
+            }
+        ]
+    }
+]

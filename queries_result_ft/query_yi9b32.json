@@ -1,0 +1,449 @@
+[
+    {
+        "question": {
+            "question": "查询近一年模型推理加速相关的论文",
+            "type": "1"
+        },
+        "results": [
+            {
+                "文章ID": "16867",
+                "标题": "FlowGNN: A Dataflow Architecture for Real-Time Workload-Agnostic Graph\n  Neural Network Inference",
+                "作者": " Rishov Sarkar,  Stefan Abi-Karam,  Yuqi He,  Lakshmi Sathidevi,  Cong Hao",
+                "发布日期": "2022-10-20",
+                "摘要": "  Graph neural networks (GNNs) have recently exploded in popularity thanks to\ntheir broad applicability to graph-related problems such as quantum chemistry,\ndrug discovery, and high energy physics. However, meeting demand for novel GNN\nmodels and fast inference simultaneously is challenging due to the gap between\ndeveloping efficient accelerators and the rapid creation of new GNN models.\nPrior art focuses on accelerating specific classes of GNNs, such as Graph\nConvolutional Networks (GCN), but lacks generality to support a wide range of\nexisting or new GNN models. Furthermore, most works rely on graph\npre-processing to exploit data locality, making them unsuitable for real-time\napplications. To address these limitations, in this work, we propose a generic\ndataflow architecture for GNN acceleration, named FlowGNN, which is\ngeneralizable to the majority of message-passing GNNs. The contributions are\nthree-fold. First, we propose a novel and scalable dataflow architecture, which\ngenerally supports a wide range of GNN models with message-passing mechanism.\nThe architecture features a configurable dataflow optimized for simultaneous\ncomputation of node embedding, edge embedding, and message passing, which is\ngenerally applicable to all models. We also propose a rich library of\nmodel-specific components. Second, we deliver ultra-fast real-time GNN\ninference without any graph pre-processing, making it agnostic to dynamically\nchanging graph structures. Third, we verify our architecture on the Xilinx\nAlveo U50 FPGA board and measure the on-board end-to-end performance. We\nachieve a speed-up of up to 24-254x against CPU (6226R) and 1.3-477x against\nGPU (A6000) (with batch sizes 1 through 1024); we also outperform the SOTA GNN\naccelerator I-GCN by 1.26x speedup and 1.55x energy efficiency over four\ndatasets. Our implementation code and on-board measurement are publicly\navailable on GitHub.\n",
+                "链接": "https://arxiv.org/abs/2204.13103"
+            },
+            {
+                "文章ID": "102164",
+                "标题": "Draft & Verify: Lossless Large Language Model Acceleration via\n  Self-Speculative Decoding",
+                "作者": " Jun Zhang,  Jue Wang,  Huan Li,  Lidan Shou,  Ke Chen,  Gang Chen,  Sharad Mehrotra",
+                "发布日期": "2023-09-18",
+                "摘要": "  We present a novel inference scheme, self-speculative decoding, for\naccelerating Large Language Models (LLMs) without the need for an auxiliary\nmodel. This approach is characterized by a two-stage process: drafting and\nverification. The drafting stage generates draft tokens at a slightly lower\nquality but more quickly, which is achieved by selectively skipping certain\nintermediate layers during drafting Subsequently, the verification stage\nemploys the original LLM to validate those draft output tokens in one forward\npass. This process ensures the final output remains identical to that produced\nby the unaltered LLM, thereby maintaining output quality. The proposed method\nrequires no additional neural network training and no extra memory footprint,\nmaking it a plug-and-play and cost-effective solution for inference\nacceleration. Benchmarks with LLaMA-2 and its fine-tuned models demonstrated a\nspeedup up to 1.73$\\times$.\n",
+                "链接": "https://arxiv.org/abs/2309.08168"
+            },
+            {
+                "文章ID": "38601",
+                "标题": "Optimization of FPGA-based CNN Accelerators Using Metaheuristics",
+                "作者": " Sadiq M. Sait,  Aiman El-Maleh,  Mohammad Altakrouri,  Ahmad Shawahna",
+                "发布日期": "2022-09-26",
+                "摘要": "  In recent years, convolutional neural networks (CNNs) have demonstrated their\nability to solve problems in many fields and with accuracy that was not\npossible before. However, this comes with extensive computational requirements,\nwhich made general CPUs unable to deliver the desired real-time performance. At\nthe same time, FPGAs have seen a surge in interest for accelerating CNN\ninference. This is due to their ability to create custom designs with different\nlevels of parallelism. Furthermore, FPGAs provide better performance per watt\ncompared to GPUs. The current trend in FPGA-based CNN accelerators is to\nimplement multiple convolutional layer processors (CLPs), each of which is\ntailored for a subset of layers. However, the growing complexity of CNN\narchitectures makes optimizing the resources available on the target FPGA\ndevice to deliver optimal performance more challenging. In this paper, we\npresent a CNN accelerator and an accompanying automated design methodology that\nemploys metaheuristics for partitioning available FPGA resources to design a\nMulti-CLP accelerator. Specifically, the proposed design tool adopts simulated\nannealing (SA) and tabu search (TS) algorithms to find the number of CLPs\nrequired and their respective configurations to achieve optimal performance on\na given target FPGA device. Here, the focus is on the key specifications and\nhardware resources, including digital signal processors, block RAMs, and\noff-chip memory bandwidth. Experimental results and comparisons using four\nwell-known benchmark CNNs are presented demonstrating that the proposed\nacceleration framework is both encouraging and promising. The SA-/TS-based\nMulti-CLP achieves 1.31x - 2.37x higher throughput than the state-of-the-art\nSingle-/Multi-CLP approaches in accelerating AlexNet, SqueezeNet 1.1, VGGNet,\nand GoogLeNet architectures on the Xilinx VC707 and VC709 FPGA boards.\n",
+                "链接": "https://arxiv.org/abs/2209.11272"
+            },
+            {
+                "文章ID": "27579",
+                "标题": "Sustainable AI Processing at the Edge",
+                "作者": "University of Pittsburgh  Sébastien Ollivier, University of Pittsburgh  Sheng Li, University of Pittsburgh  Yue Tang, University of Pittsburgh  Chayanika Chaudhuri, University of Pittsburgh  Peipei Zhou, University of Pittsburgh  Xulong Tang, University of Pittsburgh  Jingtong Hu, University of Pittsburgh  Alex K. Jones",
+                "发布日期": "2022-07-05",
+                "摘要": "  Edge computing is a popular target for accelerating machine learning\nalgorithms supporting mobile devices without requiring the communication\nlatencies to handle them in the cloud. Edge deployments of machine learning\nprimarily consider traditional concerns such as SWaP constraints (Size, Weight,\nand Power) for their installations. However, such metrics are not entirely\nsufficient to consider environmental impacts from computing given the\nsignificant contributions from embodied energy and carbon. In this paper we\nexplore the tradeoffs of convolutional neural network acceleration engines for\nboth inference and on-line training. In particular, we explore the use of\nprocessing-in-memory (PIM) approaches, mobile GPU accelerators, and recently\nreleased FPGAs, and compare them with novel Racetrack memory PIM. Replacing\nPIM-enabled DDR3 with Racetrack memory PIM can recover its embodied energy as\nquickly as 1 year. For high activity ratios, mobile GPUs can be more\nsustainable but have higher embodied energy to overcome compared to PIM-enabled\nRacetrack memory.\n",
+                "链接": "https://arxiv.org/abs/2207.01209"
+            },
+            {
+                "文章ID": "94780",
+                "标题": "Radiation reaction on an accelerating point charge",
+                "作者": " Jerrold Franklin",
+                "发布日期": "2023-08-08",
+                "摘要": "  A point charge accelerating under the influence of an external force emits\nelectromagnetic radiation that reduces the increase in its mechanical energy.\nThis causes a reduction in the particle's acceleration. We derive the decrease\nin acceleration due to radiation reaction for a particle accelerating parallel\nto its velocity, and show that it has a negligible effect.\n",
+                "链接": "https://arxiv.org/abs/2308.02628"
+            },
+            {
+                "文章ID": "35597",
+                "标题": "RecLight: A Recurrent Neural Network Accelerator with Integrated Silicon\n  Photonics",
+                "作者": " Febin Sunny,  Mahdi Nikdast,  Sudeep Pasricha",
+                "发布日期": "2022-09-02",
+                "摘要": "  Recurrent Neural Networks (RNNs) are used in applications that learn\ndependencies in data sequences, such as speech recognition, human activity\nrecognition, and anomaly detection. In recent years, newer RNN variants, such\nas GRUs and LSTMs, have been used for implementing these applications. As many\nof these applications are employed in real-time scenarios, accelerating\nRNN/LSTM/GRU inference is crucial. In this paper, we propose a novel photonic\nhardware accelerator called RecLight for accelerating simple RNNs, GRUs, and\nLSTMs. Simulation results indicate that RecLight achieves 37x lower\nenergy-per-bit and 10% better throughput compared to the state-of-the-art.\n",
+                "链接": "https://arxiv.org/abs/2209.00084"
+            },
+            {
+                "文章ID": "114776",
+                "标题": "LCM-LoRA: A Universal Stable-Diffusion Acceleration Module",
+                "作者": " Simian Luo,  Yiqin Tan,  Suraj Patil,  Daniel Gu,  Patrick von Platen,  Apolinário Passos,  Longbo Huang,  Jian Li,  Hang Zhao",
+                "发布日期": "2023-11-10",
+                "摘要": "  Latent Consistency Models (LCMs) have achieved impressive performance in\naccelerating text-to-image generative tasks, producing high-quality images with\nminimal inference steps. LCMs are distilled from pre-trained latent diffusion\nmodels (LDMs), requiring only ~32 A100 GPU training hours. This report further\nextends LCMs' potential in two aspects: First, by applying LoRA distillation to\nStable-Diffusion models including SD-V1.5, SSD-1B, and SDXL, we have expanded\nLCM's scope to larger models with significantly less memory consumption,\nachieving superior image generation quality. Second, we identify the LoRA\nparameters obtained through LCM distillation as a universal Stable-Diffusion\nacceleration module, named LCM-LoRA. LCM-LoRA can be directly plugged into\nvarious Stable-Diffusion fine-tuned models or LoRAs without training, thus\nrepresenting a universally applicable accelerator for diverse image generation\ntasks. Compared with previous numerical PF-ODE solvers such as DDIM,\nDPM-Solver, LCM-LoRA can be viewed as a plug-in neural PF-ODE solver that\npossesses strong generalization abilities. Project page:\nhttps://github.com/luosiallen/latent-consistency-model.\n",
+                "链接": "https://arxiv.org/abs/2311.05556"
+            },
+            {
+                "文章ID": "70719",
+                "标题": "High-Throughput Vector Similarity Search in Knowledge Graphs",
+                "作者": " Jason Mohoney,  Anil Pacaci,  Shihabur Rahman Chowdhury,  Ali Mousavi,  Ihab F. Ilyas,  Umar Farooq Minhas,  Jeffrey Pound,  Theodoros Rekatsinas",
+                "发布日期": "2023-04-05",
+                "摘要": "  There is an increasing adoption of machine learning for encoding data into\nvectors to serve online recommendation and search use cases. As a result,\nrecent data management systems propose augmenting query processing with online\nvector similarity search. In this work, we explore vector similarity search in\nthe context of Knowledge Graphs (KGs). Motivated by the tasks of finding\nrelated KG queries and entities for past KG query workloads, we focus on hybrid\nvector similarity search (hybrid queries for short) where part of the query\ncorresponds to vector similarity search and part of the query corresponds to\npredicates over relational attributes associated with the underlying data\nvectors. For example, given past KG queries for a song entity, we want to\nconstruct new queries for new song entities whose vector representations are\nclose to the vector representation of the entity in the past KG query. But\nentities in a KG also have non-vector attributes such as a song associated with\nan artist, a genre, and a release date. Therefore, suggested entities must also\nsatisfy query predicates over non-vector attributes beyond a vector-based\nsimilarity predicate. While these tasks are central to KGs, our contributions\nare generally applicable to hybrid queries. In contrast to prior works that\noptimize online queries, we focus on enabling efficient batch processing of\npast hybrid query workloads. We present our system, HQI, for high-throughput\nbatch processing of hybrid queries. We introduce a workload-aware vector data\npartitioning scheme to tailor the vector index layout to the given workload and\ndescribe a multi-query optimization technique to reduce the overhead of vector\nsimilarity computations. We evaluate our methods on industrial workloads and\ndemonstrate that HQI yields a 31x improvement in throughput for finding related\nKG queries compared to existing hybrid query processing approaches.\n",
+                "链接": "https://arxiv.org/abs/2304.01926"
+            },
+            {
+                "文章ID": "91898",
+                "标题": "Rob\\^oCIn Small Size League Extended Team Description Paper for RoboCup\n  2023",
+                "作者": " Aline Lima de Oliveira,  Cauê Addae da Silva Gomes,  Cecília Virginia Santos da Silva,  Charles Matheus de Sousa Alves,  Danilo Andrade Martins de Souza,  Driele Pires Ferreira Araújo Xavier,  Edgleyson Pereira da Silva,  Felipe Bezerra Martins,  Lucas Henrique Cavalcanti Santos,  Lucas Dias Maciel,  Matheus Paixão Gumercindo dos Santos,  Matheus Lafayette Vasconcelos,  Matheus Vinícius Teotonio do Nascimento Andrade,  João Guilherme Oliveira Carvalho de Melo,  João Pedro Souza Pereira de Moura,  José Ronald da Silva,  José Victor Silva Cruz,  Pedro Henrique Santana de Morais,  Pedro Paulo Salman de Oliveira,  Riei Joaquim Matos Rodrigues,  Roberto Costa Fernandes,  Ryan Vinicius Santos Morais,  Tamara Mayara Ramos Teobaldo,  Washington Igor dos Santos Silva,  Edna Natividade Silva Barros",
+                "发布日期": "2023-07-20",
+                "摘要": "  Rob\\^oCIn has participated in RoboCup Small Size League since 2019, won its\nfirst world title in 2022 (Division B), and is currently a three-times\nLatin-American champion. This paper presents our improvements to defend the\nSmall Size League (SSL) division B title in RoboCup 2023 in Bordeaux, France.\nThis paper aims to share some of the academic research that our team developed\nover the past year. Our team has successfully published 2 articles related to\nSSL at two high-impact conferences: the 25th RoboCup International Symposium\nand the 19th IEEE Latin American Robotics Symposium (LARS 2022). Over the last\nyear, we have been continuously migrating from our past codebase to\nUnification. We will describe the new architecture implemented and some points\nof software and AI refactoring. In addition, we discuss the process of\nintegrating machined components into the mechanical system, our development for\nparticipating in the vision blackout challenge last year and what we are\npreparing for this year.\n",
+                "链接": "https://arxiv.org/abs/2307.10018"
+            },
+            {
+                "文章ID": "2073",
+                "标题": "GenGNN: A Generic FPGA Framework for Graph Neural Network Acceleration",
+                "作者": " Stefan Abi-Karam,  Yuqi He,  Rishov Sarkar,  Lakshmi Sathidevi,  Zihang Qiao,  Cong Hao",
+                "发布日期": "2022-01-24",
+                "摘要": "  Graph neural networks (GNNs) have recently exploded in popularity thanks to\ntheir broad applicability to ubiquitous graph-related problems such as quantum\nchemistry, drug discovery, and high energy physics. However, meeting demand for\nnovel GNN models and fast inference simultaneously is challenging because of\nthe gap between the difficulty in developing efficient FPGA accelerators and\nthe rapid pace of creation of new GNN models. Prior art focuses on the\nacceleration of specific classes of GNNs but lacks the generality to work\nacross existing models or to extend to new and emerging GNN models. In this\nwork, we propose a generic GNN acceleration framework using High-Level\nSynthesis (HLS), named GenGNN, with two-fold goals. First, we aim to deliver\nultra-fast GNN inference without any graph pre-processing for real-time\nrequirements. Second, we aim to support a diverse set of GNN models with the\nextensibility to flexibly adapt to new models. The framework features an\noptimized message-passing structure applicable to all models, combined with a\nrich library of model-specific components. We verify our implementation\non-board on the Xilinx Alveo U50 FPGA and observe a speed-up of up to 25x\nagainst CPU (6226R) baseline and 13x against GPU (A6000) baseline. Our HLS code\nwill be open-source on GitHub upon acceptance.\n",
+                "链接": "https://arxiv.org/abs/2201.08475"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "近几个月自然语言处理相关的文章。",
+            "type": "1"
+        },
+        "results": [
+            {
+                "文章ID": "56412",
+                "标题": "Topic Modelling of Swedish Newspaper Articles about Coronavirus: a Case\n  Study using Latent Dirichlet Allocation Method",
+                "作者": " Bernadeta Griciūtė,  Lifeng Han,  Goran Nenadic",
+                "发布日期": "2023-04-19",
+                "摘要": "  Topic Modelling (TM) is from the research branches of natural language\nunderstanding (NLU) and natural language processing (NLP) that is to facilitate\ninsightful analysis from large documents and datasets, such as a summarisation\nof main topics and the topic changes. This kind of discovery is getting more\npopular in real-life applications due to its impact on big data analytics. In\nthis study, from the social-media and healthcare domain, we apply popular\nLatent Dirichlet Allocation (LDA) methods to model the topic changes in Swedish\nnewspaper articles about Coronavirus. We describe the corpus we created\nincluding 6515 articles, methods applied, and statistics on topic changes over\napproximately 1 year and two months period of time from 17th January 2020 to\n13th March 2021. We hope this work can be an asset for grounding applications\nof topic modelling and can be inspiring for similar case studies in an era with\npandemics, to support socio-economic impact research as well as clinical and\nhealthcare analytics. Our data and source code are openly available at\nhttps://github. com/poethan/Swed_Covid_TM Keywords: Latent Dirichlet Allocation\n(LDA); Topic Modelling; Coronavirus; Pandemics; Natural Language Understanding;\nBERT-topic\n",
+                "链接": "https://arxiv.org/abs/2301.03029"
+            },
+            {
+                "文章ID": "74968",
+                "标题": "Examining European Press Coverage of the Covid-19 No-Vax Movement: An\n  NLP Framework",
+                "作者": " David Alonso del Barrio,  Daniel Gatica-Perez",
+                "发布日期": "2023-05-02",
+                "摘要": "  This paper examines how the European press dealt with the no-vax reactions\nagainst the Covid-19 vaccine and the dis- and misinformation associated with\nthis movement. Using a curated dataset of 1786 articles from 19 European\nnewspapers on the anti-vaccine movement over a period of 22 months in\n2020-2021, we used Natural Language Processing techniques including topic\nmodeling, sentiment analysis, semantic relationship with word embeddings,\npolitical analysis, named entity recognition, and semantic networks, to\nunderstand the specific role of the European traditional press in the\ndisinformation ecosystem. The results of this multi-angle analysis demonstrate\nthat the European well-established press actively opposed a variety of hoaxes\nmainly spread on social media, and was critical of the anti-vax trend,\nregardless of the political orientation of the newspaper. This confirms the\nrelevance of studying the role of high-quality press in the disinformation\necosystem.\n",
+                "链接": "https://arxiv.org/abs/2305.00182"
+            },
+            {
+                "文章ID": "99532",
+                "标题": "Link Prediction for Wikipedia Articles as a Natural Language Inference\n  Task",
+                "作者": " Chau-Thang Phan,  Quoc-Nam Nguyen,  Kiet Van Nguyen",
+                "发布日期": "2023-09-06",
+                "摘要": "  Link prediction task is vital to automatically understanding the structure of\nlarge knowledge bases. In this paper, we present our system to solve this task\nat the Data Science and Advanced Analytics 2023 Competition \"Efficient and\nEffective Link Prediction\" (DSAA-2023 Competition) with a corpus containing\n948,233 training and 238,265 for public testing. This paper introduces an\napproach to link prediction in Wikipedia articles by formulating it as a\nnatural language inference (NLI) task. Drawing inspiration from recent\nadvancements in natural language processing and understanding, we cast link\nprediction as an NLI task, wherein the presence of a link between two articles\nis treated as a premise, and the task is to determine whether this premise\nholds based on the information presented in the articles. We implemented our\nsystem based on the Sentence Pair Classification for Link Prediction for the\nWikipedia Articles task. Our system achieved 0.99996 Macro F1-score and 1.00000\nMacro F1-score for the public and private test sets, respectively. Our team\nUIT-NLP ranked 3rd in performance on the private test set, equal to the scores\nof the first and second places. Our code is publicly for research purposes.\n",
+                "链接": "https://arxiv.org/abs/2308.16469"
+            },
+            {
+                "文章ID": "61938",
+                "标题": "A Survey on Event-based News Narrative Extraction",
+                "作者": " Brian Keith Norambuena,  Tanushree Mitra,  Chris North",
+                "发布日期": "2023-03-14",
+                "摘要": "  Narratives are fundamental to our understanding of the world, providing us\nwith a natural structure for knowledge representation over time. Computational\nnarrative extraction is a subfield of artificial intelligence that makes heavy\nuse of information retrieval and natural language processing techniques.\nDespite the importance of computational narrative extraction, relatively little\nscholarly work exists on synthesizing previous research and strategizing future\nresearch in the area. In particular, this article focuses on extracting news\nnarratives from an event-centric perspective. Extracting narratives from news\ndata has multiple applications in understanding the evolving information\nlandscape. This survey presents an extensive study of research in the area of\nevent-based news narrative extraction. In particular, we screened over 900\narticles that yielded 54 relevant articles. These articles are synthesized and\norganized by representation model, extraction criteria, and evaluation\napproaches. Based on the reviewed studies, we identify recent trends, open\nchallenges, and potential research lines.\n",
+                "链接": "https://arxiv.org/abs/2302.08351"
+            },
+            {
+                "文章ID": "26135",
+                "标题": "Exploiting Transliterated Words for Finding Similarity in Inter-Language\n  News Articles using Machine Learning",
+                "作者": " Sameea Naeem,  Dr. Arif ur Rahman,  Syed Mujtaba Haider,  Abdul Basit Mughal",
+                "发布日期": "2022-06-24",
+                "摘要": "  Finding similarities between two inter-language news articles is a\nchallenging problem of Natural Language Processing (NLP). It is difficult to\nfind similar news articles in a different language other than the native\nlanguage of user, there is a need for a Machine Learning based automatic system\nto find the similarity between two inter-language news articles. In this\narticle, we propose a Machine Learning model with the combination of English\nUrdu word transliteration which will show whether the English news article is\nsimilar to the Urdu news article or not. The existing approaches to find\nsimilarities has a major drawback when the archives contain articles of\nlow-resourced languages like Urdu along with English news article. The existing\napproaches to find similarities has drawback when the archives contain\nlow-resourced languages like Urdu along with English news articles. We used\nlexicon to link Urdu and English news articles. As Urdu language processing\napplications like machine translation, text to speech, etc are unable to handle\nEnglish text at the same time so this research proposed technique to find\nsimilarities in English and Urdu news articles based on transliteration.\n",
+                "链接": "https://arxiv.org/abs/2206.11860"
+            },
+            {
+                "文章ID": "12668",
+                "标题": "Generating Scientific Articles with Machine Learning",
+                "作者": " Eliot H. Ayache,  Conor M. B. Omand",
+                "发布日期": "2022-04-01",
+                "摘要": "  In recent years, the field of machine learning has seen rapid growth, with\napplications in a variety of domains, including image recognition, natural\nlanguage processing, and predictive modeling. In this paper, we explore the\napplication of machine learning to the generation of scientific articles. We\npresent a method for using machine learning to generate scientific articles\nbased on a data set of scientific papers. The method uses a machine-learning\nalgorithm to learn the structure of a scientific article and a set of training\ndata consisting of scientific papers. The machine-learning algorithm is used to\ngenerate a scientific article based on the data set of scientific papers. We\nevaluate the performance of the method by comparing the generated article to a\nset of manually written articles. The results show that the machine-generated\narticle is of similar quality to the manually written articles.\n",
+                "链接": "https://arxiv.org/abs/2203.16569"
+            },
+            {
+                "文章ID": "62254",
+                "标题": "Transformadores: Fundamentos teoricos y Aplicaciones",
+                "作者": " Jordi de la Torre",
+                "发布日期": "2023-02-21",
+                "摘要": "  Transformers are a neural network architecture originally designed for\nnatural language processing that it is now a mainstream tool for solving a wide\nvariety of problems, including natural language processing, sound, image,\nreinforcement learning, and other problems with heterogeneous input data. Its\ndistinctive feature is its self-attention system, based on attention to one's\nown sequence, which derives from the previously introduced attention system.\nThis article provides the reader with the necessary context to understand the\nmost recent research articles and presents the mathematical and algorithmic\nfoundations of the elements that make up this type of network. The different\ncomponents that make up this architecture and the variations that may exist are\nalso studied, as well as some applications of the transformer models. This\narticle is in Spanish to bring this scientific knowledge to the\nSpanish-speaking community.\n",
+                "链接": "https://arxiv.org/abs/2302.09327"
+            },
+            {
+                "文章ID": "120207",
+                "标题": "Measuring Distributional Shifts in Text: The Advantage of Language\n  Model-Based Embeddings",
+                "作者": " Gyandev Gupta,  Bashir Rastegarpanah,  Amalendu Iyer,  Joshua Rubin,  Krishnaram Kenthapadi",
+                "发布日期": "2023-12-06",
+                "摘要": "  An essential part of monitoring machine learning models in production is\nmeasuring input and output data drift. In this paper, we present a system for\nmeasuring distributional shifts in natural language data and highlight and\ninvestigate the potential advantage of using large language models (LLMs) for\nthis problem. Recent advancements in LLMs and their successful adoption in\ndifferent domains indicate their effectiveness in capturing semantic\nrelationships for solving various natural language processing problems. The\npower of LLMs comes largely from the encodings (embeddings) generated in the\nhidden layers of the corresponding neural network. First we propose a\nclustering-based algorithm for measuring distributional shifts in text data by\nexploiting such embeddings. Then we study the effectiveness of our approach\nwhen applied to text embeddings generated by both LLMs and classical embedding\nalgorithms. Our experiments show that general-purpose LLM-based embeddings\nprovide a high sensitivity to data drift compared to other embedding methods.\nWe propose drift sensitivity as an important evaluation metric to consider when\ncomparing language models. Finally, we present insights and lessons learned\nfrom deploying our framework as part of the Fiddler ML Monitoring platform over\na period of 18 months.\n",
+                "链接": "https://arxiv.org/abs/2312.02337"
+            },
+            {
+                "文章ID": "103131",
+                "标题": "fakenewsbr: A Fake News Detection Platform for Brazilian Portuguese",
+                "作者": " Luiz Giordani,  Gilsiley Darú,  Rhenan Queiroz,  Vitor Buzinaro,  Davi Keglevich Neiva,  Daniel Camilo Fuentes Guzmán,  Marcos Jardel Henriques,  Oilson Alberto Gonzatto Junior,  Francisco Louzada",
+                "发布日期": "2023-09-22",
+                "摘要": "  The proliferation of fake news has become a significant concern in recent\ntimes due to its potential to spread misinformation and manipulate public\nopinion. This paper presents a comprehensive study on detecting fake news in\nBrazilian Portuguese, focusing on journalistic-type news. We propose a machine\nlearning-based approach that leverages natural language processing techniques,\nincluding TF-IDF and Word2Vec, to extract features from textual data. We\nevaluate the performance of various classification algorithms, such as logistic\nregression, support vector machine, random forest, AdaBoost, and LightGBM, on a\ndataset containing both true and fake news articles. The proposed approach\nachieves high accuracy and F1-Score, demonstrating its effectiveness in\nidentifying fake news. Additionally, we developed a user-friendly web platform,\nfakenewsbr.com, to facilitate the verification of news articles' veracity. Our\nplatform provides real-time analysis, allowing users to assess the likelihood\nof fake news articles. Through empirical analysis and comparative studies, we\ndemonstrate the potential of our approach to contribute to the fight against\nthe spread of fake news and promote more informed media consumption.\n",
+                "链接": "https://arxiv.org/abs/2309.11052"
+            },
+            {
+                "文章ID": "35267",
+                "标题": "Stock Market Prediction using Natural Language Processing -- A Survey",
+                "作者": " Om Mane,  Saravanakumar kandasamy",
+                "发布日期": "2022-08-30",
+                "摘要": "  The stock market is a network which provides a platform for almost all major\neconomic transactions. While investing in the stock market is a good idea,\ninvesting in individual stocks may not be, especially for the casual investor.\nSmart stock-picking requires in-depth research and plenty of dedication.\nPredicting this stock value offers enormous arbitrage profit opportunities.\nThis attractiveness of finding a solution has prompted researchers to find a\nway past problems like volatility, seasonality, and dependence on time. This\npaper surveys recent literature in the domain of natural language processing\nand machine learning techniques used to predict stock market movements. The\nmain contributions of this paper include the sophisticated categorizations of\nmany recent articles and the illustration of the recent trends of research in\nstock market prediction and its related areas.\n",
+                "链接": "https://arxiv.org/abs/2208.13564"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "2023年以后关于NLP领域的持续性学习论文",
+            "type": "1"
+        },
+        "results": [
+            {
+                "文章ID": "88367",
+                "标题": "Continuous Time q-learning for McKean-Vlasov Control Problems",
+                "作者": " Xiaoli Wei,  Xiang Yu",
+                "发布日期": "2023-07-06",
+                "摘要": "  This paper studies the q-learning, recently coined as the continuous time\ncounterpart of Q-learning by Jia and Zhou (2023), for continuous time\nMckean-Vlasov control problems in the setting of entropy-regularized\nreinforcement learning. In contrast to the single agent's control problem in\nJia and Zhou (2023), the mean-field interaction of agents renders the\ndefinition of the q-function more subtle, for which we reveal that two distinct\nq-functions naturally arise: (i) the integrated q-function (denoted by $q$) as\nthe first-order approximation of the integrated Q-function introduced in Gu,\nGuo, Wei and Xu (2023), which can be learnt by a weak martingale condition\ninvolving test policies; and (ii) the essential q-function (denoted by $q_e$)\nthat is employed in the policy improvement iterations. We show that two\nq-functions are related via an integral representation under all test policies.\nBased on the weak martingale condition and our proposed searching method of\ntest policies, some model-free learning algorithms are devised. In two\nexamples, one in LQ control framework and one beyond LQ control framework, we\ncan obtain the exact parameterization of the optimal value function and\nq-functions and illustrate our algorithms with simulation experiments.\n",
+                "链接": "https://arxiv.org/abs/2306.16208"
+            },
+            {
+                "文章ID": "118625",
+                "标题": "Sinkhorn Flow: A Continuous-Time Framework for Understanding and\n  Generalizing the Sinkhorn Algorithm",
+                "作者": " Mohammad Reza Karimi,  Ya-Ping Hsieh,  Andreas Krause",
+                "发布日期": "2023-11-29",
+                "摘要": "  Many problems in machine learning can be formulated as solving\nentropy-regularized optimal transport on the space of probability measures. The\ncanonical approach involves the Sinkhorn iterates, renowned for their rich\nmathematical properties. Recently, the Sinkhorn algorithm has been recast\nwithin the mirror descent framework, thus benefiting from classical\noptimization theory insights. Here, we build upon this result by introducing a\ncontinuous-time analogue of the Sinkhorn algorithm. This perspective allows us\nto derive novel variants of Sinkhorn schemes that are robust to noise and bias.\nMoreover, our continuous-time dynamics not only generalize but also offer a\nunified perspective on several recently discovered dynamics in machine learning\nand mathematics, such as the \"Wasserstein mirror flow\" of (Deb et al. 2023) or\nthe \"mean-field Schr\\\"odinger equation\" of (Claisse et al. 2023).\n",
+                "链接": "https://arxiv.org/abs/2311.16706"
+            },
+            {
+                "文章ID": "112556",
+                "标题": "Upgrading VAE Training With Unlimited Data Plans Provided by Diffusion\n  Models",
+                "作者": " Tim Z. Xiao,  Johannes Zenn,  Robert Bamler",
+                "发布日期": "2023-11-27",
+                "摘要": "  Variational autoencoders (VAEs) are popular models for representation\nlearning but their encoders are susceptible to overfitting (Cremer et al.,\n2018) because they are trained on a finite training set instead of the true\n(continuous) data distribution $p_{\\mathrm{data}}(\\mathbf{x})$. Diffusion\nmodels, on the other hand, avoid this issue by keeping the encoder fixed. This\nmakes their representations less interpretable, but it simplifies training,\nenabling accurate and continuous approximations of\n$p_{\\mathrm{data}}(\\mathbf{x})$. In this paper, we show that overfitting\nencoders in VAEs can be effectively mitigated by training on samples from a\npre-trained diffusion model. These results are somewhat unexpected as recent\nfindings (Alemohammad et al., 2023; Shumailov et al., 2023) observe a decay in\ngenerative performance when models are trained on data generated by another\ngenerative model. We analyze generalization performance, amortization gap, and\nrobustness of VAEs trained with our proposed method on three different data\nsets. We find improvements in all metrics compared to both normal training and\nconventional data augmentation methods, and we show that a modest amount of\nsamples from the diffusion model suffices to obtain these gains.\n",
+                "链接": "https://arxiv.org/abs/2310.19653"
+            },
+            {
+                "文章ID": "99413",
+                "标题": "SHARP Challenge 2023: Solving CAD History and pArameters Recovery from\n  Point clouds and 3D scans. Overview, Datasets, Metrics, and Baselines",
+                "作者": " Dimitrios Mallis,  Sk Aziz Ali,  Elona Dupont,  Kseniya Cherenkova,  Ahmet Serdar Karadeniz,  Mohammad Sadil Khan,  Anis Kacem,  Gleb Gusev,  Djamila Aouada",
+                "发布日期": "2023-08-31",
+                "摘要": "  Recent breakthroughs in geometric Deep Learning (DL) and the availability of\nlarge Computer-Aided Design (CAD) datasets have advanced the research on\nlearning CAD modeling processes and relating them to real objects. In this\ncontext, 3D reverse engineering of CAD models from 3D scans is considered to be\none of the most sought-after goals for the CAD industry. However, recent\nefforts assume multiple simplifications limiting the applications in real-world\nsettings. The SHARP Challenge 2023 aims at pushing the research a step closer\nto the real-world scenario of CAD reverse engineering through dedicated\ndatasets and tracks. In this paper, we define the proposed SHARP 2023 tracks,\ndescribe the provided datasets, and propose a set of baseline methods along\nwith suitable evaluation metrics to assess the performance of the track\nsolutions. All proposed datasets along with useful routines and the evaluation\nmetrics are publicly available.\n",
+                "链接": "https://arxiv.org/abs/2308.15966"
+            },
+            {
+                "文章ID": "115881",
+                "标题": "Proceedings Fifth International Workshop on Formal Methods for\n  Autonomous Systems",
+                "作者": "University of Manchester, UK  Marie Farrell, University of Nottingham, UK  Matt Luckcuck, University of Bremen,\n  Germany  Mario Gleirscher, Karlsruhe Institute of Technology, Germany  Maike Schwammberger",
+                "发布日期": "2023-11-16",
+                "摘要": "  This EPTCS volume contains the proceedings for the Fifth International\nWorkshop on Formal Methods for Autonomous Systems (FMAS 2023), which was held\non the 15th and 16th of November 2023. FMAS 2023 was co-located with 18th\nInternational Conference on integrated Formal Methods (iFM) (iFM'22), organised\nby Leiden Institute of Advanced Computer Science of Leiden University. The\nworkshop itself was held at Scheltema Leiden, a renovated 19th Century blanket\nfactory alongside the canal.\n  FMAS 2023 received 25 submissions. We received 11 regular papers, 3\nexperience reports, 6 research previews, and 5 vision papers. The researchers\nwho submitted papers to FMAS 2023 were from institutions in: Australia, Canada,\nColombia, France, Germany, Ireland, Italy, the Netherlands, Sweden, the United\nKingdom, and the United States of America. Increasing our number of submissions\nfor the third year in a row is an encouraging sign that FMAS has established\nitself as a reputable publication venue for research on the formal modelling\nand verification of autonomous systems. After each paper was reviewed by three\nmembers of our Programme Committee we accepted a total of 15 papers: 8 long\npapers and 7 short papers.\n",
+                "链接": "https://arxiv.org/abs/2311.08987"
+            },
+            {
+                "文章ID": "72953",
+                "标题": "MER 2023: Multi-label Learning, Modality Robustness, and Semi-Supervised\n  Learning",
+                "作者": " Zheng Lian,  Haiyang Sun,  Licai Sun,  Kang Chen,  Mingyu Xu,  Kexin Wang,  Ke Xu,  Yu He,  Ying Li,  Jinming Zhao,  Ye Liu,  Bin Liu,  Jiangyan Yi,  Meng Wang,  Erik Cambria,  Guoying Zhao,  Björn W. Schuller,  Jianhua Tao",
+                "发布日期": "2023-09-15",
+                "摘要": "  The first Multimodal Emotion Recognition Challenge (MER 2023) was\nsuccessfully held at ACM Multimedia. The challenge focuses on system robustness\nand consists of three distinct tracks: (1) MER-MULTI, where participants are\nrequired to recognize both discrete and dimensional emotions; (2) MER-NOISE, in\nwhich noise is added to test videos for modality robustness evaluation; (3)\nMER-SEMI, which provides a large amount of unlabeled samples for\nsemi-supervised learning. In this paper, we introduce the motivation behind\nthis challenge, describe the benchmark dataset, and provide some statistics\nabout participants. To continue using this dataset after MER 2023, please sign\na new End User License Agreement and send it to our official email address\nmerchallenge.contact@gmail.com. We believe this high-quality dataset can become\na new benchmark in multimodal emotion recognition, especially for the Chinese\nresearch community.\n",
+                "链接": "https://arxiv.org/abs/2304.08981"
+            },
+            {
+                "文章ID": "88267",
+                "标题": "The 2nd Place Solution for 2023 Waymo Open Sim Agents Challenge",
+                "作者": " Cheng Qian,  Di Xiu,  Minghao Tian",
+                "发布日期": "2023-06-29",
+                "摘要": "  In this technical report, we present the 2nd place solution of 2023 Waymo\nOpen Sim Agents Challenge (WOSAC)[4]. We propose a simple yet effective\nautoregressive method for simulating multi-agent behaviors, which is built upon\na well-known multimodal motion forecasting framework called Motion Transformer\n(MTR)[5] with postprocessing algorithms applied. Our submission named MTR+++\nachieves 0.4697 on the Realism Meta metric in 2023 WOSAC. Besides, a modified\nmodel based on MTR named MTR_E is proposed after the challenge, which has a\nbetter score 0.4911 and is ranked the 3rd on the leaderboard of WOSAC as of\nJune 25, 2023.\n",
+                "链接": "https://arxiv.org/abs/2306.15914"
+            },
+            {
+                "文章ID": "85987",
+                "标题": "Team AcieLee: Technical Report for EPIC-SOUNDS Audio-Based Interaction\n  Recognition Challenge 2023",
+                "作者": " Yuqi Li,  Yizhi Luo,  Xiaoshuai Hao,  Chuanguang Yang,  Zhulin An,  Dantong Song,  Wei Yi",
+                "发布日期": "2023-06-16",
+                "摘要": "  In this report, we describe the technical details of our submission to the\nEPIC-SOUNDS Audio-Based Interaction Recognition Challenge 2023, by Team\n\"AcieLee\" (username: Yuqi\\_Li). The task is to classify the audio caused by\ninteractions between objects, or from events of the camera wearer. We conducted\nexhaustive experiments and found learning rate step decay, backbone frozen,\nlabel smoothing and focal loss contribute most to the performance improvement.\nAfter training, we combined multiple models from different stages and\nintegrated them into a single model by assigning fusion weights. This proposed\nmethod allowed us to achieve 3rd place in the CVPR 2023 workshop of EPIC-SOUNDS\nAudio-Based Interaction Recognition Challenge.\n",
+                "链接": "https://arxiv.org/abs/2306.08998"
+            },
+            {
+                "文章ID": "91898",
+                "标题": "Rob\\^oCIn Small Size League Extended Team Description Paper for RoboCup\n  2023",
+                "作者": " Aline Lima de Oliveira,  Cauê Addae da Silva Gomes,  Cecília Virginia Santos da Silva,  Charles Matheus de Sousa Alves,  Danilo Andrade Martins de Souza,  Driele Pires Ferreira Araújo Xavier,  Edgleyson Pereira da Silva,  Felipe Bezerra Martins,  Lucas Henrique Cavalcanti Santos,  Lucas Dias Maciel,  Matheus Paixão Gumercindo dos Santos,  Matheus Lafayette Vasconcelos,  Matheus Vinícius Teotonio do Nascimento Andrade,  João Guilherme Oliveira Carvalho de Melo,  João Pedro Souza Pereira de Moura,  José Ronald da Silva,  José Victor Silva Cruz,  Pedro Henrique Santana de Morais,  Pedro Paulo Salman de Oliveira,  Riei Joaquim Matos Rodrigues,  Roberto Costa Fernandes,  Ryan Vinicius Santos Morais,  Tamara Mayara Ramos Teobaldo,  Washington Igor dos Santos Silva,  Edna Natividade Silva Barros",
+                "发布日期": "2023-07-20",
+                "摘要": "  Rob\\^oCIn has participated in RoboCup Small Size League since 2019, won its\nfirst world title in 2022 (Division B), and is currently a three-times\nLatin-American champion. This paper presents our improvements to defend the\nSmall Size League (SSL) division B title in RoboCup 2023 in Bordeaux, France.\nThis paper aims to share some of the academic research that our team developed\nover the past year. Our team has successfully published 2 articles related to\nSSL at two high-impact conferences: the 25th RoboCup International Symposium\nand the 19th IEEE Latin American Robotics Symposium (LARS 2022). Over the last\nyear, we have been continuously migrating from our past codebase to\nUnification. We will describe the new architecture implemented and some points\nof software and AI refactoring. In addition, we discuss the process of\nintegrating machined components into the mechanical system, our development for\nparticipating in the vision blackout challenge last year and what we are\npreparing for this year.\n",
+                "链接": "https://arxiv.org/abs/2307.10018"
+            },
+            {
+                "文章ID": "106668",
+                "标题": "Lightweight Boosting Models for User Response Prediction Using\n  Adversarial Validation",
+                "作者": " Hyeonwoo Kim,  Wonsung Lee",
+                "发布日期": "2023-10-09",
+                "摘要": "  The ACM RecSys Challenge 2023, organized by ShareChat, aims to predict the\nprobability of the app being installed. This paper describes the lightweight\nsolution to this challenge. We formulate the task as a user response prediction\ntask. For rapid prototyping for the task, we propose a lightweight solution\nincluding the following steps: 1) using adversarial validation, we effectively\neliminate uninformative features from a dataset; 2) to address noisy continuous\nfeatures and categorical features with a large number of unique values, we\nemploy feature engineering techniques.; 3) we leverage Gradient Boosted\nDecision Trees (GBDT) for their exceptional performance and scalability. The\nexperiments show that a single LightGBM model, without additional ensembling,\nperforms quite well. Our team achieved ninth place in the challenge with the\nfinal leaderboard score of 6.059065. Code for our approach can be found here:\nhttps://github.com/choco9966/recsys-challenge-2023.\n",
+                "链接": "https://arxiv.org/abs/2310.03778"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "大模型在游戏方面的论文",
+            "type": "1"
+        },
+        "results": [
+            {
+                "文章ID": "91534",
+                "标题": "Federated Large Language Model: A Position Paper",
+                "作者": " Chaochao Chen,  Xiaohua Feng,  Jun Zhou,  Jianwei Yin,  Xiaolin Zheng",
+                "发布日期": "2023-07-19",
+                "摘要": "  Large scale language models (LLM) have received significant attention and\nfound diverse applications across various domains, but their development\nencounters challenges in real-world scenarios. These challenges arise due to\nthe scarcity of public domain data availability and the need to maintain\nprivacy with respect to private domain data. To address these issues, federated\nlearning (FL) has emerged as a promising technology that enables collaborative\ntraining of shared models while preserving decentralized data. We propose the\nconcept of federated LLM, which comprises three key components, i.e., federated\nLLM pre-training, federated LLM fine-tuning, and federated LLM prompt\nengineering. For each component, we discuss its advantage over traditional LLM\ntraining methods and propose specific engineering strategies for\nimplementation. Furthermore, we explore the novel challenges introduced by the\nintegration of FL and LLM. We analyze existing solutions and identify potential\nobstacles faced by these solutions within the context of federated LLM.\n",
+                "链接": "https://arxiv.org/abs/2307.08925"
+            },
+            {
+                "文章ID": "75161",
+                "标题": "Automated Paper Screening for Clinical Reviews Using Large Language\n  Models",
+                "作者": " Eddie Guo,  Mehul Gupta,  Jiawen Deng,  Ye-Jean Park,  Mike Paget,  Christopher Naugler",
+                "发布日期": "2023-10-09",
+                "摘要": "  Objective: To assess the performance of the OpenAI GPT API in accurately and\nefficiently identifying relevant titles and abstracts from real-world clinical\nreview datasets and compare its performance against ground truth labelling by\ntwo independent human reviewers.\n  Methods: We introduce a novel workflow using the OpenAI GPT API for screening\ntitles and abstracts in clinical reviews. A Python script was created to make\ncalls to the GPT API with the screening criteria in natural language and a\ncorpus of title and abstract datasets that have been filtered by a minimum of\ntwo human reviewers. We compared the performance of our model against\nhuman-reviewed papers across six review papers, screening over 24,000 titles\nand abstracts.\n  Results: Our results show an accuracy of 0.91, a sensitivity of excluded\npapers of 0.91, and a sensitivity of included papers of 0.76. On a randomly\nselected subset of papers, the GPT API demonstrated the ability to provide\nreasoning for its decisions and corrected its initial decision upon being asked\nto explain its reasoning for a subset of incorrect classifications.\n  Conclusion: The GPT API has the potential to streamline the clinical review\nprocess, save valuable time and effort for researchers, and contribute to the\noverall quality of clinical reviews. By prioritizing the workflow and acting as\nan aid rather than a replacement for researchers and reviewers, the GPT API can\nenhance efficiency and lead to more accurate and reliable conclusions in\nmedical research.\n",
+                "链接": "https://arxiv.org/abs/2305.00844"
+            },
+            {
+                "文章ID": "80551",
+                "标题": "SPRING: Studying the Paper and Reasoning to Play Games",
+                "作者": " Yue Wu,  Shrimai Prabhumoye,  So Yeon Min,  Yonatan Bisk,  Ruslan Salakhutdinov,  Amos Azaria,  Tom Mitchell,  Yuanzhi Li",
+                "发布日期": "2023-12-13",
+                "摘要": "  Open-world survival games pose significant challenges for AI algorithms due\nto their multi-tasking, deep exploration, and goal prioritization requirements.\nDespite reinforcement learning (RL) being popular for solving games, its high\nsample complexity limits its effectiveness in complex open-world games like\nCrafter or Minecraft. We propose a novel approach, SPRING, to read the game's\noriginal academic paper and use the knowledge learned to reason and play the\ngame through a large language model (LLM). Prompted with the LaTeX source as\ngame context and a description of the agent's current observation, our SPRING\nframework employs a directed acyclic graph (DAG) with game-related questions as\nnodes and dependencies as edges. We identify the optimal action to take in the\nenvironment by traversing the DAG and calculating LLM responses for each node\nin topological order, with the LLM's answer to final node directly translating\nto environment actions. In our experiments, we study the quality of in-context\n\"reasoning\" induced by different forms of prompts under the setting of the\nCrafter open-world environment. Our experiments suggest that LLMs, when\nprompted with consistent chain-of-thought, have great potential in completing\nsophisticated high-level trajectories. Quantitatively, SPRING with GPT-4\noutperforms all state-of-the-art RL baselines, trained for 1M steps, without\nany training. Finally, we show the potential of games as a test bed for LLMs.\n",
+                "链接": "https://arxiv.org/abs/2305.15486"
+            },
+            {
+                "文章ID": "82791",
+                "标题": "ReviewerGPT? An Exploratory Study on Using Large Language Models for\n  Paper Reviewing",
+                "作者": " Ryan Liu,  Nihar B. Shah",
+                "发布日期": "2023-06-02",
+                "摘要": "  Given the rapid ascent of large language models (LLMs), we study the\nquestion: (How) can large language models help in reviewing of scientific\npapers or proposals? We first conduct some pilot studies where we find that (i)\nGPT-4 outperforms other LLMs (Bard, Vicuna, Koala, Alpaca, LLaMa, Dolly,\nOpenAssistant, StableLM), and (ii) prompting with a specific question (e.g., to\nidentify errors) outperforms prompting to simply write a review. With these\ninsights, we study the use of LLMs (specifically, GPT-4) for three tasks:\n  1. Identifying errors: We construct 13 short computer science papers each\nwith a deliberately inserted error, and ask the LLM to check for the\ncorrectness of these papers. We observe that the LLM finds errors in 7 of them,\nspanning both mathematical and conceptual errors.\n  2. Verifying checklists: We task the LLM to verify 16 closed-ended checklist\nquestions in the respective sections of 15 NeurIPS 2022 papers. We find that\nacross 119 {checklist question, paper} pairs, the LLM had an 86.6% accuracy.\n  3. Choosing the \"better\" paper: We generate 10 pairs of abstracts,\ndeliberately designing each pair in such a way that one abstract was clearly\nsuperior than the other. The LLM, however, struggled to discern these\nrelatively straightforward distinctions accurately, committing errors in its\nevaluations for 6 out of the 10 pairs.\n  Based on these experiments, we think that LLMs have a promising use as\nreviewing assistants for specific reviewing tasks, but not (yet) for complete\nevaluations of papers or proposals.\n",
+                "链接": "https://arxiv.org/abs/2306.00622"
+            },
+            {
+                "文章ID": "7583",
+                "标题": "Paper Plain: Making Medical Research Papers Approachable to Healthcare\n  Consumers with Natural Language Processing",
+                "作者": " Tal August,  Lucy Lu Wang,  Jonathan Bragg,  Marti A. Hearst,  Andrew Head,  Kyle Lo",
+                "发布日期": "2022-03-02",
+                "摘要": "  When seeking information not covered in patient-friendly documents, like\nmedical pamphlets, healthcare consumers may turn to the research literature.\nReading medical papers, however, can be a challenging experience. To improve\naccess to medical papers, we introduce a novel interactive interface-Paper\nPlain-with four features powered by natural language processing: definitions of\nunfamiliar terms, in-situ plain language section summaries, a collection of key\nquestions that guide readers to answering passages, and plain language\nsummaries of the answering passages. We evaluate Paper Plain, finding that\nparticipants who use Paper Plain have an easier time reading and understanding\nresearch papers without a loss in paper comprehension compared to those who use\na typical PDF reader. Altogether, the study results suggest that guiding\nreaders to relevant passages and providing plain language summaries, or\n\"gists,\" alongside the original paper content can make reading medical papers\neasier and give readers more confidence to approach these papers.\n",
+                "链接": "https://arxiv.org/abs/2203.00130"
+            },
+            {
+                "文章ID": "121257",
+                "标题": "GlitchBench: Can large multimodal models detect video game glitches?",
+                "作者": " Mohammad Reza Taesiri,  Tianjun Feng,  Cor-Paul Bezemer,  Anh Nguyen",
+                "发布日期": "2023-12-12",
+                "摘要": "  Large multimodal models (LMMs) have evolved from large language models (LLMs)\nto integrate multiple input modalities, such as visual inputs. This integration\naugments the capacity of LLMs for tasks requiring visual comprehension and\nreasoning. However, the extent and limitations of their enhanced abilities are\nnot fully understood, especially when it comes to real-world tasks. To address\nthis gap, we introduce GlitchBench, a novel benchmark derived from video game\nquality assurance tasks, to test and evaluate the reasoning capabilities of\nLMMs. Our benchmark is curated from a variety of unusual and glitched scenarios\nfrom video games and aims to challenge both the visual and linguistic reasoning\npowers of LMMs in detecting and interpreting out-of-the-ordinary events. We\nevaluate multiple state-of-the-art LMMs, and we show that GlitchBench presents\na new challenge for these models. Code and data are available at:\nhttps://glitchbench.github.io/\n",
+                "链接": "https://arxiv.org/abs/2312.05291"
+            },
+            {
+                "文章ID": "117394",
+                "标题": "Towards Better Parameter-Efficient Fine-Tuning for Large Language\n  Models: A Position Paper",
+                "作者": " Chengyu Wang,  Junbing Yan,  Wei Zhang,  Jun Huang",
+                "发布日期": "2023-11-23",
+                "摘要": "  This paper delves into the pressing need in Parameter-Efficient Fine-Tuning\n(PEFT) for Large Language Models (LLMs). While LLMs possess remarkable\ncapabilities, their extensive parameter requirements and associated\ncomputational demands hinder their practicality and scalability for real-world\napplications. Our position paper highlights current states and the necessity of\nfurther studying into the topic, and recognizes significant challenges and open\nissues that must be addressed to fully harness the powerful abilities of LLMs.\nThese challenges encompass novel efficient PEFT architectures, PEFT for\ndifferent learning settings, PEFT combined with model compression techniques,\nand the exploration of PEFT for multi-modal LLMs. By presenting this position\npaper, we aim to stimulate further research and foster discussions surrounding\nmore efficient and accessible PEFT for LLMs.\n",
+                "链接": "https://arxiv.org/abs/2311.13126"
+            },
+            {
+                "文章ID": "81151",
+                "标题": "Playing repeated games with Large Language Models",
+                "作者": " Elif Akata,  Lion Schulz,  Julian Coda-Forno,  Seong Joon Oh,  Matthias Bethge,  Eric Schulz",
+                "发布日期": "2023-05-29",
+                "摘要": "  Large Language Models (LLMs) are transforming society and permeating into\ndiverse applications. As a result, LLMs will frequently interact with us and\nother agents. It is, therefore, of great societal value to understand how LLMs\nbehave in interactive social settings. Here, we propose to use behavioral game\ntheory to study LLM's cooperation and coordination behavior. To do so, we let\ndifferent LLMs (GPT-3, GPT-3.5, and GPT-4) play finitely repeated games with\neach other and with other, human-like strategies. Our results show that LLMs\ngenerally perform well in such tasks and also uncover persistent behavioral\nsignatures. In a large set of two players-two strategies games, we find that\nLLMs are particularly good at games where valuing their own self-interest pays\noff, like the iterated Prisoner's Dilemma family. However, they behave\nsub-optimally in games that require coordination. We, therefore, further focus\non two games from these distinct families. In the canonical iterated Prisoner's\nDilemma, we find that GPT-4 acts particularly unforgivingly, always defecting\nafter another agent has defected only once. In the Battle of the Sexes, we find\nthat GPT-4 cannot match the behavior of the simple convention to alternate\nbetween options. We verify that these behavioral signatures are stable across\nrobustness checks. Finally, we show how GPT-4's behavior can be modified by\nproviding further information about the other player as well as by asking it to\npredict the other player's actions before making a choice. These results enrich\nour understanding of LLM's social behavior and pave the way for a behavioral\ngame theory for machines.\n",
+                "链接": "https://arxiv.org/abs/2305.16867"
+            },
+            {
+                "文章ID": "105928",
+                "标题": "Can large language models provide useful feedback on research papers? A\n  large-scale empirical analysis",
+                "作者": " Weixin Liang,  Yuhui Zhang,  Hancheng Cao,  Binglu Wang,  Daisy Ding,  Xinyu Yang,  Kailas Vodrahalli,  Siyu He,  Daniel Smith,  Yian Yin,  Daniel McFarland,  James Zou",
+                "发布日期": "2023-10-04",
+                "摘要": "  Expert feedback lays the foundation of rigorous research. However, the rapid\ngrowth of scholarly production and intricate knowledge specialization challenge\nthe conventional scientific feedback mechanisms. High-quality peer reviews are\nincreasingly difficult to obtain. Researchers who are more junior or from\nunder-resourced settings have especially hard times getting timely feedback.\nWith the breakthrough of large language models (LLM) such as GPT-4, there is\ngrowing interest in using LLMs to generate scientific feedback on research\nmanuscripts. However, the utility of LLM-generated feedback has not been\nsystematically studied. To address this gap, we created an automated pipeline\nusing GPT-4 to provide comments on the full PDFs of scientific papers. We\nevaluated the quality of GPT-4's feedback through two large-scale studies. We\nfirst quantitatively compared GPT-4's generated feedback with human peer\nreviewer feedback in 15 Nature family journals (3,096 papers in total) and the\nICLR machine learning conference (1,709 papers). The overlap in the points\nraised by GPT-4 and by human reviewers (average overlap 30.85% for Nature\njournals, 39.23% for ICLR) is comparable to the overlap between two human\nreviewers (average overlap 28.58% for Nature journals, 35.25% for ICLR). The\noverlap between GPT-4 and human reviewers is larger for the weaker papers. We\nthen conducted a prospective user study with 308 researchers from 110 US\ninstitutions in the field of AI and computational biology to understand how\nresearchers perceive feedback generated by our GPT-4 system on their own\npapers. Overall, more than half (57.4%) of the users found GPT-4 generated\nfeedback helpful/very helpful and 82.4% found it more beneficial than feedback\nfrom at least some human reviewers. While our findings show that LLM-generated\nfeedback can help researchers, we also identify several limitations.\n",
+                "链接": "https://arxiv.org/abs/2310.01783"
+            },
+            {
+                "文章ID": "101477",
+                "标题": "Strategic Behavior of Large Language Models: Game Structure vs.\n  Contextual Framing",
+                "作者": " Nunzio Lorè,  Babak Heydari",
+                "发布日期": "2023-09-13",
+                "摘要": "  This paper investigates the strategic decision-making capabilities of three\nLarge Language Models (LLMs): GPT-3.5, GPT-4, and LLaMa-2, within the framework\nof game theory. Utilizing four canonical two-player games -- Prisoner's\nDilemma, Stag Hunt, Snowdrift, and Prisoner's Delight -- we explore how these\nmodels navigate social dilemmas, situations where players can either cooperate\nfor a collective benefit or defect for individual gain. Crucially, we extend\nour analysis to examine the role of contextual framing, such as diplomatic\nrelations or casual friendships, in shaping the models' decisions. Our findings\nreveal a complex landscape: while GPT-3.5 is highly sensitive to contextual\nframing, it shows limited ability to engage in abstract strategic reasoning.\nBoth GPT-4 and LLaMa-2 adjust their strategies based on game structure and\ncontext, but LLaMa-2 exhibits a more nuanced understanding of the games'\nunderlying mechanics. These results highlight the current limitations and\nvaried proficiencies of LLMs in strategic decision-making, cautioning against\ntheir unqualified use in tasks requiring complex strategic reasoning.\n",
+                "链接": "https://arxiv.org/abs/2309.05898"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "查找一下使用2020年以后CONLL 2004数据集进行NER评测的论文",
+            "type": "5"
+        },
+        "results": [
+            {
+                "文章ID": "54351",
+                "标题": "Do CoNLL-2003 Named Entity Taggers Still Work Well in 2023?",
+                "作者": " Shuheng Liu,  Alan Ritter",
+                "发布日期": "2023-07-13",
+                "摘要": "  The CoNLL-2003 English named entity recognition (NER) dataset has been widely\nused to train and evaluate NER models for almost 20 years. However, it is\nunclear how well models that are trained on this 20-year-old data and developed\nover a period of decades using the same test set will perform when applied on\nmodern data. In this paper, we evaluate the generalization of over 20 different\nmodels trained on CoNLL-2003, and show that NER models have very different\ngeneralization. Surprisingly, we find no evidence of performance degradation in\npre-trained Transformers, such as RoBERTa and T5, even when fine-tuned using\ndecades-old data. We investigate why some models generalize well to new data\nwhile others do not, and attempt to disentangle the effects of temporal drift\nand overfitting due to test reuse. Our analysis suggests that most\ndeterioration is due to temporal mismatch between the pre-training corpora and\nthe downstream test sets. We found that four factors are important for good\ngeneralization: model architecture, number of parameters, time period of the\npre-training corpus, in addition to the amount of fine-tuning data. We suggest\ncurrent evaluation methods have, in some sense, underestimated progress on NER\nover the past 20 years, as NER models have not only improved on the original\nCoNLL-2003 test set, but improved even more on modern data. Our datasets can be\nfound at https://github.com/ShuhengL/acl2023_conllpp.\n",
+                "链接": "https://arxiv.org/abs/2212.09747"
+            },
+            {
+                "文章ID": "101950",
+                "标题": "SIB-200: A Simple, Inclusive, and Big Evaluation Dataset for Topic\n  Classification in 200+ Languages and Dialects",
+                "作者": " David Ifeoluwa Adelani,  Hannah Liu,  Xiaoyu Shen,  Nikita Vassilyev,  Jesujoba O. Alabi,  Yanke Mao,  Haonan Gao,  Annie En-Shiun Lee",
+                "发布日期": "2023-09-15",
+                "摘要": "  Despite the progress we have recorded in the last few years in multilingual\nnatural language processing, evaluation is typically limited to a small set of\nlanguages with available datasets which excludes a large number of low-resource\nlanguages. In this paper, we created SIB-200 -- a large-scale open-sourced\nbenchmark dataset for topic classification in 200 languages and dialects to\naddress the lack of evaluation dataset for Natural Language Understanding\n(NLU). For many of the languages covered in SIB-200, this is the first publicly\navailable evaluation dataset for NLU. The dataset is based on Flores-200\nmachine translation corpus. We annotated the English portion of the dataset and\nextended the sentence-level annotation to the remaining 203 languages covered\nin the corpus. Despite the simplicity of this task, our evaluation in\nfull-supervised setting, cross-lingual transfer setting and prompting of large\nlanguage model setting show that there is still a large gap between the\nperformance of high-resource and low-resource languages when multilingual\nevaluation is scaled to numerous world languages. We found that languages\nunseen during the pre-training of multilingual language models,\nunder-represented language families (like Nilotic and Altantic-Congo), and\nlanguages from the regions of Africa, Americas, Oceania and South East Asia,\noften have the lowest performance on our topic classification dataset. We hope\nour dataset will encourage a more inclusive evaluation of multilingual language\nmodels on a more diverse set of languages. https://github.com/dadelani/sib-200\n",
+                "链接": "https://arxiv.org/abs/2309.07445"
+            },
+            {
+                "文章ID": "116376",
+                "标题": "Virtual Heritage at iGrid 2000",
+                "作者": " Dave Pape,  Josephine Anstey,  Bryan Carter,  Jason Leigh,  Maria Roussou,  Tim Portlock",
+                "发布日期": "2023-11-20",
+                "摘要": "  As part of the iGrid Research Demonstration at INET 2000, we created two\nVirtual Cultural Heritage environments - \"Virtual Harlem\" and \"Shared Miletus\".\nThe purpose of these applications was to explore possibilities in using the\ncombination of high-speed international networks and virtual reality (VR)\ndisplays for cultural heritage education. Our ultimate goal is to enable the\nconstruction of tele-immersive museums and classes. In this paper we present an\noverview of the infrastructure used for these applications, and some details of\ntheir construction.\n",
+                "链接": "https://arxiv.org/abs/2311.10303"
+            },
+            {
+                "文章ID": "120716",
+                "标题": "Analyzing the Influence of Fake News in the 2024 Elections: A\n  Comprehensive Dataset",
+                "作者": " Mizanur Rahman,  Shaina Raza",
+                "发布日期": "2023-12-08",
+                "摘要": "  This work introduces a dataset focused on fake news in US political speeches,\nspecifically examining racial slurs and biases. By scraping and annotating\n40,000 news articles, using advanced NLP tools and human verification, we\nprovide a nuanced understanding of misinformation in political discourse. The\ndataset, designed for machine learning and bias analysis, is a critical\nresource for researchers, policymakers, and educators. It facilitates the\ndevelopment of strategies against misinformation and enhances media literacy,\nmarking a significant contribution to the study of fake news and political\ncommunication. Our dataset, focusing on the analysis of fake news in the\ncontext of the 2024 elections, is publicly accessible for community to work on\nfake news identification. Our dataset, focusing on the analysis of fake news in\nthe context of the 2024 elections, is publicly accessible.\n",
+                "链接": "https://arxiv.org/abs/2312.03750"
+            },
+            {
+                "文章ID": "6391",
+                "标题": "Analyse scientom\\'etrique du domaine de l'infectiologie de 2000 \\`a 2020",
+                "作者": "METRICS  Lesya Baudoin, METRICS  Anne Glanard, HCERES  Abdelghani Maddi, METRICS  Wilfriedo Mescheba, HCERES  Frédérique Sachwald",
+                "发布日期": "2022-02-22",
+                "摘要": "  Research on infectious diseases constitutes a transversal scientific field. A\nspecific corpus is designed by combining a controlled language (Medline MeSH\nthesaurus) and the categorization of journals (Web of Science). From this\nglobal corpus, the article characterizes the publications from the top 20\ncountries publishing in the field and evolutions between 2000 and 2020. Topic\nmaps show the research themes within the field of infectious diseases both in\nthe world and in France. The explosion of publications on Covid-19 in 2020 has\na quite visible impact on the topic map in infectious diseases and changes the\nposition of some countries in this field of research. The conclusion points to\nissues for further research as more complete data will become available on the\nCovid-19 period.\n",
+                "链接": "https://arxiv.org/abs/2202.10229"
+            },
+            {
+                "文章ID": "106555",
+                "标题": "The Cadenza ICASSP 2024 Grand Challenge",
+                "作者": " Gerardo Roa Dabike,  Michael A. Akeroyd,  Scott Bannister,  Jon Barker,  Trevor J. Cox,  Bruno Fazenda,  Jennifer Firth,  Simone Graetzer,  Alinka Greasley,  Rebecca Vos,  William Whitmer",
+                "发布日期": "2023-10-06",
+                "摘要": "  The Cadenza project aims to enhance the audio quality of music for\nindividuals with hearing loss. As part of this, the project is organizing the\nICASSP SP Cadenza Challenge: Music Demixing/Remixing for Hearing Aids. The\nchallenge can be tackled by decomposing the music at the hearing aid\nmicrophones into vocals, bass, drums, and other components. These can then be\nintelligently remixed in a personalized manner to improve audio quality.\nAlternatively, an end-to-end approach could be used. Processes need to consider\nthe music itself, the gain applied to each component, and the listener's\nhearing loss. The submitted entries will be evaluated using the intrusive\nobjective metric, the Hearing Aid Audio Quality Index (HAAQI). This paper\noutlines the challenge.\n",
+                "链接": "https://arxiv.org/abs/2310.03480"
+            },
+            {
+                "文章ID": "105369",
+                "标题": "AfriSpeech-200: Pan-African Accented Speech Dataset for Clinical and\n  General Domain ASR",
+                "作者": " Tobi Olatunji,  Tejumade Afonja,  Aditya Yadavalli,  Chris Chinenye Emezue,  Sahib Singh,  Bonaventure F. P. Dossou,  Joanne Osuchukwu,  Salomey Osei,  Atnafu Lambebo Tonja,  Naome Etori,  Clinton Mbataku",
+                "发布日期": "2023-10-03",
+                "摘要": "  Africa has a very low doctor-to-patient ratio. At very busy clinics, doctors\ncould see 30+ patients per day -- a heavy patient burden compared with\ndeveloped countries -- but productivity tools such as clinical automatic speech\nrecognition (ASR) are lacking for these overworked clinicians. However,\nclinical ASR is mature, even ubiquitous, in developed nations, and\nclinician-reported performance of commercial clinical ASR systems is generally\nsatisfactory. Furthermore, the recent performance of general domain ASR is\napproaching human accuracy. However, several gaps exist. Several publications\nhave highlighted racial bias with speech-to-text algorithms and performance on\nminority accents lags significantly. To our knowledge, there is no publicly\navailable research or benchmark on accented African clinical ASR, and speech\ndata is non-existent for the majority of African accents. We release\nAfriSpeech, 200hrs of Pan-African English speech, 67,577 clips from 2,463\nunique speakers across 120 indigenous accents from 13 countries for clinical\nand general domain ASR, a benchmark test set, with publicly available\npre-trained models with SOTA performance on the AfriSpeech benchmark.\n",
+                "链接": "https://arxiv.org/abs/2310.00274"
+            },
+            {
+                "文章ID": "2675",
+                "标题": "Training Vision Transformers with Only 2040 Images",
+                "作者": " Yun-Hao Cao,  Hao Yu,  Jianxin Wu",
+                "发布日期": "2022-01-27",
+                "摘要": "  Vision Transformers (ViTs) is emerging as an alternative to convolutional\nneural networks (CNNs) for visual recognition. They achieve competitive results\nwith CNNs but the lack of the typical convolutional inductive bias makes them\nmore data-hungry than common CNNs. They are often pretrained on JFT-300M or at\nleast ImageNet and few works study training ViTs with limited data. In this\npaper, we investigate how to train ViTs with limited data (e.g., 2040 images).\nWe give theoretical analyses that our method (based on parametric instance\ndiscrimination) is superior to other methods in that it can capture both\nfeature alignment and instance similarities. We achieve state-of-the-art\nresults when training from scratch on 7 small datasets under various ViT\nbackbones. We also investigate the transferring ability of small datasets and\nfind that representations learned from small datasets can even improve\nlarge-scale ImageNet training.\n",
+                "链接": "https://arxiv.org/abs/2201.10728"
+            },
+            {
+                "文章ID": "98152",
+                "标题": "NPF-200: A Multi-Modal Eye Fixation Dataset and Method for\n  Non-Photorealistic Videos",
+                "作者": " Ziyu Yang,  Sucheng Ren,  Zongwei Wu,  Nanxuan Zhao,  Junle Wang,  Jing Qin,  Shengfeng He",
+                "发布日期": "2023-08-24",
+                "摘要": "  Non-photorealistic videos are in demand with the wave of the metaverse, but\nlack of sufficient research studies. This work aims to take a step forward to\nunderstand how humans perceive non-photorealistic videos with eye fixation\n(\\ie, saliency detection), which is critical for enhancing media production,\nartistic design, and game user experience. To fill in the gap of missing a\nsuitable dataset for this research line, we present NPF-200, the first\nlarge-scale multi-modal dataset of purely non-photorealistic videos with eye\nfixations. Our dataset has three characteristics: 1) it contains soundtracks\nthat are essential according to vision and psychological studies; 2) it\nincludes diverse semantic content and videos are of high-quality; 3) it has\nrich motions across and within videos. We conduct a series of analyses to gain\ndeeper insights into this task and compare several state-of-the-art methods to\nexplore the gap between natural images and non-photorealistic data.\nAdditionally, as the human attention system tends to extract visual and audio\nfeatures with different frequencies, we propose a universal frequency-aware\nmulti-modal non-photorealistic saliency detection model called NPSNet,\ndemonstrating the state-of-the-art performance of our task. The results uncover\nstrengths and weaknesses of multi-modal network design and multi-domain\ntraining, opening up promising directions for future works. {Our dataset and\ncode can be found at \\url{https://github.com/Yangziyu/NPF200}}.\n",
+                "链接": "https://arxiv.org/abs/2308.12163"
+            },
+            {
+                "文章ID": "36295",
+                "标题": "ASR2K: Speech Recognition for Around 2000 Languages without Audio",
+                "作者": " Xinjian Li,  Florian Metze,  David R Mortensen,  Alan W Black,  Shinji Watanabe",
+                "发布日期": "2022-09-08",
+                "摘要": "  Most recent speech recognition models rely on large supervised datasets,\nwhich are unavailable for many low-resource languages. In this work, we present\na speech recognition pipeline that does not require any audio for the target\nlanguage. The only assumption is that we have access to raw text datasets or a\nset of n-gram statistics. Our speech pipeline consists of three components:\nacoustic, pronunciation, and language models. Unlike the standard pipeline, our\nacoustic and pronunciation models use multilingual models without any\nsupervision. The language model is built using n-gram statistics or the raw\ntext dataset. We build speech recognition for 1909 languages by combining it\nwith Crubadan: a large endangered languages n-gram database. Furthermore, we\ntest our approach on 129 languages across two datasets: Common Voice and CMU\nWilderness dataset. We achieve 50% CER and 74% WER on the Wilderness dataset\nwith Crubadan statistics only and improve them to 45% CER and 69% WER when\nusing 10000 raw text utterances.\n",
+                "链接": "https://arxiv.org/abs/2209.02842"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "查找一下近三个月有关语言模型rlhf的arxiv上的全部文章。",
+            "type": "5"
+        },
+        "results": []
+    }
+]

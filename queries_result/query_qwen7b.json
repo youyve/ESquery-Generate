@@ -1,0 +1,459 @@
+[
+    {
+        "question": {
+            "question": "与大模型工具学习相关论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查询近一年模型推理加速相关的论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找OCR文本识别最新进展。",
+            "type": "1"
+        },
+        "results": [
+            {
+                "文章ID": "0",
+                "标题": "A Literature Review on Length of Stay Prediction for Stroke Patients\n  using Machine Learning and Statistical Approaches",
+                "作者": " Ola Alkhatib,  Ayman Alahmar",
+                "发布日期": "2022-01-06",
+                "摘要": "  Hospital length of stay (LOS) is one of the most essential healthcare metrics\nthat reflects the hospital quality of service and helps improve hospital\nscheduling and management. LOS prediction helps in cost management because\npatients who remain in hospitals usually do so in hospital units where\nresources are severely limited. In this study, we reviewed papers on LOS\nprediction using machine learning and statistical approaches. Our literature\nreview considers research studies that focus on LOS prediction for stroke\npatients. Some of the surveyed studies revealed that authors reached\ncontradicting conclusions. For example, the age of the patient was considered\nan important predictor of LOS for stroke patients in some studies, while other\nstudies concluded that age was not a significant factor. Therefore, additional\nresearch is required in this domain to further understand the predictors of LOS\nfor stroke patients.\n",
+                "链接": "https://arxiv.org/abs/2201.00005"
+            },
+            {
+                "文章ID": "1",
+                "标题": "Leveraging Queue Length and Attention Mechanisms for Enhanced Traffic\n  Signal Control Optimization",
+                "作者": " Liang Zhang,  Shubin Xie,  Jianming Deng",
+                "发布日期": "2023-09-26",
+                "摘要": "  Reinforcement learning (RL) techniques for traffic signal control (TSC) have\ngained increasing popularity in recent years. However, most existing RL-based\nTSC methods tend to focus primarily on the RL model structure while neglecting\nthe significance of proper traffic state representation. Furthermore, some\nRL-based methods heavily rely on expert-designed traffic signal phase\ncompetition. In this paper, we present a novel approach to TSC that utilizes\nqueue length as an efficient state representation. We propose two new methods:\n(1) Max Queue-Length (M-QL), an optimization-based traditional method designed\nbased on the property of queue length; and (2) AttentionLight, an RL model that\nemploys the self-attention mechanism to capture the signal phase correlation\nwithout requiring human knowledge of phase relationships. Comprehensive\nexperiments on multiple real-world datasets demonstrate the effectiveness of\nour approach: (1) the M-QL method outperforms the latest RL-based methods; (2)\nAttentionLight achieves a new state-of-the-art performance; and (3) our results\nhighlight the significance of proper state representation, which is as crucial\nas neural network design in TSC methods. Our findings have important\nimplications for advancing the development of more effective and efficient TSC\nmethods. Our code is released on Github (https://github.\ncom/LiangZhang1996/AttentionLight).\n",
+                "链接": "https://arxiv.org/abs/2201.00006"
+            },
+            {
+                "文章ID": "2",
+                "标题": "Confidence-Aware Multi-Teacher Knowledge Distillation",
+                "作者": " Hailin Zhang,  Defang Chen,  Can Wang",
+                "发布日期": "2022-02-15",
+                "摘要": "  Knowledge distillation is initially introduced to utilize additional\nsupervision from a single teacher model for the student model training. To\nboost the student performance, some recent variants attempt to exploit diverse\nknowledge sources from multiple teachers. However, existing studies mainly\nintegrate knowledge from diverse sources by averaging over multiple teacher\npredictions or combining them using other various label-free strategies, which\nmay mislead student in the presence of low-quality teacher predictions. To\ntackle this problem, we propose Confidence-Aware Multi-teacher Knowledge\nDistillation (CA-MKD), which adaptively assigns sample-wise reliability for\neach teacher prediction with the help of ground-truth labels, with those\nteacher predictions close to one-hot labels assigned large weights. Besides,\nCA-MKD incorporates intermediate layers to stable the knowledge transfer\nprocess. Extensive experiments show that our CA-MKD consistently outperforms\nall compared state-of-the-art methods across various teacher-student\narchitectures.\n",
+                "链接": "https://arxiv.org/abs/2201.00007"
+            },
+            {
+                "文章ID": "3",
+                "标题": "A Lightweight and Accurate Spatial-Temporal Transformer for Traffic\n  Forecasting",
+                "作者": " Guanyao Li,  Shuhan Zhong,  S. -H. Gary Chan,  Ruiyuan Li,  Chih-Chieh Hung,  Wen-Chih Peng",
+                "发布日期": "2022-05-05",
+                "摘要": "  We study the forecasting problem for traffic with dynamic, possibly\nperiodical, and joint spatial-temporal dependency between regions. Given the\naggregated inflow and outflow traffic of regions in a city from time slots 0 to\nt-1, we predict the traffic at time t at any region. Prior arts in the area\noften consider the spatial and temporal dependencies in a decoupled manner or\nare rather computationally intensive in training with a large number of\nhyper-parameters to tune. We propose ST-TIS, a novel, lightweight, and accurate\nSpatial-Temporal Transformer with information fusion and region sampling for\ntraffic forecasting. ST-TIS extends the canonical Transformer with information\nfusion and region sampling. The information fusion module captures the complex\nspatial-temporal dependency between regions. The region sampling module is to\nimprove the efficiency and prediction accuracy, cutting the computation\ncomplexity for dependency learning from $O(n^2)$ to $O(n\\sqrt{n})$, where n is\nthe number of regions. With far fewer parameters than state-of-the-art models,\nthe offline training of our model is significantly faster in terms of tuning\nand computation (with a reduction of up to $90\\%$ on training time and network\nparameters). Notwithstanding such training efficiency, extensive experiments\nshow that ST-TIS is substantially more accurate in online prediction than\nstate-of-the-art approaches (with an average improvement of up to $9.5\\%$ on\nRMSE, and $12.4\\%$ on MAPE).\n",
+                "链接": "https://arxiv.org/abs/2201.00008"
+            },
+            {
+                "文章ID": "4",
+                "标题": "Improving Deep Neural Network Classification Confidence using\n  Heatmap-based eXplainable AI",
+                "作者": " Erico Tjoa,  Hong Jing Khok,  Tushar Chouhan,  Guan Cuntai",
+                "发布日期": "2023-01-24",
+                "摘要": "  This paper quantifies the quality of heatmap-based eXplainable AI (XAI)\nmethods w.r.t image classification problem. Here, a heatmap is considered\ndesirable if it improves the probability of predicting the correct classes.\nDifferent XAI heatmap-based methods are empirically shown to improve\nclassification confidence to different extents depending on the datasets, e.g.\nSaliency works best on ImageNet and Deconvolution on Chest X-Ray Pneumonia\ndataset. The novelty includes a new gap distribution that shows a stark\ndifference between correct and wrong predictions. Finally, the generative\naugmentative explanation is introduced, a method to generate heatmaps capable\nof improving predictive confidence to a high level.\n",
+                "链接": "https://arxiv.org/abs/2201.00009"
+            },
+            {
+                "文章ID": "5",
+                "标题": "An Efficient Federated Distillation Learning System for Multi-task Time\n  Series Classification",
+                "作者": " Huanlai Xing,  Zhiwen Xiao,  Rong Qu,  Zonghai Zhu,  Bowen Zhao",
+                "发布日期": "2022-01-04",
+                "摘要": "  This paper proposes an efficient federated distillation learning system\n(EFDLS) for multi-task time series classification (TSC). EFDLS consists of a\ncentral server and multiple mobile users, where different users may run\ndifferent TSC tasks. EFDLS has two novel components, namely a feature-based\nstudent-teacher (FBST) framework and a distance-based weights matching (DBWM)\nscheme. Within each user, the FBST framework transfers knowledge from its\nteacher's hidden layers to its student's hidden layers via knowledge\ndistillation, with the teacher and student having identical network structure.\nFor each connected user, its student model's hidden layers' weights are\nuploaded to the EFDLS server periodically. The DBWM scheme is deployed on the\nserver, with the least square distance used to measure the similarity between\nthe weights of two given models. This scheme finds a partner for each connected\nuser such that the user's and its partner's weights are the closest among all\nthe weights uploaded. The server exchanges and sends back the user's and its\npartner's weights to these two users which then load the received weights to\ntheir teachers' hidden layers. Experimental results show that the proposed\nEFDLS achieves excellent performance on a set of selected UCR2018 datasets\nregarding top-1 accuracy.\n",
+                "链接": "https://arxiv.org/abs/2201.00011"
+            },
+            {
+                "文章ID": "6",
+                "标题": "MORAL: Aligning AI with Human Norms through Multi-Objective Reinforced\n  Active Learning",
+                "作者": " Markus Peschl,  Arkady Zgonnikov,  Frans A. Oliehoek,  Luciano C. Siebert",
+                "发布日期": "2022-01-04",
+                "摘要": "  Inferring reward functions from demonstrations and pairwise preferences are\nauspicious approaches for aligning Reinforcement Learning (RL) agents with\nhuman intentions. However, state-of-the art methods typically focus on learning\na single reward model, thus rendering it difficult to trade off different\nreward functions from multiple experts. We propose Multi-Objective Reinforced\nActive Learning (MORAL), a novel method for combining diverse demonstrations of\nsocial norms into a Pareto-optimal policy. Through maintaining a distribution\nover scalarization weights, our approach is able to interactively tune a deep\nRL agent towards a variety of preferences, while eliminating the need for\ncomputing multiple policies. We empirically demonstrate the effectiveness of\nMORAL in two scenarios, which model a delivery and an emergency task that\nrequire an agent to act in the presence of normative conflicts. Overall, we\nconsider our research a step towards multi-objective RL with learned rewards,\nbridging the gap between current reward learning and machine ethics literature.\n",
+                "链接": "https://arxiv.org/abs/2201.00012"
+            },
+            {
+                "文章ID": "7",
+                "标题": "Exploiting Bi-directional Global Transition Patterns and Personal\n  Preferences for Missing POI Category Identification",
+                "作者": " Dongbo Xi,  Fuzhen Zhuang,  Yanchi Liu,  Hengshu Zhu,  Pengpeng Zhao,  Chang Tan,  Qing He",
+                "发布日期": "2022-01-04",
+                "摘要": "  Recent years have witnessed the increasing popularity of Location-based\nSocial Network (LBSN) services, which provides unparalleled opportunities to\nbuild personalized Point-of-Interest (POI) recommender systems. Existing POI\nrecommendation and location prediction tasks utilize past information for\nfuture recommendation or prediction from a single direction perspective, while\nthe missing POI category identification task needs to utilize the check-in\ninformation both before and after the missing category. Therefore, a\nlong-standing challenge is how to effectively identify the missing POI\ncategories at any time in the real-world check-in data of mobile users. To this\nend, in this paper, we propose a novel neural network approach to identify the\nmissing POI categories by integrating both bi-directional global non-personal\ntransition patterns and personal preferences of users. Specifically, we\ndelicately design an attention matching cell to model how well the check-in\ncategory information matches their non-personal transition patterns and\npersonal preferences. Finally, we evaluate our model on two real-world\ndatasets, which clearly validate its effectiveness compared with the\nstate-of-the-art baselines. Furthermore, our model can be naturally extended to\naddress next POI category recommendation and prediction tasks with competitive\nperformance.\n",
+                "链接": "https://arxiv.org/abs/2201.00014"
+            },
+            {
+                "文章ID": "8",
+                "标题": "TransLog: A Unified Transformer-based Framework for Log Anomaly\n  Detection",
+                "作者": " Hongcheng Guo,  Xingyu Lin,  Jian Yang,  Yi Zhuang,  Jiaqi Bai,  Tieqiao Zheng,  Bo Zhang,  Zhoujun Li",
+                "发布日期": "2022-01-19",
+                "摘要": "  Log anomaly detection is a key component in the field of artificial\nintelligence for IT operations (AIOps). Considering log data of variant\ndomains, retraining the whole network for unknown domains is inefficient in\nreal industrial scenarios especially for low-resource domains. However,\nprevious deep models merely focused on extracting the semantics of log sequence\nin the same domain, leading to poor generalization on multi-domain logs.\nTherefore, we propose a unified Transformer-based framework for log anomaly\ndetection (\\ourmethod{}), which is comprised of the pretraining and\nadapter-based tuning stage. Our model is first pretrained on the source domain\nto obtain shared semantic knowledge of log data. Then, we transfer the\npretrained model to the target domain via the adapter-based tuning. The\nproposed method is evaluated on three public datasets including one source\ndomain and two target domains. The experimental results demonstrate that our\nsimple yet efficient approach, with fewer trainable parameters and lower\ntraining costs in the target domain, achieves state-of-the-art performance on\nthree benchmarks.\n",
+                "链接": "https://arxiv.org/abs/2201.00016"
+            },
+            {
+                "文章ID": "9",
+                "标题": "Stochastic convex optimization for provably efficient apprenticeship\n  learning",
+                "作者": " Angeliki Kamoutsi,  Goran Banjac,  John Lygeros",
+                "发布日期": "2022-01-04",
+                "摘要": "  We consider large-scale Markov decision processes (MDPs) with an unknown cost\nfunction and employ stochastic convex optimization tools to address the problem\nof imitation learning, which consists of learning a policy from a finite set of\nexpert demonstrations.\n  We adopt the apprenticeship learning formalism, which carries the assumption\nthat the true cost function can be represented as a linear combination of some\nknown features. Existing inverse reinforcement learning algorithms come with\nstrong theoretical guarantees, but are computationally expensive because they\nuse reinforcement learning or planning algorithms as a subroutine. On the other\nhand, state-of-the-art policy gradient based algorithms (like IM-REINFORCE,\nIM-TRPO, and GAIL), achieve significant empirical success in challenging\nbenchmark tasks, but are not well understood in terms of theory. With an\nemphasis on non-asymptotic guarantees of performance, we propose a method that\ndirectly learns a policy from expert demonstrations, bypassing the intermediate\nstep of learning the cost function, by formulating the problem as a single\nconvex optimization problem over occupancy measures. We develop a\ncomputationally efficient algorithm and derive high confidence regret bounds on\nthe quality of the extracted policy, utilizing results from stochastic convex\noptimization and recent works in approximate linear programming for solving\nforward MDPs.\n",
+                "链接": "https://arxiv.org/abs/2201.00039"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "查找大模型推理的论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找一下工具评测相关论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "对比解码相关论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "请找到缓和噪声标签影响的论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "帮我查找对机器翻译数据集质量进行评估的论文",
+            "type": "1"
+        },
+        "results": [
+            {
+                "文章ID": "38541",
+                "标题": "Approaching English-Polish Machine Translation Quality Assessment with\n  Neural-based Methods",
+                "作者": " Artur Nowakowski",
+                "发布日期": "2022-09-23",
+                "摘要": "  This paper presents our contribution to the PolEval 2021 Task 2: Evaluation\nof translation quality assessment metrics. We describe experiments with\npre-trained language models and state-of-the-art frameworks for translation\nquality assessment in both nonblind and blind versions of the task. Our\nsolutions ranked second in the nonblind version and third in the blind version.\n",
+                "链接": "https://arxiv.org/abs/2209.11016"
+            },
+            {
+                "文章ID": "50351",
+                "标题": "Competency-Aware Neural Machine Translation: Can Machine Translation\n  Know its Own Translation Quality?",
+                "作者": " Pei Zhang,  Baosong Yang,  Haoran Wei,  Dayiheng Liu,  Kai Fan,  Luo Si,  Jun Xie",
+                "发布日期": "2022-11-28",
+                "摘要": "  Neural machine translation (NMT) is often criticized for failures that happen\nwithout awareness. The lack of competency awareness makes NMT untrustworthy.\nThis is in sharp contrast to human translators who give feedback or conduct\nfurther investigations whenever they are in doubt about predictions. To fill\nthis gap, we propose a novel competency-aware NMT by extending conventional NMT\nwith a self-estimator, offering abilities to translate a source sentence and\nestimate its competency. The self-estimator encodes the information of the\ndecoding procedure and then examines whether it can reconstruct the original\nsemantics of the source sentence. Experimental results on four translation\ntasks demonstrate that the proposed method not only carries out translation\ntasks intact but also delivers outstanding performance on quality estimation.\nWithout depending on any reference or annotated data typically required by\nstate-of-the-art metric and quality estimation methods, our model yields an\neven higher correlation with human quality judgments than a variety of\naforementioned methods, such as BLEURT, COMET, and BERTScore. Quantitative and\nqualitative analyses show better robustness of competency awareness in our\nmodel.\n",
+                "链接": "https://arxiv.org/abs/2211.13865"
+            },
+            {
+                "文章ID": "17492",
+                "标题": "Quality-Aware Decoding for Neural Machine Translation",
+                "作者": " Patrick Fernandes,  António Farinhas,  Ricardo Rei,  José G. C. de Souza,  Perez Ogayo,  Graham Neubig,  André F. T. Martins",
+                "发布日期": "2022-05-03",
+                "摘要": "  Despite the progress in machine translation quality estimation and evaluation\nin the last years, decoding in neural machine translation (NMT) is mostly\noblivious to this and centers around finding the most probable translation\naccording to the model (MAP decoding), approximated with beam search. In this\npaper, we bring together these two lines of research and propose quality-aware\ndecoding for NMT, by leveraging recent breakthroughs in reference-free and\nreference-based MT evaluation through various inference methods like $N$-best\nreranking and minimum Bayes risk decoding. We perform an extensive comparison\nof various possible candidate generation and ranking methods across four\ndatasets and two model classes and find that quality-aware decoding\nconsistently outperforms MAP-based decoding according both to state-of-the-art\nautomatic metrics (COMET and BLEURT) and to human assessments. Our code is\navailable at https://github.com/deep-spin/qaware-decode.\n",
+                "链接": "https://arxiv.org/abs/2205.00978"
+            },
+            {
+                "文章ID": "116470",
+                "标题": "Astronomical Images Quality Assessment with Automated Machine Learning",
+                "作者": " Olivier Parisot,  Pierrick Bruneau,  Patrik Hitzelberger",
+                "发布日期": "2023-11-20",
+                "摘要": "  Electronically Assisted Astronomy consists in capturing deep sky images with\na digital camera coupled to a telescope to display views of celestial objects\nthat would have been invisible through direct observation. This practice\ngenerates a large quantity of data, which may then be enhanced with dedicated\nimage editing software after observation sessions. In this study, we show how\nImage Quality Assessment can be useful for automatically rating astronomical\nimages, and we also develop a dedicated model by using Automated Machine\nLearning.\n",
+                "链接": "https://arxiv.org/abs/2311.10617"
+            },
+            {
+                "文章ID": "72923",
+                "标题": "Tailoring Domain Adaptation for Machine Translation Quality Estimation",
+                "作者": " Javad Pourmostafa Roshan Sharami,  Dimitar Shterionov,  Frédéric Blain,  Eva Vanmassenhove,  Mirella De Sisto,  Chris Emmery,  Pieter Spronck",
+                "发布日期": "2023-05-10",
+                "摘要": "  While quality estimation (QE) can play an important role in the translation\nprocess, its effectiveness relies on the availability and quality of training\ndata. For QE in particular, high-quality labeled data is often lacking due to\nthe high cost and effort associated with labeling such data. Aside from the\ndata scarcity challenge, QE models should also be generalizable, i.e., they\nshould be able to handle data from different domains, both generic and\nspecific. To alleviate these two main issues -- data scarcity and domain\nmismatch -- this paper combines domain adaptation and data augmentation within\na robust QE system. Our method first trains a generic QE model and then\nfine-tunes it on a specific domain while retaining generic knowledge. Our\nresults show a significant improvement for all the language pairs investigated,\nbetter cross-lingual inference, and a superior performance in zero-shot\nlearning scenarios as compared to state-of-the-art baselines.\n",
+                "链接": "https://arxiv.org/abs/2304.08891"
+            },
+            {
+                "文章ID": "83169",
+                "标题": "Evaluating Machine Translation Quality with Conformal Predictive\n  Distributions",
+                "作者": " Patrizio Giovannotti",
+                "发布日期": "2023-06-05",
+                "摘要": "  This paper presents a new approach for assessing uncertainty in machine\ntranslation by simultaneously evaluating translation quality and providing a\nreliable confidence score. Our approach utilizes conformal predictive\ndistributions to produce prediction intervals with guaranteed coverage, meaning\nthat for any given significance level $\\epsilon$, we can expect the true\nquality score of a translation to fall out of the interval at a rate of\n$1-\\epsilon$. In this paper, we demonstrate how our method outperforms a\nsimple, but effective baseline on six different language pairs in terms of\ncoverage and sharpness. Furthermore, we validate that our approach requires the\ndata exchangeability assumption to hold for optimal performance.\n",
+                "链接": "https://arxiv.org/abs/2306.01549"
+            },
+            {
+                "文章ID": "18472",
+                "标题": "Paired Image-to-Image Translation Quality Assessment Using Multi-Method\n  Fusion",
+                "作者": " Stefan Borasinski,  Esin Yavuz,  Sébastien Béhuret",
+                "发布日期": "2022-05-11",
+                "摘要": "  How best to evaluate synthesized images has been a longstanding problem in\nimage-to-image translation, and to date remains largely unresolved. This paper\nproposes a novel approach that combines signals of image quality between paired\nsource and transformation to predict the latter's similarity with a\nhypothetical ground truth. We trained a Multi-Method Fusion (MMF) model via an\nensemble of gradient-boosted regressors using Image Quality Assessment (IQA)\nmetrics to predict Deep Image Structure and Texture Similarity (DISTS),\nenabling models to be ranked without the need for ground truth data. Analysis\nrevealed the task to be feature-constrained, introducing a trade-off at\ninference between metric computation time and prediction accuracy. The MMF\nmodel we present offers an efficient way to automate the evaluation of\nsynthesized images, and by extension the image-to-image translation models that\ngenerated them.\n",
+                "链接": "https://arxiv.org/abs/2205.04186"
+            },
+            {
+                "文章ID": "28554",
+                "标题": "Facilitated machine learning for image-based fruit quality assessment",
+                "作者": " Manuel Knott,  Fernando Perez-Cruz,  Thijs Defraeye",
+                "发布日期": "2023-01-11",
+                "摘要": "  Image-based machine learning models can be used to make the sorting and\ngrading of agricultural products more efficient. In many regions, implementing\nsuch systems can be difficult due to the lack of centralization and automation\nof postharvest supply chains. Stakeholders are often too small to specialize in\nmachine learning, and large training data sets are unavailable. We propose a\nmachine learning procedure for images based on pre-trained Vision Transformers.\nIt is easier to implement than the current standard approach of training\nConvolutional Neural Networks (CNNs) as we do not (re-)train deep neural\nnetworks. We evaluate our approach based on two data sets for apple defect\ndetection and banana ripeness estimation. Our model achieves a competitive\nclassification accuracy equal to or less than one percent below the\nbest-performing CNN. At the same time, it requires three times fewer training\nsamples to achieve a 90% accuracy.\n",
+                "链接": "https://arxiv.org/abs/2207.04523"
+            },
+            {
+                "文章ID": "13646",
+                "标题": "Data-Driven Approach for Log Instruction Quality Assessment",
+                "作者": " Jasmin Bogatinovski,  Sasho Nedelkoski,  Alexander Acker,  Jorge Cardoso,  Odej Kao",
+                "发布日期": "2022-04-07",
+                "摘要": "  In the current IT world, developers write code while system operators run the\ncode mostly as a black box. The connection between both worlds is typically\nestablished with log messages: the developer provides hints to the (unknown)\noperator, where the cause of an occurred issue is, and vice versa, the operator\ncan report bugs during operation. To fulfil this purpose, developers write log\ninstructions that are structured text commonly composed of a log level (e.g.,\n\"info\", \"error\"), static text (\"IP {} cannot be reached\"), and dynamic\nvariables (e.g. IP {}). However, as opposed to well-adopted coding practices,\nthere are no widely adopted guidelines on how to write log instructions with\ngood quality properties. For example, a developer may assign a high log level\n(e.g., \"error\") for a trivial event that can confuse the operator and increase\nmaintenance costs. Or the static text can be insufficient to hint at a specific\nissue. In this paper, we address the problem of log quality assessment and\nprovide the first step towards its automation. We start with an in-depth\nanalysis of quality log instruction properties in nine software systems and\nidentify two quality properties: 1) correct log level assignment assessing the\ncorrectness of the log level, and 2) sufficient linguistic structure assessing\nthe minimal richness of the static text necessary for verbose event\ndescription. Based on these findings, we developed a data-driven approach that\nadapts deep learning methods for each of the two properties. An extensive\nevaluation on large-scale open-source systems shows that our approach correctly\nassesses log level assignments with an accuracy of 0.88, and the sufficient\nlinguistic structure with an F1 score of 0.99, outperforming the baselines. Our\nstudy shows the potential of the data-driven methods in assessing instructions\nquality and aid developers in comprehending and writing better code.\n",
+                "链接": "https://arxiv.org/abs/2204.02618"
+            },
+            {
+                "文章ID": "87010",
+                "标题": "Evaluation of Chinese-English Machine Translation of Emotion-Loaded\n  Microblog Texts: A Human Annotated Dataset for the Quality Assessment of\n  Emotion Translation",
+                "作者": " Shenbin Qian,  Constantin Orasan,  Felix do Carmo,  Qiuliang Li,  Diptesh Kanojia",
+                "发布日期": "2023-06-22",
+                "摘要": "  In this paper, we focus on how current Machine Translation (MT) tools perform\non the translation of emotion-loaded texts by evaluating outputs from Google\nTranslate according to a framework proposed in this paper. We propose this\nevaluation framework based on the Multidimensional Quality Metrics (MQM) and\nperform a detailed error analysis of the MT outputs. From our analysis, we\nobserve that about 50% of the MT outputs fail to preserve the original emotion.\nAfter further analysis of the errors, we find that emotion carrying words and\nlinguistic phenomena such as polysemous words, negation, abbreviation etc., are\ncommon causes for these translation errors.\n",
+                "链接": "https://arxiv.org/abs/2306.11900"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "查找大语言模型相关的分析类型的论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查询2022年以来指令遵循数据集构建相关的论文",
+            "type": "1"
+        },
+        "results": [
+            {
+                "文章ID": "0",
+                "标题": "A Literature Review on Length of Stay Prediction for Stroke Patients\n  using Machine Learning and Statistical Approaches",
+                "作者": " Ola Alkhatib,  Ayman Alahmar",
+                "发布日期": "2022-01-06",
+                "摘要": "  Hospital length of stay (LOS) is one of the most essential healthcare metrics\nthat reflects the hospital quality of service and helps improve hospital\nscheduling and management. LOS prediction helps in cost management because\npatients who remain in hospitals usually do so in hospital units where\nresources are severely limited. In this study, we reviewed papers on LOS\nprediction using machine learning and statistical approaches. Our literature\nreview considers research studies that focus on LOS prediction for stroke\npatients. Some of the surveyed studies revealed that authors reached\ncontradicting conclusions. For example, the age of the patient was considered\nan important predictor of LOS for stroke patients in some studies, while other\nstudies concluded that age was not a significant factor. Therefore, additional\nresearch is required in this domain to further understand the predictors of LOS\nfor stroke patients.\n",
+                "链接": "https://arxiv.org/abs/2201.00005"
+            },
+            {
+                "文章ID": "1",
+                "标题": "Leveraging Queue Length and Attention Mechanisms for Enhanced Traffic\n  Signal Control Optimization",
+                "作者": " Liang Zhang,  Shubin Xie,  Jianming Deng",
+                "发布日期": "2023-09-26",
+                "摘要": "  Reinforcement learning (RL) techniques for traffic signal control (TSC) have\ngained increasing popularity in recent years. However, most existing RL-based\nTSC methods tend to focus primarily on the RL model structure while neglecting\nthe significance of proper traffic state representation. Furthermore, some\nRL-based methods heavily rely on expert-designed traffic signal phase\ncompetition. In this paper, we present a novel approach to TSC that utilizes\nqueue length as an efficient state representation. We propose two new methods:\n(1) Max Queue-Length (M-QL), an optimization-based traditional method designed\nbased on the property of queue length; and (2) AttentionLight, an RL model that\nemploys the self-attention mechanism to capture the signal phase correlation\nwithout requiring human knowledge of phase relationships. Comprehensive\nexperiments on multiple real-world datasets demonstrate the effectiveness of\nour approach: (1) the M-QL method outperforms the latest RL-based methods; (2)\nAttentionLight achieves a new state-of-the-art performance; and (3) our results\nhighlight the significance of proper state representation, which is as crucial\nas neural network design in TSC methods. Our findings have important\nimplications for advancing the development of more effective and efficient TSC\nmethods. Our code is released on Github (https://github.\ncom/LiangZhang1996/AttentionLight).\n",
+                "链接": "https://arxiv.org/abs/2201.00006"
+            },
+            {
+                "文章ID": "2",
+                "标题": "Confidence-Aware Multi-Teacher Knowledge Distillation",
+                "作者": " Hailin Zhang,  Defang Chen,  Can Wang",
+                "发布日期": "2022-02-15",
+                "摘要": "  Knowledge distillation is initially introduced to utilize additional\nsupervision from a single teacher model for the student model training. To\nboost the student performance, some recent variants attempt to exploit diverse\nknowledge sources from multiple teachers. However, existing studies mainly\nintegrate knowledge from diverse sources by averaging over multiple teacher\npredictions or combining them using other various label-free strategies, which\nmay mislead student in the presence of low-quality teacher predictions. To\ntackle this problem, we propose Confidence-Aware Multi-teacher Knowledge\nDistillation (CA-MKD), which adaptively assigns sample-wise reliability for\neach teacher prediction with the help of ground-truth labels, with those\nteacher predictions close to one-hot labels assigned large weights. Besides,\nCA-MKD incorporates intermediate layers to stable the knowledge transfer\nprocess. Extensive experiments show that our CA-MKD consistently outperforms\nall compared state-of-the-art methods across various teacher-student\narchitectures.\n",
+                "链接": "https://arxiv.org/abs/2201.00007"
+            },
+            {
+                "文章ID": "3",
+                "标题": "A Lightweight and Accurate Spatial-Temporal Transformer for Traffic\n  Forecasting",
+                "作者": " Guanyao Li,  Shuhan Zhong,  S. -H. Gary Chan,  Ruiyuan Li,  Chih-Chieh Hung,  Wen-Chih Peng",
+                "发布日期": "2022-05-05",
+                "摘要": "  We study the forecasting problem for traffic with dynamic, possibly\nperiodical, and joint spatial-temporal dependency between regions. Given the\naggregated inflow and outflow traffic of regions in a city from time slots 0 to\nt-1, we predict the traffic at time t at any region. Prior arts in the area\noften consider the spatial and temporal dependencies in a decoupled manner or\nare rather computationally intensive in training with a large number of\nhyper-parameters to tune. We propose ST-TIS, a novel, lightweight, and accurate\nSpatial-Temporal Transformer with information fusion and region sampling for\ntraffic forecasting. ST-TIS extends the canonical Transformer with information\nfusion and region sampling. The information fusion module captures the complex\nspatial-temporal dependency between regions. The region sampling module is to\nimprove the efficiency and prediction accuracy, cutting the computation\ncomplexity for dependency learning from $O(n^2)$ to $O(n\\sqrt{n})$, where n is\nthe number of regions. With far fewer parameters than state-of-the-art models,\nthe offline training of our model is significantly faster in terms of tuning\nand computation (with a reduction of up to $90\\%$ on training time and network\nparameters). Notwithstanding such training efficiency, extensive experiments\nshow that ST-TIS is substantially more accurate in online prediction than\nstate-of-the-art approaches (with an average improvement of up to $9.5\\%$ on\nRMSE, and $12.4\\%$ on MAPE).\n",
+                "链接": "https://arxiv.org/abs/2201.00008"
+            },
+            {
+                "文章ID": "4",
+                "标题": "Improving Deep Neural Network Classification Confidence using\n  Heatmap-based eXplainable AI",
+                "作者": " Erico Tjoa,  Hong Jing Khok,  Tushar Chouhan,  Guan Cuntai",
+                "发布日期": "2023-01-24",
+                "摘要": "  This paper quantifies the quality of heatmap-based eXplainable AI (XAI)\nmethods w.r.t image classification problem. Here, a heatmap is considered\ndesirable if it improves the probability of predicting the correct classes.\nDifferent XAI heatmap-based methods are empirically shown to improve\nclassification confidence to different extents depending on the datasets, e.g.\nSaliency works best on ImageNet and Deconvolution on Chest X-Ray Pneumonia\ndataset. The novelty includes a new gap distribution that shows a stark\ndifference between correct and wrong predictions. Finally, the generative\naugmentative explanation is introduced, a method to generate heatmaps capable\nof improving predictive confidence to a high level.\n",
+                "链接": "https://arxiv.org/abs/2201.00009"
+            },
+            {
+                "文章ID": "5",
+                "标题": "An Efficient Federated Distillation Learning System for Multi-task Time\n  Series Classification",
+                "作者": " Huanlai Xing,  Zhiwen Xiao,  Rong Qu,  Zonghai Zhu,  Bowen Zhao",
+                "发布日期": "2022-01-04",
+                "摘要": "  This paper proposes an efficient federated distillation learning system\n(EFDLS) for multi-task time series classification (TSC). EFDLS consists of a\ncentral server and multiple mobile users, where different users may run\ndifferent TSC tasks. EFDLS has two novel components, namely a feature-based\nstudent-teacher (FBST) framework and a distance-based weights matching (DBWM)\nscheme. Within each user, the FBST framework transfers knowledge from its\nteacher's hidden layers to its student's hidden layers via knowledge\ndistillation, with the teacher and student having identical network structure.\nFor each connected user, its student model's hidden layers' weights are\nuploaded to the EFDLS server periodically. The DBWM scheme is deployed on the\nserver, with the least square distance used to measure the similarity between\nthe weights of two given models. This scheme finds a partner for each connected\nuser such that the user's and its partner's weights are the closest among all\nthe weights uploaded. The server exchanges and sends back the user's and its\npartner's weights to these two users which then load the received weights to\ntheir teachers' hidden layers. Experimental results show that the proposed\nEFDLS achieves excellent performance on a set of selected UCR2018 datasets\nregarding top-1 accuracy.\n",
+                "链接": "https://arxiv.org/abs/2201.00011"
+            },
+            {
+                "文章ID": "6",
+                "标题": "MORAL: Aligning AI with Human Norms through Multi-Objective Reinforced\n  Active Learning",
+                "作者": " Markus Peschl,  Arkady Zgonnikov,  Frans A. Oliehoek,  Luciano C. Siebert",
+                "发布日期": "2022-01-04",
+                "摘要": "  Inferring reward functions from demonstrations and pairwise preferences are\nauspicious approaches for aligning Reinforcement Learning (RL) agents with\nhuman intentions. However, state-of-the art methods typically focus on learning\na single reward model, thus rendering it difficult to trade off different\nreward functions from multiple experts. We propose Multi-Objective Reinforced\nActive Learning (MORAL), a novel method for combining diverse demonstrations of\nsocial norms into a Pareto-optimal policy. Through maintaining a distribution\nover scalarization weights, our approach is able to interactively tune a deep\nRL agent towards a variety of preferences, while eliminating the need for\ncomputing multiple policies. We empirically demonstrate the effectiveness of\nMORAL in two scenarios, which model a delivery and an emergency task that\nrequire an agent to act in the presence of normative conflicts. Overall, we\nconsider our research a step towards multi-objective RL with learned rewards,\nbridging the gap between current reward learning and machine ethics literature.\n",
+                "链接": "https://arxiv.org/abs/2201.00012"
+            },
+            {
+                "文章ID": "7",
+                "标题": "Exploiting Bi-directional Global Transition Patterns and Personal\n  Preferences for Missing POI Category Identification",
+                "作者": " Dongbo Xi,  Fuzhen Zhuang,  Yanchi Liu,  Hengshu Zhu,  Pengpeng Zhao,  Chang Tan,  Qing He",
+                "发布日期": "2022-01-04",
+                "摘要": "  Recent years have witnessed the increasing popularity of Location-based\nSocial Network (LBSN) services, which provides unparalleled opportunities to\nbuild personalized Point-of-Interest (POI) recommender systems. Existing POI\nrecommendation and location prediction tasks utilize past information for\nfuture recommendation or prediction from a single direction perspective, while\nthe missing POI category identification task needs to utilize the check-in\ninformation both before and after the missing category. Therefore, a\nlong-standing challenge is how to effectively identify the missing POI\ncategories at any time in the real-world check-in data of mobile users. To this\nend, in this paper, we propose a novel neural network approach to identify the\nmissing POI categories by integrating both bi-directional global non-personal\ntransition patterns and personal preferences of users. Specifically, we\ndelicately design an attention matching cell to model how well the check-in\ncategory information matches their non-personal transition patterns and\npersonal preferences. Finally, we evaluate our model on two real-world\ndatasets, which clearly validate its effectiveness compared with the\nstate-of-the-art baselines. Furthermore, our model can be naturally extended to\naddress next POI category recommendation and prediction tasks with competitive\nperformance.\n",
+                "链接": "https://arxiv.org/abs/2201.00014"
+            },
+            {
+                "文章ID": "8",
+                "标题": "TransLog: A Unified Transformer-based Framework for Log Anomaly\n  Detection",
+                "作者": " Hongcheng Guo,  Xingyu Lin,  Jian Yang,  Yi Zhuang,  Jiaqi Bai,  Tieqiao Zheng,  Bo Zhang,  Zhoujun Li",
+                "发布日期": "2022-01-19",
+                "摘要": "  Log anomaly detection is a key component in the field of artificial\nintelligence for IT operations (AIOps). Considering log data of variant\ndomains, retraining the whole network for unknown domains is inefficient in\nreal industrial scenarios especially for low-resource domains. However,\nprevious deep models merely focused on extracting the semantics of log sequence\nin the same domain, leading to poor generalization on multi-domain logs.\nTherefore, we propose a unified Transformer-based framework for log anomaly\ndetection (\\ourmethod{}), which is comprised of the pretraining and\nadapter-based tuning stage. Our model is first pretrained on the source domain\nto obtain shared semantic knowledge of log data. Then, we transfer the\npretrained model to the target domain via the adapter-based tuning. The\nproposed method is evaluated on three public datasets including one source\ndomain and two target domains. The experimental results demonstrate that our\nsimple yet efficient approach, with fewer trainable parameters and lower\ntraining costs in the target domain, achieves state-of-the-art performance on\nthree benchmarks.\n",
+                "链接": "https://arxiv.org/abs/2201.00016"
+            },
+            {
+                "文章ID": "9",
+                "标题": "Stochastic convex optimization for provably efficient apprenticeship\n  learning",
+                "作者": " Angeliki Kamoutsi,  Goran Banjac,  John Lygeros",
+                "发布日期": "2022-01-04",
+                "摘要": "  We consider large-scale Markov decision processes (MDPs) with an unknown cost\nfunction and employ stochastic convex optimization tools to address the problem\nof imitation learning, which consists of learning a policy from a finite set of\nexpert demonstrations.\n  We adopt the apprenticeship learning formalism, which carries the assumption\nthat the true cost function can be represented as a linear combination of some\nknown features. Existing inverse reinforcement learning algorithms come with\nstrong theoretical guarantees, but are computationally expensive because they\nuse reinforcement learning or planning algorithms as a subroutine. On the other\nhand, state-of-the-art policy gradient based algorithms (like IM-REINFORCE,\nIM-TRPO, and GAIL), achieve significant empirical success in challenging\nbenchmark tasks, but are not well understood in terms of theory. With an\nemphasis on non-asymptotic guarantees of performance, we propose a method that\ndirectly learns a policy from expert demonstrations, bypassing the intermediate\nstep of learning the cost function, by formulating the problem as a single\nconvex optimization problem over occupancy measures. We develop a\ncomputationally efficient algorithm and derive high confidence regret bounds on\nthe quality of the extracted policy, utilizing results from stochastic convex\noptimization and recent works in approximate linear programming for solving\nforward MDPs.\n",
+                "链接": "https://arxiv.org/abs/2201.00039"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "新的大模型结构相关探索的论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "使用LLM进行蛋白质结构/功能/性质预测的论文",
+            "type": "5"
+        },
+        "results": [
+            {
+                "文章ID": "34638",
+                "标题": "Secondary Protein Structure Prediction Using Neural Networks",
+                "作者": " Sidharth Malhotra,  Robin Walters",
+                "发布日期": "2022-08-25",
+                "摘要": "  In this paper we experiment with using neural network structures to predict a\nprotein's secondary structure ({\\alpha} helix positions) from only its primary\nstructure (amino acid sequence). We implement a fully connected neural network\n(FCNN) and preform three experiments using that FCNN. Firstly, we do a\ncross-species comparison of models trained and tested on mouse and human\ndatasets. Secondly, we test the impact of varying the length of protein\nsequence we input into the model. Thirdly, we compare custom error functions\ndesigned to focus on the center of the input window. At the end of paper we\npropose a alternative, recurrent neural network model which can be applied to\nthe problem.\n",
+                "链接": "https://arxiv.org/abs/2208.11248"
+            },
+            {
+                "文章ID": "109510",
+                "标题": "Protein 3D Graph Structure Learning for Robust Structure-based Protein\n  Property Prediction",
+                "作者": " Yufei Huang,  Siyuan Li,  Jin Su,  Lirong Wu,  Odin Zhang,  Haitao Lin,  Jingqi Qi,  Zihan Liu,  Zhangyang Gao,  Yuyang Liu,  Jiangbin Zheng,  Stan. ZQ. Li",
+                "发布日期": "2023-10-20",
+                "摘要": "  Protein structure-based property prediction has emerged as a promising\napproach for various biological tasks, such as protein function prediction and\nsub-cellular location estimation. The existing methods highly rely on\nexperimental protein structure data and fail in scenarios where these data are\nunavailable. Predicted protein structures from AI tools (e.g., AlphaFold2) were\nutilized as alternatives. However, we observed that current practices, which\nsimply employ accurately predicted structures during inference, suffer from\nnotable degradation in prediction accuracy. While similar phenomena have been\nextensively studied in general fields (e.g., Computer Vision) as model\nrobustness, their impact on protein property prediction remains unexplored. In\nthis paper, we first investigate the reason behind the performance decrease\nwhen utilizing predicted structures, attributing it to the structure embedding\nbias from the perspective of structure representation learning. To study this\nproblem, we identify a Protein 3D Graph Structure Learning Problem for Robust\nProtein Property Prediction (PGSL-RP3), collect benchmark datasets, and present\na protein Structure embedding Alignment Optimization framework (SAO) to\nmitigate the problem of structure embedding bias between the predicted and\nexperimental protein structures. Extensive experiments have shown that our\nframework is model-agnostic and effective in improving the property prediction\nof both predicted structures and experimental structures. The benchmark\ndatasets and codes will be released to benefit the community.\n",
+                "链接": "https://arxiv.org/abs/2310.11466"
+            },
+            {
+                "文章ID": "26245",
+                "标题": "PSP: Million-level Protein Sequence Dataset for Protein Structure\n  Prediction",
+                "作者": " Sirui Liu,  Jun Zhang,  Haotian Chu,  Min Wang,  Boxin Xue,  Ningxi Ni,  Jialiang Yu,  Yuhao Xie,  Zhenyu Chen,  Mengyun Chen,  Yuan Liu,  Piya Patra,  Fan Xu,  Jie Chen,  Zidong Wang,  Lijiang Yang,  Fan Yu,  Lei Chen,  Yi Qin Gao",
+                "发布日期": "2022-06-27",
+                "摘要": "  Proteins are essential component of human life and their structures are\nimportant for function and mechanism analysis. Recent work has shown the\npotential of AI-driven methods for protein structure prediction. However, the\ndevelopment of new models is restricted by the lack of dataset and benchmark\ntraining procedure. To the best of our knowledge, the existing open source\ndatasets are far less to satisfy the needs of modern protein sequence-structure\nrelated research. To solve this problem, we present the first million-level\nprotein structure prediction dataset with high coverage and diversity, named as\nPSP. This dataset consists of 570k true structure sequences (10TB) and 745k\ncomplementary distillation sequences (15TB). We provide in addition the\nbenchmark training procedure for SOTA protein structure prediction model on\nthis dataset. We validate the utility of this dataset for training by\nparticipating CAMEO contest in which our model won the first place. We hope our\nPSP dataset together with the training benchmark can enable a broader community\nof AI/biology researchers for AI-driven protein related research.\n",
+                "链接": "https://arxiv.org/abs/2206.12240"
+            },
+            {
+                "文章ID": "31301",
+                "标题": "HelixFold-Single: MSA-free Protein Structure Prediction by Using Protein\n  Language Model as an Alternative",
+                "作者": " Xiaomin Fang,  Fan Wang,  Lihang Liu,  Jingzhou He,  Dayong Lin,  Yingfei Xiang,  Xiaonan Zhang,  Hua Wu,  Hui Li,  Le Song",
+                "发布日期": "2023-10-19",
+                "摘要": "  AI-based protein structure prediction pipelines, such as AlphaFold2, have\nachieved near-experimental accuracy. These advanced pipelines mainly rely on\nMultiple Sequence Alignments (MSAs) as inputs to learn the co-evolution\ninformation from the homologous sequences. Nonetheless, searching MSAs from\nprotein databases is time-consuming, usually taking dozens of minutes.\nConsequently, we attempt to explore the limits of fast protein structure\nprediction by using only primary sequences of proteins. HelixFold-Single is\nproposed to combine a large-scale protein language model with the superior\ngeometric learning capability of AlphaFold2. Our proposed method,\nHelixFold-Single, first pre-trains a large-scale protein language model (PLM)\nwith thousands of millions of primary sequences utilizing the self-supervised\nlearning paradigm, which will be used as an alternative to MSAs for learning\nthe co-evolution information. Then, by combining the pre-trained PLM and the\nessential components of AlphaFold2, we obtain an end-to-end differentiable\nmodel to predict the 3D coordinates of atoms from only the primary sequence.\nHelixFold-Single is validated in datasets CASP14 and CAMEO, achieving\ncompetitive accuracy with the MSA-based methods on the targets with large\nhomologous families. Furthermore, HelixFold-Single consumes much less time than\nthe mainstream pipelines for protein structure prediction, demonstrating its\npotential in tasks requiring many predictions. The code of HelixFold-Single is\navailable at\nhttps://github.com/PaddlePaddle/PaddleHelix/tree/dev/apps/protein_folding/helixfold-single,\nand we also provide stable web services on\nhttps://paddlehelix.baidu.com/app/drug/protein-single/forecast.\n",
+                "链接": "https://arxiv.org/abs/2207.13921"
+            },
+            {
+                "文章ID": "48975",
+                "标题": "A Review of Deep Learning Techniques for Protein Function Prediction",
+                "作者": " Divyanshu Aggarwal,  Yasha Hasija",
+                "发布日期": "2022-11-18",
+                "摘要": "  Deep Learning and big data have shown tremendous success in bioinformatics\nand computational biology in recent years; artificial intelligence methods have\nalso significantly contributed in the task of protein function classification.\nThis review paper analyzes the recent developments in approaches for the task\nof predicting protein function using deep learning. We explain the importance\nof determining the protein function and why automating the following task is\ncrucial. Then, after reviewing the widely used deep learning techniques for\nthis task, we continue our review and highlight the emergence of the modern\nState of The Art (SOTA) deep learning models which have achieved groundbreaking\nresults in the field of computer vision, natural language processing and\nmulti-modal learning in the last few years. We hope that this review will\nprovide a broad view of the current role and advances of deep learning in\nbiological sciences, especially in predicting protein function tasks and\nencourage new researchers to contribute to this area.\n",
+                "链接": "https://arxiv.org/abs/2211.09705"
+            },
+            {
+                "文章ID": "70802",
+                "标题": "EigenFold: Generative Protein Structure Prediction with Diffusion Models",
+                "作者": " Bowen Jing,  Ezra Erives,  Peter Pao-Huang,  Gabriele Corso,  Bonnie Berger,  Tommi Jaakkola",
+                "发布日期": "2023-04-06",
+                "摘要": "  Protein structure prediction has reached revolutionary levels of accuracy on\nsingle structures, yet distributional modeling paradigms are needed to capture\nthe conformational ensembles and flexibility that underlie biological function.\nTowards this goal, we develop EigenFold, a diffusion generative modeling\nframework for sampling a distribution of structures from a given protein\nsequence. We define a diffusion process that models the structure as a system\nof harmonic oscillators and which naturally induces a cascading-resolution\ngenerative process along the eigenmodes of the system. On recent CAMEO targets,\nEigenFold achieves a median TMScore of 0.84, while providing a more\ncomprehensive picture of model uncertainty via the ensemble of sampled\nstructures relative to existing methods. We then assess EigenFold's ability to\nmodel and predict conformational heterogeneity for fold-switching proteins and\nligand-induced conformational change. Code is available at\nhttps://github.com/bjing2016/EigenFold.\n",
+                "链接": "https://arxiv.org/abs/2304.02198"
+            },
+            {
+                "文章ID": "106701",
+                "标题": "CrysFormer: Protein Structure Prediction via 3d Patterson Maps and\n  Partial Structure Attention",
+                "作者": " Chen Dun,  Qiutai Pan,  Shikai Jin,  Ria Stevens,  Mitchell D. Miller, Jr. George N. Phillips,,  Anastasios Kyrillidis",
+                "发布日期": "2023-10-09",
+                "摘要": "  Determining the structure of a protein has been a decades-long open question.\nA protein's three-dimensional structure often poses nontrivial computation\ncosts, when classical simulation algorithms are utilized. Advances in the\ntransformer neural network architecture -- such as AlphaFold2 -- achieve\nsignificant improvements for this problem, by learning from a large dataset of\nsequence information and corresponding protein structures. Yet, such methods\nonly focus on sequence information; other available prior knowledge, such as\nprotein crystallography and partial structure of amino acids, could be\npotentially utilized. To the best of our knowledge, we propose the first\ntransformer-based model that directly utilizes protein crystallography and\npartial structure information to predict the electron density maps of proteins.\nVia two new datasets of peptide fragments (2-residue and 15-residue) , we\ndemonstrate our method, dubbed \\texttt{CrysFormer}, can achieve accurate\npredictions, based on a much smaller dataset size and with reduced computation\ncosts.\n",
+                "链接": "https://arxiv.org/abs/2310.03899"
+            },
+            {
+                "文章ID": "51324",
+                "标题": "Protein Language Models and Structure Prediction: Connection and\n  Progression",
+                "作者": " Bozhen Hu,  Jun Xia,  Jiangbin Zheng,  Cheng Tan,  Yufei Huang,  Yongjie Xu,  Stan Z. Li",
+                "发布日期": "2022-12-01",
+                "摘要": "  The prediction of protein structures from sequences is an important task for\nfunction prediction, drug design, and related biological processes\nunderstanding. Recent advances have proved the power of language models (LMs)\nin processing the protein sequence databases, which inherit the advantages of\nattention networks and capture useful information in learning representations\nfor proteins. The past two years have witnessed remarkable success in tertiary\nprotein structure prediction (PSP), including evolution-based and\nsingle-sequence-based PSP. It seems that instead of using energy-based models\nand sampling procedures, protein language model (pLM)-based pipelines have\nemerged as mainstream paradigms in PSP. Despite the fruitful progress, the PSP\ncommunity needs a systematic and up-to-date survey to help bridge the gap\nbetween LMs in the natural language processing (NLP) and PSP domains and\nintroduce their methodologies, advancements and practical applications. To this\nend, in this paper, we first introduce the similarities between protein and\nhuman languages that allow LMs extended to pLMs, and applied to protein\ndatabases. Then, we systematically review recent advances in LMs and pLMs from\nthe perspectives of network architectures, pre-training strategies,\napplications, and commonly-used protein databases. Next, different types of\nmethods for PSP are discussed, particularly how the pLM-based architectures\nfunction in the process of protein folding. Finally, we identify challenges\nfaced by the PSP community and foresee promising research directions along with\nthe advances of pLMs. This survey aims to be a hands-on guide for researchers\nto understand PSP methods, develop pLMs and tackle challenging problems in this\nfield for practical purposes.\n",
+                "链接": "https://arxiv.org/abs/2211.16742"
+            },
+            {
+                "文章ID": "100807",
+                "标题": "Insights Into the Inner Workings of Transformer Models for Protein\n  Function Prediction",
+                "作者": " Markus Wenzel,  Erik Grüner,  Nils Strodthoff",
+                "发布日期": "2023-09-08",
+                "摘要": "  Motivation: We explored how explainable AI (XAI) can help to shed light into\nthe inner workings of neural networks for protein function prediction, by\nextending the widely used XAI method of integrated gradients such that latent\nrepresentations inside of transformer models, which were finetuned to Gene\nOntology term and Enzyme Commission number prediction, can be inspected too.\nResults: The approach enabled us to identify amino acids in the sequences that\nthe transformers pay particular attention to, and to show that these relevant\nsequence parts reflect expectations from biology and chemistry, both in the\nembedding layer and inside of the model, where we identified transformer heads\nwith a statistically significant correspondence of attribution maps with ground\ntruth sequence annotations (e.g., transmembrane regions, active sites) across\nmany proteins. Availability and Implementation: Source code can be accessed at\nhttps://github.com/markuswenzel/xai-proteins .\n",
+                "链接": "https://arxiv.org/abs/2309.03631"
+            },
+            {
+                "文章ID": "57484",
+                "标题": "Beating the Best: Improving on AlphaFold2 at Protein Structure\n  Prediction",
+                "作者": " Abbi Abdel-Rehim,  Oghenejokpeme Orhobor,  Hang Lou,  Hao Ni,  Ross D. King",
+                "发布日期": "2023-01-24",
+                "摘要": "  The goal of Protein Structure Prediction (PSP) problem is to predict a\nprotein's 3D structure (confirmation) from its amino acid sequence. The problem\nhas been a 'holy grail' of science since the Noble prize-winning work of\nAnfinsen demonstrated that protein conformation was determined by sequence. A\nrecent and important step towards this goal was the development of AlphaFold2,\ncurrently the best PSP method. AlphaFold2 is probably the highest profile\napplication of AI to science. Both AlphaFold2 and RoseTTAFold (another\nimpressive PSP method) have been published and placed in the public domain\n(code & models). Stacking is a form of ensemble machine learning ML in which\nmultiple baseline models are first learnt, then a meta-model is learnt using\nthe outputs of the baseline level model to form a model that outperforms the\nbase models. Stacking has been successful in many applications. We developed\nthe ARStack PSP method by stacking AlphaFold2 and RoseTTAFold. ARStack\nsignificantly outperforms AlphaFold2. We rigorously demonstrate this using two\nsets of non-homologous proteins, and a test set of protein structures published\nafter that of AlphaFold2 and RoseTTAFold. As more high quality prediction\nmethods are published it is likely that ensemble methods will increasingly\noutperform any single method.\n",
+                "链接": "https://arxiv.org/abs/2301.07568"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "找一下使用强化学习做代码生成的论文",
+            "type": "5"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找一下关于大模型使用工具的安全性的论文。",
+            "type": "5"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找一下2023年关于LLM-based Agent的综述",
+            "type": "6"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "对比解码综述",
+            "type": "6"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找大模型结合树搜索方法进行推理的论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "利用大模型做数学题生成的论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找可以用于验证模型推理能力的数据集论文",
+            "type": "1"
+        },
+        "results": []
+    }
+]

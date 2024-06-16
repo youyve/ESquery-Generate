@@ -1,0 +1,512 @@
+[
+    {
+        "question": {
+            "question": "与大模型工具学习相关论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查询近一年模型推理加速相关的论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "与大模型安全相关论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找多语言情感分析的最新论文。",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "2023年以后关于NLP领域的持续性学习论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "大模型在游戏方面的论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找一下文本检索任务上，是否有关于大模型在语义坍缩问题上的研究",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找大语言模型相关的分析类型的论文",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找一下利用gpt4做评测指标优缺点的文章",
+            "type": "5"
+        },
+        "results": [
+            {
+                "文章ID": "109172",
+                "标题": "Use of probabilistic phrases in a coordination game: human versus GPT-4",
+                "作者": " Laurence T Maloney,  Maria F Dal Martello,  Vivian Fei,  Valerie Ma",
+                "发布日期": "2023-11-28",
+                "摘要": "  English speakers use probabilistic phrases such as likely to communicate\ninformation about the probability or likelihood of events. Communication is\nsuccessful to the extent that the listener grasps what the speaker means to\nconvey and, if communication is successful, individuals can potentially\ncoordinate their actions based on shared knowledge about uncertainty. We first\nassessed human ability to estimate the probability and the ambiguity\n(imprecision) of twenty-three probabilistic phrases in a coordination game in\ntwo different contexts, investment advice and medical advice. We then had GPT4\n(OpenAI), a Large Language Model, complete the same tasks as the human\nparticipants. We found that the median human participant and GPT4 assigned\nprobability estimates that were in good agreement (proportions of variance\naccounted for close to .90). GPT4's estimates of probability both in the\ninvestment and Medical contexts were as close or closer to that of the human\nparticipants as the human participants' estimates were to one another.\nEstimates of probability for both the human participants and GPT4 were little\naffected by context. In contrast, human and GPT4 estimates of ambiguity were\nnot in such good agreement.\n",
+                "链接": "https://arxiv.org/abs/2310.10544"
+            },
+            {
+                "文章ID": "103691",
+                "标题": "OpenAi's GPT4 as coding assistant",
+                "作者": " Lefteris Moussiades,  George Zografos",
+                "发布日期": "2023-09-25",
+                "摘要": "  Lately, Large Language Models have been widely used in code generation. GPT4\nis considered the most potent Large Language Model from Openai. In this paper,\nwe examine GPT3.5 and GPT4 as coding assistants. More specifically, we have\nconstructed appropriate tests to check whether the two systems can a) answer\ntypical questions that can arise during the code development, b) produce\nreliable code, and c) contribute to code debugging. The test results are\nimpressive. The performance of GPT4 is outstanding and signals an increase in\nthe productivity of programmers and the reorganization of software development\nprocedures based on these new tools.\n",
+                "链接": "https://arxiv.org/abs/2309.12732"
+            },
+            {
+                "文章ID": "116159",
+                "标题": "Do Physicians Know How to Prompt? The Need for Automatic Prompt\n  Optimization Help in Clinical Note Generation",
+                "作者": " Zonghai Yao,  Ahmed Jaafar,  Beining Wang,  Yue Zhu,  Zhichao Yang,  Hong Yu",
+                "发布日期": "2023-11-17",
+                "摘要": "  This study examines the effect of prompt engineering on the performance of\nLarge Language Models (LLMs) in clinical note generation. We introduce an\nAutomatic Prompt Optimization (APO) framework to refine initial prompts and\ncompare the outputs of medical experts, non-medical experts, and APO-enhanced\nGPT3.5 and GPT4. Results highlight GPT4 APO's superior performance in\nstandardizing prompt quality across clinical note sections. A human-in-the-loop\napproach shows that experts maintain content quality post-APO, with a\npreference for their own modifications, suggesting the value of expert\ncustomization. We recommend a two-phase optimization process, leveraging\nAPO-GPT4 for consistency and expert input for personalization.\n",
+                "链接": "https://arxiv.org/abs/2311.09684"
+            },
+            {
+                "文章ID": "106036",
+                "标题": "Towards End-to-End Embodied Decision Making via Multi-modal Large\n  Language Model: Explorations with GPT4-Vision and Beyond",
+                "作者": " Liang Chen,  Yichi Zhang,  Shuhuai Ren,  Haozhe Zhao,  Zefan Cai,  Yuchi Wang,  Peiyi Wang,  Tianyu Liu,  Baobao Chang",
+                "发布日期": "2023-11-29",
+                "摘要": "  In this study, we explore the potential of Multimodal Large Language Models\n(MLLMs) in improving embodied decision-making processes for agents. While Large\nLanguage Models (LLMs) have been widely used due to their advanced reasoning\nskills and vast world knowledge, MLLMs like GPT4-Vision offer enhanced visual\nunderstanding and reasoning capabilities. We investigate whether\nstate-of-the-art MLLMs can handle embodied decision-making in an end-to-end\nmanner and whether collaborations between LLMs and MLLMs can enhance\ndecision-making. To address these questions, we introduce a new benchmark\ncalled PCA-EVAL, which evaluates embodied decision-making from the perspectives\nof Perception, Cognition, and Action. Additionally, we propose HOLMES, a\nmulti-agent cooperation framework that allows LLMs to leverage MLLMs and APIs\nto gather multimodal information for informed decision-making. We compare\nend-to-end embodied decision-making and HOLMES on our benchmark and find that\nthe GPT4-Vision model demonstrates strong end-to-end embodied decision-making\nabilities, outperforming GPT4-HOLMES in terms of average decision accuracy\n(+3%). However, this performance is exclusive to the latest GPT4-Vision model,\nsurpassing the open-source state-of-the-art MLLM by 26%. Our results indicate\nthat powerful MLLMs like GPT4-Vision hold promise for decision-making in\nembodied agents, offering new avenues for MLLM research. Code and data are open\nat https://github.com/pkunlp-icler/PCA-EVAL/.\n",
+                "链接": "https://arxiv.org/abs/2310.02071"
+            },
+            {
+                "文章ID": "94388",
+                "标题": "Large Language Model Displays Emergent Ability to Interpret Novel\n  Literary Metaphors",
+                "作者": " Nicholas Ichien,  Dušan Stamenković,  Keith J. Holyoak",
+                "发布日期": "2023-10-16",
+                "摘要": "  Recent advances in the performance of large language models (LLMs) have\nsparked debate over whether, given sufficient training, high-level human\nabilities emerge in such generic forms of artificial intelligence (AI). Despite\nthe exceptional performance of LLMs on a wide range of tasks involving natural\nlanguage processing and reasoning, there has been sharp disagreement as to\nwhether their abilities extend to more creative human abilities. A core example\nis the ability to interpret novel metaphors. Given the enormous and non curated\ntext corpora used to train LLMs, a serious obstacle to designing tests is the\nrequirement of finding novel yet high quality metaphors that are unlikely to\nhave been included in the training data. Here we assessed the ability of GPT4,\na state of the art large language model, to provide natural-language\ninterpretations of novel literary metaphors drawn from Serbian poetry and\ntranslated into English. Despite exhibiting no signs of having been exposed to\nthese metaphors previously, the AI system consistently produced detailed and\nincisive interpretations. Human judges, blind to the fact that an AI model was\ninvolved, rated metaphor interpretations generated by GPT4 as superior to those\nprovided by a group of college students. In interpreting reversed metaphors,\nGPT4, as well as humans, exhibited signs of sensitivity to the Gricean\ncooperative principle. In addition, for several novel English poems GPT4\nproduced interpretations that were rated as excellent or good by a human\nliterary critic. These results indicate that LLMs such as GPT4 have acquired an\nemergent ability to interpret complex metaphors, including those embedded in\nnovel poems.\n",
+                "链接": "https://arxiv.org/abs/2308.01497"
+            },
+            {
+                "文章ID": "91796",
+                "标题": "Enhancing conversational quality in language learning chatbots: An\n  evaluation of GPT4 for ASR error correction",
+                "作者": " Long Mai,  Julie Carson-Berndsen",
+                "发布日期": "2023-07-20",
+                "摘要": "  The integration of natural language processing (NLP) technologies into\neducational applications has shown promising results, particularly in the\nlanguage learning domain. Recently, many spoken open-domain chatbots have been\nused as speaking partners, helping language learners improve their language\nskills. However, one of the significant challenges is the high word-error-rate\n(WER) when recognizing non-native/non-fluent speech, which interrupts\nconversation flow and leads to disappointment for learners. This paper explores\nthe use of GPT4 for ASR error correction in conversational settings. In\naddition to WER, we propose to use semantic textual similarity (STS) and next\nresponse sensibility (NRS) metrics to evaluate the impact of error correction\nmodels on the quality of the conversation. We find that transcriptions\ncorrected by GPT4 lead to higher conversation quality, despite an increase in\nWER. GPT4 also outperforms standard error correction methods without the need\nfor in-domain training data.\n",
+                "链接": "https://arxiv.org/abs/2307.09744"
+            },
+            {
+                "文章ID": "120700",
+                "标题": "Methods to Estimate Large Language Model Confidence",
+                "作者": " Maia Kotelanski,  Robert Gallo,  Ashwin Nayak,  Thomas Savage",
+                "发布日期": "2023-12-11",
+                "摘要": "  Large Language Models have difficulty communicating uncertainty, which is a\nsignificant obstacle to applying LLMs to complex medical tasks. This study\nevaluates methods to measure LLM confidence when suggesting a diagnosis for\nchallenging clinical vignettes. GPT4 was asked a series of challenging case\nquestions using Chain of Thought and Self Consistency prompting. Multiple\nmethods were investigated to assess model confidence and evaluated on their\nability to predict the models observed accuracy. The methods evaluated were\nIntrinsic Confidence, SC Agreement Frequency and CoT Response Length. SC\nAgreement Frequency correlated with observed accuracy, yielding a higher Area\nunder the Receiver Operating Characteristic Curve compared to Intrinsic\nConfidence and CoT Length analysis. SC agreement is the most useful proxy for\nmodel confidence, especially for medical diagnosis. Model Intrinsic Confidence\nand CoT Response Length exhibit a weaker ability to differentiate between\ncorrect and incorrect answers, preventing them from being reliable and\ninterpretable markers for model confidence. We conclude GPT4 has a limited\nability to assess its own diagnostic accuracy. SC Agreement Frequency is the\nmost useful method to measure GPT4 confidence.\n",
+                "链接": "https://arxiv.org/abs/2312.03733"
+            },
+            {
+                "文章ID": "109439",
+                "标题": "Entity Matching using Large Language Models",
+                "作者": " Ralph Peeters,  Christian Bizer",
+                "发布日期": "2023-10-18",
+                "摘要": "  Entity Matching is the task of deciding whether two entity descriptions refer\nto the same real-world entity. Entity Matching is a central step in most data\nintegration pipelines and an enabler for many e-commerce applications which\nrequire to match products offers from different vendors. State-of-the-art\nentity matching methods often rely on pre-trained language models (PLMs) such\nas BERT or RoBERTa. Two major drawbacks of these models for entity matching are\nthat (i) the models require significant amounts of task-specific training data\nand (ii) the fine-tuned models are not robust concerning out-of-distribution\nentities. In this paper, we investigate using large language models (LLMs) for\nentity matching as a less domain-specific training data reliant and more robust\nalternative to PLM-based matchers. Our study covers hosted LLMs, such as GPT3.5\nand GPT4, as well as open source LLMs based on Llama2 which can be run locally.\nWe evaluate these models in a zero-shot scenario as well as a scenario where\ntask-specific training data is available. We compare different prompt designs\nas well as the prompt sensitivity of the models in the zero-shot scenario. We\ninvestigate (i) the selection of in-context demonstrations, (ii) the generation\nof matching rules, as well as (iii) fine-tuning GPT3.5 in the second scenario\nusing the same pool of training data across the different approaches. Our\nexperiments show that GPT4 without any task-specific training data outperforms\nfine-tuned PLMs (RoBERTa and Ditto) on three out of five benchmark datasets\nreaching F1 scores around 90%. The experiments with in-context learning and\nrule generation show that all models beside of GPT4 benefit from these\ntechniques (on average 5.9% and 2.2% F1), while GPT4 does not need such\nadditional guidance in most cases...\n",
+                "链接": "https://arxiv.org/abs/2310.11244"
+            },
+            {
+                "文章ID": "115369",
+                "标题": "MEGAVERSE: Benchmarking Large Language Models Across Languages,\n  Modalities, Models and Tasks",
+                "作者": " Sanchit Ahuja,  Divyanshu Aggarwal,  Varun Gumma,  Ishaan Watts,  Ashutosh Sathe,  Millicent Ochieng,  Rishav Hada,  Prachi Jain,  Maxamed Axmed,  Kalika Bali,  Sunayana Sitaram",
+                "发布日期": "2023-11-14",
+                "摘要": "  Recently, there has been a rapid advancement in research on Large Language\nModels (LLMs), resulting in significant progress in several Natural Language\nProcessing (NLP) tasks. Consequently, there has been a surge in LLM evaluation\nresearch to comprehend the models' capabilities and limitations. However, much\nof this research has been confined to the English language, leaving LLM\nbuilding and evaluation for non-English languages relatively unexplored. There\nhas been an introduction of several new LLMs, necessitating their evaluation on\nnon-English languages. This study aims to expand our MEGA benchmarking suite by\nincluding six new datasets to form the MEGAVERSE benchmark. The benchmark\ncomprises 22 datasets covering 81 languages, including low-resource African\nlanguages. We evaluate several state-of-the-art LLMs like GPT-3.5-Turbo, GPT4,\nPaLM2, and Llama2 on the MEGAVERSE datasets. Additionally, we include two\nmultimodal datasets in the benchmark and assess the performance of the\nLLaVa-v1.5 model. Our experiments suggest that GPT4 and PaLM2 outperform the\nLlama models on various tasks, notably on low-resource languages, with GPT4\noutperforming PaLM2 on more datasets than vice versa. However, issues such as\ndata contamination must be addressed to obtain an accurate assessment of LLM\nperformance on non-English languages.\n",
+                "链接": "https://arxiv.org/abs/2311.07463"
+            },
+            {
+                "文章ID": "122793",
+                "标题": "GPT-4 Surpassing Human Performance in Linguistic Pragmatics",
+                "作者": " Ljubisa Bojic,  Predrag Kovacevic,  Milan Cabarkapa",
+                "发布日期": "2023-12-18",
+                "摘要": "  As Large Language Models (LLMs) become increasingly integrated into everyday\nlife, their capabilities to understand and emulate human cognition are under\nsteady examination. This study investigates the ability of LLMs to comprehend\nand interpret linguistic pragmatics, an aspect of communication that considers\ncontext and implied meanings. Using Grice's communication principles, LLMs and\nhuman subjects (N=76) were evaluated based on their responses to various\ndialogue-based tasks. The findings revealed the superior performance and speed\nof LLMs, particularly GPT4, over human subjects in interpreting pragmatics.\nGPT4 also demonstrated accuracy in the pre-testing of human-written samples,\nindicating its potential in text analysis. In a comparative analysis of LLMs\nusing human individual and average scores, the models exhibited significant\nchronological improvement. The models were ranked from lowest to highest score,\nwith GPT2 positioned at 78th place, GPT3 ranking at 23rd, Bard at 10th, GPT3.5\nplacing 5th, Best Human scoring 2nd, and GPT4 achieving the top spot. The\nfindings highlight the remarkable progress made in the development and\nperformance of these LLMs. Future studies should consider diverse subjects,\nmultiple languages, and other cognitive aspects to fully comprehend the\ncapabilities of LLMs. This research holds significant implications for the\ndevelopment and application of AI-based models in communication-centered\nsectors.\n",
+                "链接": "https://arxiv.org/abs/2312.09545"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "使用LLM进行蛋白质结构/功能/性质预测的论文",
+            "type": "5"
+        },
+        "results": [
+            {
+                "文章ID": "94492",
+                "标题": "Wider and Deeper LLM Networks are Fairer LLM Evaluators",
+                "作者": " Xinghua Zhang,  Bowen Yu,  Haiyang Yu,  Yangyu Lv,  Tingwen Liu,  Fei Huang,  Hongbo Xu,  Yongbin Li",
+                "发布日期": "2023-08-04",
+                "摘要": "  Measuring the quality of responses generated by LLMs is a challenging task,\nparticularly when it comes to evaluating whether the response is aligned with\nhuman preference. A novel approach involves using the LLM itself to make\nevaluation and stabilizing the results through multiple independent\nevaluations, similar to a single-layer narrow LLM network. This network\nconsists of a fixed number of neurons, with each neuron being the same LLM. In\nthis paper, we draw upon the extensive research on deep neural networks to\nexplore whether deeper and wider networks can lead to fairer evaluations.\nSpecifically, inspired by the observation that different neurons in a neural\nnetwork are responsible for detecting different concepts, we first adaptively\ngenerate as many neuron roles as possible for each evaluation sample. Each\nperspective corresponds to the role of a specific LLM neuron in the first\nlayer. In subsequent layers, we follow the idea that higher layers in deep\nnetworks are responsible for more comprehensive features, each layer receives\nrepresentations from all neurons in the previous layer, integrating the locally\nlearned evaluation information to obtain a more comprehensive evaluation\nresult. Interestingly, this network design resembles the process of academic\npaper reviewing. To validate the effectiveness of our method, we construct the\nlargest and most diverse English evaluation benchmark LLMEval$^2$ for LLM\nevaluators, comprising 15 tasks, 8 abilities, and 2,553 samples. Experimental\nresults demonstrate that a wider network (involving many reviewers) with 2\nlayers (one round of discussion) performs the best, improving kappa correlation\ncoefficient from 0.28 to 0.34. We also leverage WideDeep to aid in the\nassessment of Chinese LLMs, which has accelerated the evaluation time by 4.6\ntimes, resulting in a 60% cost saving. WideDeep achieves a remarkable 93%\nagreement level among humans.\n",
+                "链接": "https://arxiv.org/abs/2308.01862"
+            },
+            {
+                "文章ID": "95766",
+                "标题": "LLM As DBA",
+                "作者": " Xuanhe Zhou,  Guoliang Li,  Zhiyuan Liu",
+                "发布日期": "2023-08-14",
+                "摘要": "  Database administrators (DBAs) play a crucial role in managing, maintaining\nand optimizing a database system to ensure data availability, performance, and\nreliability. However, it is hard and tedious for DBAs to manage a large number\nof database instances (e.g., millions of instances on the cloud databases).\nRecently large language models (LLMs) have shown great potential to understand\nvaluable documents and accordingly generate reasonable answers. Thus, we\npropose D-Bot, a LLM-based database administrator that can continuously acquire\ndatabase maintenance experience from textual sources, and provide reasonable,\nwell-founded, in-time diagnosis and optimization advice for target databases.\nThis paper presents a revolutionary LLM-centric framework for database\nmaintenance, including (i) database maintenance knowledge detection from\ndocuments and tools, (ii) tree of thought reasoning for root cause analysis,\nand (iii) collaborative diagnosis among multiple LLMs. Our preliminary\nexperimental results that D-Bot can efficiently and effectively diagnose the\nroot causes and our code is available at\ngithub.com/TsinghuaDatabaseGroup/DB-GPT.\n",
+                "链接": "https://arxiv.org/abs/2308.05481"
+            },
+            {
+                "文章ID": "125330",
+                "标题": "The LLM Surgeon",
+                "作者": " Tycho F. A. van der Ouderaa,  Markus Nagel,  Mart van Baalen,  Yuki M. Asano,  Tijmen Blankevoort",
+                "发布日期": "2023-12-29",
+                "摘要": "  State-of-the-art language models are becoming increasingly large in an effort\nto achieve the highest performance on large corpora of available textual data.\nHowever, the sheer size of the Transformer architectures makes it difficult to\ndeploy models within computational, environmental or device-specific\nconstraints. We explore data-driven compression of existing pretrained models\nas an alternative to training smaller models from scratch. To do so, we scale\nKronecker-factored curvature approximations of the target loss landscape to\nlarge language models. In doing so, we can compute both the dynamic allocation\nof structures that can be removed as well as updates of remaining weights that\naccount for the removal. We provide a general framework for unstructured,\nsemi-structured and structured pruning and improve upon weight updates to\ncapture more correlations between weights, while remaining computationally\nefficient. Experimentally, our method can prune rows and columns from a range\nof OPT models and Llamav2-7B by 20%-30%, with a negligible loss in performance,\nand achieve state-of-the-art results in unstructured and semi-structured\npruning of large language models.\n",
+                "链接": "https://arxiv.org/abs/2312.17244"
+            },
+            {
+                "文章ID": "78662",
+                "标题": "LLM-CXR: Instruction-Finetuned LLM for CXR Image Understanding and\n  Generation",
+                "作者": " Suhyeon Lee,  Won Jun Kim,  Jinho Chang,  Jong Chul Ye",
+                "发布日期": "2023-10-18",
+                "摘要": "  Following the impressive development of LLMs, vision-language alignment in\nLLMs is actively being researched to enable multimodal reasoning and visual IO.\nThis direction of research is particularly relevant to medical imaging because\nmedical image analysis and generation consist of reasoning based on a\ncombination of visual features and prior knowledge. Many recent works have\nfocused on training adapter networks that serve as an information bridge\nbetween image processing networks and LLMs; but presumably, in order to achieve\nmaximum reasoning potential of LLMs on visual information as well, visual and\nlanguage features should be allowed to interact more freely. This is especially\nimportant in the medical domain because understanding and generating medical\nimages such as chest X-rays (CXR) require not only accurate visual and\nlanguage-based reasoning but also a more intimate mapping between the two\nmodalities. Thus, taking inspiration from previous work on the transformer and\nVQ-GAN combination for bidirectional image and text generation, we build upon\nthis approach and develop a method for instruction-tuning an LLM pre-trained\nonly on text to gain vision-language capabilities for medical images.\nSpecifically, we leverage a pretrained LLM's existing question-answering and\ninstruction-following abilities to teach it to understand visual inputs by\ninstructing it to answer questions about image inputs and, symmetrically,\noutput both text and image responses appropriate to a given query by tuning the\nLLM with diverse tasks that encompass image-based text-generation and\ntext-based image-generation. We show that our model, LLM-CXR, trained in this\napproach shows better image-text alignment in both CXR understanding and\ngeneration tasks while being smaller in size compared to previously developed\nmodels that perform a narrower range of tasks. The code is at\nhttps://github.com/hyn2028/llm-cxr.\n",
+                "链接": "https://arxiv.org/abs/2305.11490"
+            },
+            {
+                "文章ID": "103890",
+                "标题": "Calibrating LLM-Based Evaluator",
+                "作者": " Yuxuan Liu,  Tianchi Yang,  Shaohan Huang,  Zihan Zhang,  Haizhen Huang,  Furu Wei,  Weiwei Deng,  Feng Sun,  Qi Zhang",
+                "发布日期": "2023-09-26",
+                "摘要": "  Recent advancements in large language models (LLMs) on language modeling and\nemergent capabilities make them a promising reference-free evaluator of natural\nlanguage generation quality, and a competent alternative to human evaluation.\nHowever, hindered by the closed-source or high computational demand to host and\ntune, there is a lack of practice to further calibrate an off-the-shelf\nLLM-based evaluator towards better human alignment. In this work, we propose\nAutoCalibrate, a multi-stage, gradient-free approach to automatically calibrate\nand align an LLM-based evaluator toward human preference. Instead of explicitly\nmodeling human preferences, we first implicitly encompass them within a set of\nhuman labels. Then, an initial set of scoring criteria is drafted by the\nlanguage model itself, leveraging in-context learning on different few-shot\nexamples. To further calibrate this set of criteria, we select the best\nperformers and re-draft them with self-refinement. Our experiments on multiple\ntext quality evaluation datasets illustrate a significant improvement in\ncorrelation with expert evaluation through calibration. Our comprehensive\nqualitative analysis conveys insightful intuitions and observations on the\nessence of effective scoring criteria.\n",
+                "链接": "https://arxiv.org/abs/2309.13308"
+            },
+            {
+                "文章ID": "114789",
+                "标题": "LLM Augmented Hierarchical Agents",
+                "作者": " Bharat Prakash,  Tim Oates,  Tinoosh Mohsenin",
+                "发布日期": "2023-11-10",
+                "摘要": "  Solving long-horizon, temporally-extended tasks using Reinforcement Learning\n(RL) is challenging, compounded by the common practice of learning without\nprior knowledge (or tabula rasa learning). Humans can generate and execute\nplans with temporally-extended actions and quickly learn to perform new tasks\nbecause we almost never solve problems from scratch. We want autonomous agents\nto have this same ability. Recently, LLMs have been shown to encode a\ntremendous amount of knowledge about the world and to perform impressive\nin-context learning and reasoning. However, using LLMs to solve real world\nproblems is hard because they are not grounded in the current task. In this\npaper we exploit the planning capabilities of LLMs while using RL to provide\nlearning from the environment, resulting in a hierarchical agent that uses LLMs\nto solve long-horizon tasks. Instead of completely relying on LLMs, they guide\na high-level policy, making learning significantly more sample efficient. This\napproach is evaluated in simulation environments such as MiniGrid, SkillHack,\nand Crafter, and on a real robot arm in block manipulation tasks. We show that\nagents trained using our approach outperform other baselines methods and, once\ntrained, don't need access to LLMs during deployment.\n",
+                "链接": "https://arxiv.org/abs/2311.05596"
+            },
+            {
+                "文章ID": "115464",
+                "标题": "MART: Improving LLM Safety with Multi-round Automatic Red-Teaming",
+                "作者": " Suyu Ge,  Chunting Zhou,  Rui Hou,  Madian Khabsa,  Yi-Chia Wang,  Qifan Wang,  Jiawei Han,  Yuning Mao",
+                "发布日期": "2023-11-15",
+                "摘要": "  Red-teaming is a common practice for mitigating unsafe behaviors in Large\nLanguage Models (LLMs), which involves thoroughly assessing LLMs to identify\npotential flaws and addressing them with responsible and accurate responses.\nWhile effective, manual red-teaming is costly, and existing automatic\nred-teaming typically discovers safety risks without addressing them. In this\npaper, we propose a Multi-round Automatic Red-Teaming (MART) method, which\nincorporates both automatic adversarial prompt writing and safe response\ngeneration, significantly increasing red-teaming scalability and the safety of\nthe target LLM. Specifically, an adversarial LLM and a target LLM interplay\nwith each other in an iterative manner, where the adversarial LLM aims to\ngenerate challenging prompts that elicit unsafe responses from the target LLM,\nwhile the target LLM is fine-tuned with safety aligned data on these\nadversarial prompts. In each round, the adversarial LLM crafts better attacks\non the updated target LLM, while the target LLM also improves itself through\nsafety fine-tuning. On adversarial prompt benchmarks, the violation rate of an\nLLM with limited safety alignment reduces up to 84.7% after 4 rounds of MART,\nachieving comparable performance to LLMs with extensive adversarial prompt\nwriting. Notably, model helpfulness on non-adversarial prompts remains stable\nthroughout iterations, indicating the target LLM maintains strong performance\non instruction following.\n",
+                "链接": "https://arxiv.org/abs/2311.07689"
+            },
+            {
+                "文章ID": "124213",
+                "标题": "Speech Translation with Large Language Models: An Industrial Practice",
+                "作者": " Zhichao Huang,  Rong Ye,  Tom Ko,  Qianqian Dong,  Shanbo Cheng,  Mingxuan Wang,  Hang Li",
+                "发布日期": "2023-12-22",
+                "摘要": "  Given the great success of large language models (LLMs) across various tasks,\nin this paper, we introduce LLM-ST, a novel and effective speech translation\nmodel constructed upon a pre-trained LLM. By integrating the large language\nmodel (LLM) with a speech encoder and employing multi-task instruction tuning,\nLLM-ST can produce accurate timestamped transcriptions and translations, even\nfrom long audio inputs. Furthermore, our findings indicate that the\nimplementation of Chain-of-Thought (CoT) prompting can yield advantages in the\ncontext of LLM-ST. Through rigorous experimentation on English and Chinese\ndatasets, we showcase the exceptional performance of LLM-ST, establishing a new\nbenchmark in the field of speech translation. Demo:\nhttps://speechtranslation.github.io/llm-st/.\n",
+                "链接": "https://arxiv.org/abs/2312.13585"
+            },
+            {
+                "文章ID": "91534",
+                "标题": "Federated Large Language Model: A Position Paper",
+                "作者": " Chaochao Chen,  Xiaohua Feng,  Jun Zhou,  Jianwei Yin,  Xiaolin Zheng",
+                "发布日期": "2023-07-19",
+                "摘要": "  Large scale language models (LLM) have received significant attention and\nfound diverse applications across various domains, but their development\nencounters challenges in real-world scenarios. These challenges arise due to\nthe scarcity of public domain data availability and the need to maintain\nprivacy with respect to private domain data. To address these issues, federated\nlearning (FL) has emerged as a promising technology that enables collaborative\ntraining of shared models while preserving decentralized data. We propose the\nconcept of federated LLM, which comprises three key components, i.e., federated\nLLM pre-training, federated LLM fine-tuning, and federated LLM prompt\nengineering. For each component, we discuss its advantage over traditional LLM\ntraining methods and propose specific engineering strategies for\nimplementation. Furthermore, we explore the novel challenges introduced by the\nintegration of FL and LLM. We analyze existing solutions and identify potential\nobstacles faced by these solutions within the context of federated LLM.\n",
+                "链接": "https://arxiv.org/abs/2307.08925"
+            },
+            {
+                "文章ID": "79394",
+                "标题": "Response Length Perception and Sequence Scheduling: An LLM-Empowered LLM\n  Inference Pipeline",
+                "作者": " Zangwei Zheng,  Xiaozhe Ren,  Fuzhao Xue,  Yang Luo,  Xin Jiang,  Yang You",
+                "发布日期": "2023-05-30",
+                "摘要": "  Large language models (LLMs) have revolutionized the field of AI,\ndemonstrating unprecedented capacity across various tasks. However, the\ninference process for LLMs comes with significant computational costs. In this\npaper, we propose an efficient LLM inference pipeline that harnesses the power\nof LLMs. Our approach begins by tapping into the potential of LLMs to\naccurately perceive and predict the response length with minimal overhead. By\nleveraging this information, we introduce an efficient sequence scheduling\ntechnique that groups queries with similar response lengths into micro-batches.\nWe evaluate our approach on real-world instruction datasets using the\nLLaMA-based model, and our results demonstrate an impressive 86% improvement in\ninference throughput without compromising effectiveness. Notably, our method is\northogonal to other inference acceleration techniques, making it a valuable\naddition to many existing toolkits (e.g., FlashAttention, Quantization) for LLM\ninference.\n",
+                "链接": "https://arxiv.org/abs/2305.13144"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "请找到利用clip做开放词汇检测的论文",
+            "type": "5"
+        },
+        "results": [
+            {
+                "文章ID": "53315",
+                "标题": "CLIP Itself is a Strong Fine-tuner: Achieving 85.7% and 88.0% Top-1\n  Accuracy with ViT-B and ViT-L on ImageNet",
+                "作者": " Xiaoyi Dong,  Jianmin Bao,  Ting Zhang,  Dongdong Chen,  Shuyang Gu,  Weiming Zhang,  Lu Yuan,  Dong Chen,  Fang Wen,  Nenghai Yu",
+                "发布日期": "2022-12-13",
+                "摘要": "  Recent studies have shown that CLIP has achieved remarkable success in\nperforming zero-shot inference while its fine-tuning performance is not\nsatisfactory. In this paper, we identify that fine-tuning performance is\nsignificantly impacted by hyper-parameter choices. We examine various key\nhyper-parameters and empirically evaluate their impact in fine-tuning CLIP for\nclassification tasks through a comprehensive study. We find that the\nfine-tuning performance of CLIP is substantially underestimated. Equipped with\nhyper-parameter refinement, we demonstrate CLIP itself is better or at least\ncompetitive in fine-tuning compared with large-scale supervised pre-training\napproaches or latest works that use CLIP as prediction targets in Masked Image\nModeling. Specifically, CLIP ViT-Base/16 and CLIP ViT-Large/14 can achieve\n85.7%,88.0% finetuning Top-1 accuracy on the ImageNet-1K dataset . These\nobservations challenge the conventional conclusion that CLIP is not suitable\nfor fine-tuning, and motivate us to rethink recently proposed improvements\nbased on CLIP. We will release our code publicly at\n\\url{https://github.com/LightDXY/FT-CLIP}.\n",
+                "链接": "https://arxiv.org/abs/2212.06138"
+            },
+            {
+                "文章ID": "69202",
+                "标题": "EVA-CLIP: Improved Training Techniques for CLIP at Scale",
+                "作者": " Quan Sun,  Yuxin Fang,  Ledell Wu,  Xinlong Wang,  Yue Cao",
+                "发布日期": "2023-03-28",
+                "摘要": "  Contrastive language-image pre-training, CLIP for short, has gained\nincreasing attention for its potential in various scenarios. In this paper, we\npropose EVA-CLIP, a series of models that significantly improve the efficiency\nand effectiveness of CLIP training. Our approach incorporates new techniques\nfor representation learning, optimization, and augmentation, enabling EVA-CLIP\nto achieve superior performance compared to previous CLIP models with the same\nnumber of parameters but significantly smaller training costs. Notably, our\nlargest 5.0B-parameter EVA-02-CLIP-E/14+ with only 9 billion seen samples\nachieves 82.0 zero-shot top-1 accuracy on ImageNet-1K val. A smaller\nEVA-02-CLIP-L/14+ with only 430 million parameters and 6 billion seen samples\nachieves 80.4 zero-shot top-1 accuracy on ImageNet-1K val. To facilitate open\naccess and open research, we release the complete suite of EVA-CLIP to the\ncommunity at https://github.com/baaivision/EVA/tree/master/EVA-CLIP.\n",
+                "链接": "https://arxiv.org/abs/2303.15389"
+            },
+            {
+                "文章ID": "122010",
+                "标题": "CLIP in Medical Imaging: A Comprehensive Survey",
+                "作者": " Zihao Zhao,  Yuxiao Liu,  Han Wu,  Yonghao Li,  Sheng Wang,  Lin Teng,  Disheng Liu,  Zhiming Cui,  Qian Wang,  Dinggang Shen",
+                "发布日期": "2023-12-27",
+                "摘要": "  Contrastive Language-Image Pre-training (CLIP), a simple yet effective\npre-training paradigm, successfully introduces text supervision to vision\nmodels. It has shown promising results across various tasks, attributable to\nits generalizability and interpretability. The use of CLIP has recently gained\nincreasing interest in the medical imaging domain, serving both as a\npre-training paradigm for aligning medical vision and language, and as a\ncritical component in diverse clinical tasks. With the aim of facilitating a\ndeeper understanding of this promising direction, this survey offers an\nin-depth exploration of the CLIP paradigm within the domain of medical imaging,\nregarding both refined CLIP pre-training and CLIP-driven applications. In this\nstudy, We (1) start with a brief introduction to the fundamentals of CLIP\nmethodology. (2) Then, we investigate the adaptation of CLIP pre-training in\nthe medical domain, focusing on how to optimize CLIP given characteristics of\nmedical images and reports. (3) Furthermore, we explore the practical\nutilization of CLIP pre-trained models in various tasks, including\nclassification, dense prediction, and cross-modal tasks. (4) Finally, we\ndiscuss existing limitations of CLIP in the context of medical imaging and\npropose forward-looking directions to address the demands of medical imaging\ndomain. We expect that this comprehensive survey will provide researchers in\nthe field of medical image analysis with a holistic understanding of the CLIP\nparadigm and its potential implications. The project page can be found on\nhttps://github.com/zhaozh10/Awesome-CLIP-in-Medical-Imaging.\n",
+                "链接": "https://arxiv.org/abs/2312.07353"
+            },
+            {
+                "文章ID": "109724",
+                "标题": "On the use of Vision-Language models for Visual Sentiment Analysis: a\n  study on CLIP",
+                "作者": " Cristina Bustos,  Carles Civit,  Brian Du,  Albert Sole-Ribalta,  Agata Lapedriza",
+                "发布日期": "2023-10-19",
+                "摘要": "  This work presents a study on how to exploit the CLIP embedding space to\nperform Visual Sentiment Analysis. We experiment with two architectures built\non top of the CLIP embedding space, which we denote by CLIP-E. We train the\nCLIP-E models with WEBEmo, the largest publicly available and manually labeled\nbenchmark for Visual Sentiment Analysis, and perform two sets of experiments.\nFirst, we test on WEBEmo and compare the CLIP-E architectures with\nstate-of-the-art (SOTA) models and with CLIP Zero-Shot. Second, we perform\ncross dataset evaluation, and test the CLIP-E architectures trained with WEBEmo\non other Visual Sentiment Analysis benchmarks. Our results show that the CLIP-E\napproaches outperform SOTA models in WEBEmo fine grained categorization, and\nthey also generalize better when tested on datasets that have not been seen\nduring training. Interestingly, we observed that for the FI dataset, CLIP\nZero-Shot produces better accuracies than SOTA models and CLIP-E trained on\nWEBEmo. These results motivate several questions that we discuss in this paper,\nsuch as how we should design new benchmarks and evaluate Visual Sentiment\nAnalysis, and whether we should keep designing tailored Deep Learning models\nfor Visual Sentiment Analysis or focus our efforts on better using the\nknowledge encoded in large vision-language models such as CLIP for this task.\n",
+                "链接": "https://arxiv.org/abs/2310.12062"
+            },
+            {
+                "文章ID": "64995",
+                "标题": "CLIP-guided Prototype Modulating for Few-shot Action Recognition",
+                "作者": " Xiang Wang,  Shiwei Zhang,  Jun Cen,  Changxin Gao,  Yingya Zhang,  Deli Zhao,  Nong Sang",
+                "发布日期": "2023-03-07",
+                "摘要": "  Learning from large-scale contrastive language-image pre-training like CLIP\nhas shown remarkable success in a wide range of downstream tasks recently, but\nit is still under-explored on the challenging few-shot action recognition\n(FSAR) task. In this work, we aim to transfer the powerful multimodal knowledge\nof CLIP to alleviate the inaccurate prototype estimation issue due to data\nscarcity, which is a critical problem in low-shot regimes. To this end, we\npresent a CLIP-guided prototype modulating framework called CLIP-FSAR, which\nconsists of two key components: a video-text contrastive objective and a\nprototype modulation. Specifically, the former bridges the task discrepancy\nbetween CLIP and the few-shot video task by contrasting videos and\ncorresponding class text descriptions. The latter leverages the transferable\ntextual concepts from CLIP to adaptively refine visual prototypes with a\ntemporal Transformer. By this means, CLIP-FSAR can take full advantage of the\nrich semantic priors in CLIP to obtain reliable prototypes and achieve accurate\nfew-shot classification. Extensive experiments on five commonly used benchmarks\ndemonstrate the effectiveness of our proposed method, and CLIP-FSAR\nsignificantly outperforms existing state-of-the-art methods under various\nsettings. The source code and models will be publicly available at\nhttps://github.com/alibaba-mmai-research/CLIP-FSAR.\n",
+                "链接": "https://arxiv.org/abs/2303.02982"
+            },
+            {
+                "文章ID": "107101",
+                "标题": "Symmetrical Linguistic Feature Distillation with CLIP for Scene Text\n  Recognition",
+                "作者": " Zixiao Wang,  Hongtao Xie,  Yuxin Wang,  Jianjun Xu,  Boqiang Zhang,  Yongdong Zhang",
+                "发布日期": "2023-10-11",
+                "摘要": "  In this paper, we explore the potential of the Contrastive Language-Image\nPretraining (CLIP) model in scene text recognition (STR), and establish a novel\nSymmetrical Linguistic Feature Distillation framework (named CLIP-OCR) to\nleverage both visual and linguistic knowledge in CLIP. Different from previous\nCLIP-based methods mainly considering feature generalization on visual\nencoding, we propose a symmetrical distillation strategy (SDS) that further\ncaptures the linguistic knowledge in the CLIP text encoder. By cascading the\nCLIP image encoder with the reversed CLIP text encoder, a symmetrical structure\nis built with an image-to-text feature flow that covers not only visual but\nalso linguistic information for distillation.Benefiting from the natural\nalignment in CLIP, such guidance flow provides a progressive optimization\nobjective from vision to language, which can supervise the STR feature\nforwarding process layer-by-layer.Besides, a new Linguistic Consistency Loss\n(LCL) is proposed to enhance the linguistic capability by considering\nsecond-order statistics during the optimization. Overall, CLIP-OCR is the first\nto design a smooth transition between image and text for the STR task.Extensive\nexperiments demonstrate the effectiveness of CLIP-OCR with 93.8% average\naccuracy on six popular STR benchmarks.Code will be available at\nhttps://github.com/wzx99/CLIPOCR.\n",
+                "链接": "https://arxiv.org/abs/2310.04999"
+            },
+            {
+                "文章ID": "1347",
+                "标题": "CLIP-TD: CLIP Targeted Distillation for Vision-Language Tasks",
+                "作者": " Zhecan Wang,  Noel Codella,  Yen-Chun Chen,  Luowei Zhou,  Jianwei Yang,  Xiyang Dai,  Bin Xiao,  Haoxuan You,  Shih-Fu Chang,  Lu Yuan",
+                "发布日期": "2023-01-02",
+                "摘要": "  Contrastive language-image pretraining (CLIP) links vision and language\nmodalities into a unified embedding space, yielding the tremendous potential\nfor vision-language (VL) tasks. While early concurrent works have begun to\nstudy this potential on a subset of tasks, important questions remain: 1) What\nis the benefit of CLIP on unstudied VL tasks? 2) Does CLIP provide benefit in\nlow-shot or domain-shifted scenarios? 3) Can CLIP improve existing approaches\nwithout impacting inference or pretraining complexity? In this work, we seek to\nanswer these questions through two key contributions. First, we introduce an\nevaluation protocol that includes Visual Commonsense Reasoning (VCR), Visual\nEntailment (SNLI-VE), and Visual Question Answering (VQA), across a variety of\ndata availability constraints and conditions of domain shift. Second, we\npropose an approach, named CLIP Targeted Distillation (CLIP-TD), to\nintelligently distill knowledge from CLIP into existing architectures using a\ndynamically weighted objective applied to adaptively selected tokens per\ninstance. Experiments demonstrate that our proposed CLIP-TD leads to\nexceptional gains in the low-shot (up to 51.9%) and domain-shifted (up to\n71.3%) conditions of VCR, while simultaneously improving performance under\nstandard fully-supervised conditions (up to 2%), achieving state-of-art\nperformance on VCR compared to other single models that are pretrained with\nimage-text data only. On SNLI-VE, CLIP-TD produces significant gains in\nlow-shot conditions (up to 6.6%) as well as fully supervised (up to 3%). On\nVQA, CLIP-TD provides improvement in low-shot (up to 9%), and in\nfully-supervised (up to 1.3%). Finally, CLIP-TD outperforms concurrent works\nutilizing CLIP for finetuning, as well as baseline naive distillation\napproaches. Code will be made available.\n",
+                "链接": "https://arxiv.org/abs/2201.05729"
+            },
+            {
+                "文章ID": "92757",
+                "标题": "CLIP-KD: An Empirical Study of Distilling CLIP Models",
+                "作者": " Chuanguang Yang,  Zhulin An,  Libo Huang,  Junyu Bi,  Xinqiang Yu,  Han Yang,  Yongjun Xu",
+                "发布日期": "2023-07-25",
+                "摘要": "  CLIP has become a promising language-supervised visual pre-training framework\nand achieves excellent performance over a wide range of tasks. This paper aims\nto distill small CLIP models supervised by a large teacher CLIP model. We\npropose several distillation strategies, including relation, feature, gradient\nand contrastive paradigm, to examine the impact on CLIP distillation. We show\nthat the simplest feature mimicry with MSE loss performs best. Moreover,\ninteractive contrastive learning and relation-based distillation are also\ncritical in performance improvement. We apply the unified method to distill\nseveral student networks trained on 15 million (image, text) pairs.\nDistillation improves the student CLIP models consistently over zero-shot\nImageNet classification and cross-modal retrieval benchmarks. We hope our\nempirical study will become an important baseline for future CLIP distillation\nresearch. The code is available at \\url{https://github.com/winycg/CLIP-KD}.\n",
+                "链接": "https://arxiv.org/abs/2307.12732"
+            },
+            {
+                "文章ID": "9457",
+                "标题": "One-stage Video Instance Segmentation: From Frame-in Frame-out to\n  Clip-in Clip-out",
+                "作者": " Minghan Li,  Lei Zhang",
+                "发布日期": "2022-03-15",
+                "摘要": "  Many video instance segmentation (VIS) methods partition a video sequence\ninto individual frames to detect and segment objects frame by frame. However,\nsuch a frame-in frame-out (FiFo) pipeline is ineffective to exploit the\ntemporal information. Based on the fact that adjacent frames in a short clip\nare highly coherent in content, we propose to extend the one-stage FiFo\nframework to a clip-in clip-out (CiCo) one, which performs VIS clip by clip.\nSpecifically, we stack FPN features of all frames in a short video clip to\nbuild a spatio-temporal feature cube, and replace the 2D conv layers in the\nprediction heads and the mask branch with 3D conv layers, forming clip-level\nprediction heads (CPH) and clip-level mask heads (CMH). Then the clip-level\nmasks of an instance can be generated by feeding its box-level predictions from\nCPH and clip-level features from CMH into a small fully convolutional network.\nA clip-level segmentation loss is proposed to ensure that the generated\ninstance masks are temporally coherent in the clip. The proposed CiCo strategy\nis free of inter-frame alignment, and can be easily embedded into existing FiFo\nbased VIS approaches. To validate the generality and effectiveness of our CiCo\nstrategy, we apply it to two representative FiFo methods, Yolact\n\\cite{bolya2019yolact} and CondInst \\cite{tian2020conditional}, resulting in\ntwo new one-stage VIS models, namely CiCo-Yolact and CiCo-CondInst, which\nachieve 37.1/37.3\\%, 35.2/35.4\\% and 17.2/18.0\\% mask AP using the ResNet50\nbackbone, and 41.8/41.4\\%, 38.0/38.9\\% and 18.0/18.2\\% mask AP using the Swin\nTransformer tiny backbone on YouTube-VIS 2019, 2021 and OVIS valid sets,\nrespectively, recording new state-of-the-arts. Code and video demos of CiCo can\nbe found at \\url{https://github.com/MinghanLi/CiCo}.\n",
+                "链接": "https://arxiv.org/abs/2203.06421"
+            },
+            {
+                "文章ID": "102895",
+                "标题": "Improving CLIP Robustness with Knowledge Distillation and Self-Training",
+                "作者": " Clement Laroudie,  Andrei Bursuc,  Mai Lan Ha,  Gianni Franchi",
+                "发布日期": "2023-09-20",
+                "摘要": "  This paper examines the robustness of a multi-modal computer vision model,\nCLIP (Contrastive Language-Image Pretraining), in the context of unsupervised\nlearning. The main objective is twofold: first, to evaluate the robustness of\nCLIP, and second, to explore strategies for augmenting its robustness. To\nachieve this, we introduce a novel approach named LP-CLIP. This technique\ninvolves the distillation of CLIP features through the incorporation of a\nlinear probing layer positioned atop its encoding structure. This newly added\nlayer is trained utilizing pseudo-labels produced by CLIP, coupled with a\nself-training strategy. The LP-CLIP technique offers a promising approach to\nenhance the robustness of CLIP without the need for annotations. By leveraging\na simple linear probing layer, we aim to improve the model's ability to\nwithstand various uncertainties and challenges commonly encountered in\nreal-world scenarios. Importantly, our approach does not rely on annotated\ndata, which makes it particularly valuable in situations where labeled data\nmight be scarce or costly to obtain. Our proposed approach increases the\nrobustness of CLIP with SOTA results compared to supervised technique on\nvarious datasets.\n",
+                "链接": "https://arxiv.org/abs/2309.10361"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "查找一下使用CrossWoz或MultiWoz数据集进行DST评测的论文",
+            "type": "5"
+        },
+        "results": [
+            {
+                "文章ID": "109152",
+                "标题": "UNO-DST: Leveraging Unlabelled Data in Zero-Shot Dialogue State Tracking",
+                "作者": " Chuang Li,  Yan Zhang,  Min-Yen Kan,  Haizhou Li",
+                "发布日期": "2023-10-17",
+                "摘要": "  Previous zero-shot dialogue state tracking (DST) methods only apply transfer\nlearning, but ignore unlabelled data in the target domain. We transform\nzero-shot DST into few-shot DST by utilising such unlabelled data via joint and\nself-training methods. Our method incorporates auxiliary tasks that generate\nslot types as inverse prompts for main tasks, creating slot values during joint\ntraining. Cycle consistency between these two tasks enables the generation and\nselection of quality samples in unknown target domains for subsequent\nfine-tuning. This approach also facilitates automatic label creation, thereby\noptimizing the training and fine-tuning of DST models. We demonstrate this\nmethod's effectiveness on large language models in zero-shot scenarios,\nimproving average joint goal accuracy by $8\\%$ across all domains in MultiWOZ.\n",
+                "链接": "https://arxiv.org/abs/2310.10492"
+            },
+            {
+                "文章ID": "37569",
+                "标题": "SF-DST: Few-Shot Self-Feeding Reading Comprehension Dialogue State\n  Tracking with Auxiliary Task",
+                "作者": " Jihyun Lee,  Gary Geunbae Lee",
+                "发布日期": "2022-09-19",
+                "摘要": "  Few-shot dialogue state tracking (DST) model tracks user requests in dialogue\nwith reliable accuracy even with a small amount of data. In this paper, we\nintroduce an ontology-free few-shot DST with self-feeding belief state input.\nThe self-feeding belief state input increases the accuracy in multi-turn\ndialogue by summarizing previous dialogue. Also, we newly developed a slot-gate\nauxiliary task. This new auxiliary task helps classify whether a slot is\nmentioned in the dialogue. Our model achieved the best score in a few-shot\nsetting for four domains on multiWOZ 2.0.\n",
+                "链接": "https://arxiv.org/abs/2209.07742"
+            },
+            {
+                "文章ID": "14657",
+                "标题": "XQA-DST: Multi-Domain and Multi-Lingual Dialogue State Tracking",
+                "作者": " Han Zhou,  Ignacio Iacobacci,  Pasquale Minervini",
+                "发布日期": "2023-02-28",
+                "摘要": "  Dialogue State Tracking (DST), a crucial component of task-oriented dialogue\n(ToD) systems, keeps track of all important information pertaining to dialogue\nhistory: filling slots with the most probable values throughout the\nconversation. Existing methods generally rely on a predefined set of values and\nstruggle to generalise to previously unseen slots in new domains. To overcome\nthese challenges, we propose a domain-agnostic extractive question answering\n(QA) approach with shared weights across domains. To disentangle the complex\ndomain information in ToDs, we train our DST with a novel domain filtering\nstrategy by excluding out-of-domain question samples. With an independent\nclassifier that predicts the presence of multiple domains given the context,\nour model tackles DST by extracting spans in active domains. Empirical results\ndemonstrate that our model can efficiently leverage domain-agnostic QA datasets\nby two-stage fine-tuning while being both domain-scalable and open-vocabulary\nin DST. It shows strong transferability by achieving zero-shot\ndomain-adaptation results on MultiWOZ 2.1 with an average JGA of 36.7%. It\nfurther achieves cross-lingual transfer with state-of-the-art zero-shot\nresults, 66.2% JGA from English to German and 75.7% JGA from English to Italian\non WOZ 2.0.\n",
+                "链接": "https://arxiv.org/abs/2204.05895"
+            },
+            {
+                "文章ID": "46848",
+                "标题": "MultiWOZ-DF -- A Dataflow implementation of the MultiWOZ dataset",
+                "作者": " Joram Meron,  Victor Guimarães",
+                "发布日期": "2022-11-07",
+                "摘要": "  Semantic Machines (SM) have introduced the use of the dataflow (DF) paradigm\nto dialogue modelling, using computational graphs to hierarchically represent\nuser requests, data, and the dialogue history [Semantic Machines et al. 2020].\nAlthough the main focus of that paper was the SMCalFlow dataset (to date, the\nonly dataset with \"native\" DF annotations), they also reported some results of\nan experiment using a transformed version of the commonly used MultiWOZ dataset\n[Budzianowski et al. 2018] into a DF format. In this paper, we expand the\nexperiments using DF for the MultiWOZ dataset, exploring some additional\nexperimental set-ups. The code and instructions to reproduce the experiments\nreported here have been released. The contributions of this paper are: 1.) A DF\nimplementation capable of executing MultiWOZ dialogues; 2.) Several versions of\nconversion of MultiWOZ into a DF format are presented; 3.) Experimental results\non state match and translation accuracy.\n",
+                "链接": "https://arxiv.org/abs/2211.02303"
+            },
+            {
+                "文章ID": "7222",
+                "标题": "ASSIST: Towards Label Noise-Robust Dialogue State Tracking",
+                "作者": " Fanghua Ye,  Yue Feng,  Emine Yilmaz",
+                "发布日期": "2022-03-15",
+                "摘要": "  The MultiWOZ 2.0 dataset has greatly boosted the research on dialogue state\ntracking (DST). However, substantial noise has been discovered in its state\nannotations. Such noise brings about huge challenges for training DST models\nrobustly. Although several refined versions, including MultiWOZ 2.1-2.4, have\nbeen published recently, there are still lots of noisy labels, especially in\nthe training set. Besides, it is costly to rectify all the problematic\nannotations. In this paper, instead of improving the annotation quality\nfurther, we propose a general framework, named ASSIST (lAbel noiSe-robuSt\ndIalogue State Tracking), to train DST models robustly from noisy labels.\nASSIST first generates pseudo labels for each sample in the training set by\nusing an auxiliary model trained on a small clean dataset, then puts the\ngenerated pseudo labels and vanilla noisy labels together to train the primary\nmodel. We show the validity of ASSIST theoretically. Experimental results also\ndemonstrate that ASSIST improves the joint goal accuracy of DST by up to\n$28.16\\%$ on MultiWOZ 2.0 and $8.41\\%$ on MultiWOZ 2.4, compared to using only\nthe vanilla noisy labels.\n",
+                "链接": "https://arxiv.org/abs/2202.13024"
+            },
+            {
+                "文章ID": "17947",
+                "标题": "A Deep Learning Approach to Dst Index Prediction",
+                "作者": " Yasser Abduallah,  Jason T. L. Wang,  Prianka Bose,  Genwei Zhang,  Firas Gerges,  Haimin Wang",
+                "发布日期": "2022-05-06",
+                "摘要": "  The disturbance storm time (Dst) index is an important and useful measurement\nin space weather research. It has been used to characterize the size and\nintensity of a geomagnetic storm. A negative Dst value means that the Earth's\nmagnetic field is weakened, which happens during storms. In this paper, we\npresent a novel deep learning method, called the Dst Transformer, to perform\nshort-term, 1-6 hour ahead, forecasting of the Dst index based on the solar\nwind parameters provided by the NASA Space Science Data Coordinated Archive.\nThe Dst Transformer combines a multi-head attention layer with Bayesian\ninference, which is capable of quantifying both aleatoric uncertainty and\nepistemic uncertainty when making Dst predictions. Experimental results show\nthat the proposed Dst Transformer outperforms related machine learning methods\nin terms of the root mean square error and R-squared. Furthermore, the Dst\nTransformer can produce both data and model uncertainty quantification results,\nwhich can not be done by the existing methods. To our knowledge, this is the\nfirst time that Bayesian deep learning has been used for Dst index forecasting.\n",
+                "链接": "https://arxiv.org/abs/2205.02447"
+            },
+            {
+                "文章ID": "61900",
+                "标题": "Dialogue State Distillation Network with Inter-slot Contrastive Learning\n  for Dialogue State Tracking",
+                "作者": " Jing Xu,  Dandan Song,  Chong Liu,  Siu Cheung Hui,  Fei Li,  Qiang Ju,  Xiaonan He,  Jian Xie",
+                "发布日期": "2023-03-08",
+                "摘要": "  In task-oriented dialogue systems, Dialogue State Tracking (DST) aims to\nextract users' intentions from the dialogue history. Currently, most existing\napproaches suffer from error propagation and are unable to dynamically select\nrelevant information when utilizing previous dialogue states. Moreover, the\nrelations between the updates of different slots provide vital clues for DST.\nHowever, the existing approaches rely only on predefined graphs to indirectly\ncapture the relations. In this paper, we propose a Dialogue State Distillation\nNetwork (DSDN) to utilize relevant information of previous dialogue states and\nmigrate the gap of utilization between training and testing. Thus, it can\ndynamically exploit previous dialogue states and avoid introducing error\npropagation simultaneously. Further, we propose an inter-slot contrastive\nlearning loss to effectively capture the slot co-update relations from dialogue\ncontext. Experiments are conducted on the widely used MultiWOZ 2.0 and MultiWOZ\n2.1 datasets. The experimental results show that our proposed model achieves\nthe state-of-the-art performance for DST.\n",
+                "链接": "https://arxiv.org/abs/2302.08220"
+            },
+            {
+                "文章ID": "41702",
+                "标题": "CSS: Combining Self-training and Self-supervised Learning for Few-shot\n  Dialogue State Tracking",
+                "作者": " Haoning Zhang,  Junwei Bao,  Haipeng Sun,  Huaishao Luo,  Wenye Li,  Shuguang Cui",
+                "发布日期": "2022-10-12",
+                "摘要": "  Few-shot dialogue state tracking (DST) is a realistic problem that trains the\nDST model with limited labeled data. Existing few-shot methods mainly transfer\nknowledge learned from external labeled dialogue data (e.g., from question\nanswering, dialogue summarization, machine reading comprehension tasks, etc.)\ninto DST, whereas collecting a large amount of external labeled data is\nlaborious, and the external data may not effectively contribute to the\nDST-specific task. In this paper, we propose a few-shot DST framework called\nCSS, which Combines Self-training and Self-supervised learning methods. The\nunlabeled data of the DST task is incorporated into the self-training\niterations, where the pseudo labels are predicted by a DST model trained on\nlimited labeled data in advance. Besides, a contrastive self-supervised method\nis used to learn better representations, where the data is augmented by the\ndropout operation to train the model. Experimental results on the MultiWOZ\ndataset show that our proposed CSS achieves competitive performance in several\nfew-shot scenarios.\n",
+                "链接": "https://arxiv.org/abs/2210.05146"
+            },
+            {
+                "文章ID": "48889",
+                "标题": "Self-Training with Purpose Preserving Augmentation Improves Few-shot\n  Generative Dialogue State Tracking",
+                "作者": " Jihyun Lee,  Chaebin Lee,  Yunsu Kim,  Gary Geunbae Lee",
+                "发布日期": "2022-11-18",
+                "摘要": "  In dialogue state tracking (DST), labeling the dataset involves considerable\nhuman labor. We propose a new self-training framework for few-shot generative\nDST that utilize unlabeled data. Our self-training method iteratively improves\nthe model by pseudo labeling and employs Purpose Preserving Augmentation\n(PPAug) to prevent overfitting. We increaese the few-shot 10% performance by\napproximately 4% on MultiWOZ 2.1 and enhances the slot-recall 8.34% for unseen\nvalues compared to baseline.\n",
+                "链接": "https://arxiv.org/abs/2211.09379"
+            },
+            {
+                "文章ID": "40726",
+                "标题": "Schema Encoding for Transferable Dialogue State Tracking",
+                "作者": " Hyunmin Jeon,  Gary Geunbae Lee",
+                "发布日期": "2022-10-06",
+                "摘要": "  Dialogue state tracking (DST) is an essential sub-task for task-oriented\ndialogue systems. Recent work has focused on deep neural models for DST.\nHowever, the neural models require a large dataset for training. Furthermore,\napplying them to another domain needs a new dataset because the neural models\nare generally trained to imitate the given dataset. In this paper, we propose\nSchema Encoding for Transferable Dialogue State Tracking (SETDST), which is a\nneural DST method for effective transfer to new domains. Transferable DST could\nassist developments of dialogue systems even with few dataset on target\ndomains. We use a schema encoder not just to imitate the dataset but to\ncomprehend the schema of the dataset. We aim to transfer the model to new\ndomains by encoding new schemas and using them for DST on multi-domain\nsettings. As a result, SET-DST improved the joint accuracy by 1.46 points on\nMultiWOZ 2.1.\n",
+                "链接": "https://arxiv.org/abs/2210.02351"
+            }
+        ]
+    },
+    {
+        "question": {
+            "question": "有关大模型在新任务上面知识迁移的研究",
+            "type": "5"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找一下近两年关于语言模型奖励建模评估的文章。",
+            "type": "1"
+        },
+        "results": []
+    },
+    {
+        "question": {
+            "question": "查找一下nips 2023 paper list",
+            "type": "1"
+        },
+        "results": [
+            {
+                "文章ID": "36791",
+                "标题": "An Improved Algorithm For Online Min-Sum Set Cover",
+                "作者": " Marcin Bienkowski,  Marcin Mucha",
+                "发布日期": "2023-03-28",
+                "摘要": "  We study a fundamental model of online preference aggregation, where an\nalgorithm maintains an ordered list of $n$ elements. An input is a stream of\npreferred sets $R_1, R_2, \\dots, R_t, \\dots$. Upon seeing $R_t$ and without\nknowledge of any future sets, an algorithm has to rerank elements (change the\nlist ordering), so that at least one element of $R_t$ is found near the list\nfront. The incurred cost is a sum of the list update costs (the number of swaps\nof neighboring list elements) and access costs (position of the first element\nof $R_t$ on the list). This scenario occurs naturally in applications such as\nordering items in an online shop using aggregated preferences of shop\ncustomers. The theoretical underpinning of this problem is known as Min-Sum Set\nCover.\n  Unlike previous work (Fotakis et al., ICALP 2020, NIPS 2020) that mostly\nstudied the performance of an online algorithm ALG against the static optimal\nsolution (a single optimal list ordering), in this paper, we study an arguably\nharder variant where the benchmark is the provably stronger optimal dynamic\nsolution OPT (that may also modify the list ordering). In terms of an online\nshop, this means that the aggregated preferences of its user base evolve with\ntime. We construct a computationally efficient randomized algorithm whose\ncompetitive ratio (ALG-to-OPT cost ratio) is $O(r^2)$ and prove the existence\nof a deterministic $O(r^4)$-competitive algorithm. Here, $r$ is the maximum\ncardinality of sets $R_t$. This is the first algorithm whose ratio does not\ndepend on $n$: the previously best algorithm for this problem was $O(r^{3/2}\n\\cdot \\sqrt{n})$-competitive and $\\Omega(r)$ is a lower bound on the\nperformance of any deterministic online algorithm.\n",
+                "链接": "https://arxiv.org/abs/2209.04870"
+            },
+            {
+                "文章ID": "84628",
+                "标题": "Overview of the Problem List Summarization (ProbSum) 2023 Shared Task on\n  Summarizing Patients' Active Diagnoses and Problems from Electronic Health\n  Record Progress Notes",
+                "作者": " Yanjun Gao,  Dmitriy Dligach,  Timothy Miller,  Matthew M. Churpek,  Majid Afshar",
+                "发布日期": "2023-06-09",
+                "摘要": "  The BioNLP Workshop 2023 initiated the launch of a shared task on Problem\nList Summarization (ProbSum) in January 2023. The aim of this shared task is to\nattract future research efforts in building NLP models for real-world\ndiagnostic decision support applications, where a system generating relevant\nand accurate diagnoses will augment the healthcare providers decision-making\nprocess and improve the quality of care for patients. The goal for participants\nis to develop models that generated a list of diagnoses and problems using\ninput from the daily care notes collected from the hospitalization of\ncritically ill patients. Eight teams submitted their final systems to the\nshared task leaderboard. In this paper, we describe the tasks, datasets,\nevaluation metrics, and baseline systems. Additionally, the techniques and\nresults of the evaluation of the different approaches tried by the\nparticipating teams are summarized.\n",
+                "链接": "https://arxiv.org/abs/2306.05270"
+            },
+            {
+                "文章ID": "40312",
+                "标题": "SemEval 2023 Task 9: Multilingual Tweet Intimacy Analysis",
+                "作者": " Jiaxin Pei,  Vítor Silva,  Maarten Bos,  Yozon Liu,  Leonardo Neves,  David Jurgens,  Francesco Barbieri",
+                "发布日期": "2023-02-06",
+                "摘要": "  We propose MINT, a new Multilingual INTimacy analysis dataset covering 13,372\ntweets in 10 languages including English, French, Spanish, Italian, Portuguese,\nKorean, Dutch, Chinese, Hindi, and Arabic. We benchmarked a list of popular\nmultilingual pre-trained language models. The dataset is released along with\nthe SemEval 2023 Task 9: Multilingual Tweet Intimacy Analysis\n(https://sites.google.com/umich.edu/semeval-2023-tweet-intimacy).\n",
+                "链接": "https://arxiv.org/abs/2210.01108"
+            },
+            {
+                "文章ID": "99282",
+                "标题": "Chunked Lists versus Extensible Arrays for Text Inversion",
+                "作者": " David Hawking,  Bodo Billerbeck",
+                "发布日期": "2023-08-31",
+                "摘要": "  In our 2017 work on in-memory list-based text inversion [Hawking and\nBillerbeck. Efficient In-Memory, List-Based Text Inversion. ADCS 2017] we\ncompared memory use and indexing speed of a considerable number of variants of\nchunked linked lists. In the present work we compare the best performing of\nthose variants (FBB - dynamic Fibonacci chunking) with the extensible SQ array\ntechnique (SQA) presented in [Moffat and Mackenzie. Immediate-Access Indexing\nUsing Space-Efficient Extensible Arrays. ADCS 2023].\n",
+                "链接": "https://arxiv.org/abs/2308.15498"
+            },
+            {
+                "文章ID": "83654",
+                "标题": "PULSAR: Pre-training with Extracted Healthcare Terms for Summarising\n  Patients' Problems and Data Augmentation with Black-box Large Language Models",
+                "作者": " Hao Li,  Yuping Wu,  Viktor Schlegel,  Riza Batista-Navarro,  Thanh-Tung Nguyen,  Abhinav Ramesh Kashyap,  Xiaojun Zeng,  Daniel Beck,  Stefan Winkler,  Goran Nenadic",
+                "发布日期": "2023-06-06",
+                "摘要": "  Medical progress notes play a crucial role in documenting a patient's\nhospital journey, including his or her condition, treatment plan, and any\nupdates for healthcare providers. Automatic summarisation of a patient's\nproblems in the form of a problem list can aid stakeholders in understanding a\npatient's condition, reducing workload and cognitive bias. BioNLP 2023 Shared\nTask 1A focuses on generating a list of diagnoses and problems from the\nprovider's progress notes during hospitalisation. In this paper, we introduce\nour proposed approach to this task, which integrates two complementary\ncomponents. One component employs large language models (LLMs) for data\naugmentation; the other is an abstractive summarisation LLM with a novel\npre-training objective for generating the patients' problems summarised as a\nlist. Our approach was ranked second among all submissions to the shared task.\nThe performance of our model on the development and test datasets shows that\nour approach is more robust on unknown data, with an improvement of up to 3.1\npoints over the same size of the larger model.\n",
+                "链接": "https://arxiv.org/abs/2306.02754"
+            },
+            {
+                "文章ID": "6577",
+                "标题": "Robust and Provable Guarantees for Sparse Random Embeddings",
+                "作者": " Maciej Skorski,  Alessandro Temperoni,  Martin Theobald",
+                "发布日期": "2022-02-23",
+                "摘要": "  In this work, we improve upon the guarantees for sparse random embeddings, as\nthey were recently provided and analyzed by Freksen at al. (NIPS'18) and\nJagadeesan (NIPS'19). Specifically, we show that (a) our bounds are explicit as\nopposed to the asymptotic guarantees provided previously, and (b) our bounds\nare guaranteed to be sharper by practically significant constants across a wide\nrange of parameters, including the dimensionality, sparsity and dispersion of\nthe data. Moreover, we empirically demonstrate that our bounds significantly\noutperform prior works on a wide range of real-world datasets, such as\ncollections of images, text documents represented as bags-of-words, and text\nsequences vectorized by neural embeddings. Behind our numerical improvements\nare techniques of broader interest, which improve upon key steps of previous\nanalyses in terms of (c) tighter estimates for certain types of quadratic\nchaos, (d) establishing extreme properties of sparse linear forms, and (e)\nimprovements on bounds for the estimation of sums of independent random\nvariables.\n",
+                "链接": "https://arxiv.org/abs/2202.10815"
+            },
+            {
+                "文章ID": "84651",
+                "标题": "CUED at ProbSum 2023: Hierarchical Ensemble of Summarization Models",
+                "作者": " Potsawee Manakul,  Yassir Fathullah,  Adian Liusie,  Vyas Raina,  Vatsal Raina,  Mark Gales",
+                "发布日期": "2023-06-09",
+                "摘要": "  In this paper, we consider the challenge of summarizing patients' medical\nprogress notes in a limited data setting. For the Problem List Summarization\n(shared task 1A) at the BioNLP Workshop 2023, we demonstrate that Clinical-T5\nfine-tuned to 765 medical clinic notes outperforms other extractive,\nabstractive and zero-shot baselines, yielding reasonable baseline systems for\nmedical note summarization. Further, we introduce Hierarchical Ensemble of\nSummarization Models (HESM), consisting of token-level ensembles of diverse\nfine-tuned Clinical-T5 models, followed by Minimum Bayes Risk (MBR) decoding.\nOur HESM approach lead to a considerable summarization performance boost, and\nwhen evaluated on held-out challenge data achieved a ROUGE-L of 32.77, which\nwas the best-performing system at the top of the shared task leaderboard.\n",
+                "链接": "https://arxiv.org/abs/2306.05317"
+            },
+            {
+                "文章ID": "95587",
+                "标题": "NLLG Quarterly arXiv Report 06/23: What are the most influential current\n  AI Papers?",
+                "作者": " Steffen Eger,  Christoph Leiter,  Jonas Belouadi,  Ran Zhang,  Aida Kostikova,  Daniil Larionov,  Yanran Chen,  Vivian Fresen",
+                "发布日期": "2023-08-15",
+                "摘要": "  The rapid growth of information in the field of Generative Artificial\nIntelligence (AI), particularly in the subfields of Natural Language Processing\n(NLP) and Machine Learning (ML), presents a significant challenge for\nresearchers and practitioners to keep pace with the latest developments. To\naddress the problem of information overload, this report by the Natural\nLanguage Learning Group at Bielefeld University focuses on identifying the most\npopular papers on arXiv, with a specific emphasis on NLP and ML. The objective\nis to offer a quick guide to the most relevant and widely discussed research,\naiding both newcomers and established researchers in staying abreast of current\ntrends. In particular, we compile a list of the 40 most popular papers based on\nnormalized citation counts from the first half of 2023. We observe the\ndominance of papers related to Large Language Models (LLMs) and specifically\nChatGPT during the first half of 2023, with the latter showing signs of\ndeclining popularity more recently, however. Further, NLP related papers are\nthe most influential (around 60\\% of top papers) even though there are twice as\nmany ML related papers in our data. Core issues investigated in the most\nheavily cited papers are: LLM efficiency, evaluation techniques, ethical\nconsiderations, embodied agents, and problem-solving with LLMs. Additionally,\nwe examine the characteristics of top papers in comparison to others outside\nthe top-40 list (noticing the top paper's focus on LLM related issues and\nhigher number of co-authors) and analyze the citation distributions in our\ndataset, among others.\n",
+                "链接": "https://arxiv.org/abs/2308.04889"
+            },
+            {
+                "文章ID": "103893",
+                "标题": "Spanish Resource Grammar version 2023",
+                "作者": " Olga Zamaraeva,  Carlos Gómez-Rodríguez",
+                "发布日期": "2023-09-26",
+                "摘要": "  We present the latest version of the Spanish Resource Grammar (SRG). The new\nSRG uses the recent version of Freeling morphological analyzer and tagger and\nis accompanied by a manually verified treebank and a list of documented issues.\nWe also present the grammar's coverage and overgeneration on a small portion of\na learner corpus, an entirely new research line with respect to the SRG. The\ngrammar can be used for linguistic research, such as for empirically driven\ndevelopment of syntactic theory, and in natural language processing\napplications such as computer-assisted language learning. Finally, as the\ntreebanks grow, they can be used for training high-quality semantic parsers and\nother systems which may benefit from precise and detailed semantics.\n",
+                "链接": "https://arxiv.org/abs/2309.13318"
+            },
+            {
+                "文章ID": "101771",
+                "标题": "OWL Reasoners still useable in 2023",
+                "作者": " Konrad Abicht",
+                "发布日期": "2023-09-14",
+                "摘要": "  In a systematic literature and software review over 100 OWL reasoners/systems\nwere analyzed to see if they would still be usable in 2023. This has never been\ndone in this capacity. OWL reasoners still play an important role in knowledge\norganisation and management, but the last comprehensive surveys/studies are\nmore than 8 years old. The result of this work is a comprehensive list of 95\nstandalone OWL reasoners and systems using an OWL reasoner. For each item,\ninformation on project pages, source code repositories and related\ndocumentation was gathered. The raw research data is provided in a Github\nrepository for anyone to use.\n",
+                "链接": "https://arxiv.org/abs/2309.06888"
+            }
+        ]
+    }
+]
