@@ -9,16 +9,16 @@
 ├── es_query_generate.py      # 通过导入 question.json 批量生成 ES 查询语句
 ├── es_query_result.py        # 判断和查询所有生成的 ES 查询语句并将问题和查询结果结构化保存为 json
 ├── es_query_result_eval.py   # 通过调用强模型对问题与查询结果进行相关性打分，并保存打分中间文件
-├── finetuned_models          # 包含微调模型相关的文档和文件
-├── finetuning_data           # 包含微调数据和处理和生成微调数据的一系列脚本
-├── generated_queries         # 保存了测试一系列开闭源模型生成的 es 查询语句
-├── generated_queries_ft      # 保存了测试使用 ollama 调用一系列微调模型生成的 es 查询语句
-├── pics                      # 保存图片
-├── queries_record            # 保存了 queries_result 中查询语句的打分保存的中间文件
-├── queries_record_ft         # 保存了 queries_result_ft 中查询语句的打分中间文件
-├── queries_result            # 保存了 generated_queries 中查询语句的查询返回的结果文件
-├── queries_result_ft         # 保存了 generated_queries_ft 中查询语句的查询返回的结果文件
-└── questions                 # 包含三个问题集文件
+├── finetuned_models/         # 包含微调模型相关的文档和文件
+├── finetuning_data/          # 包含微调数据和处理和生成微调数据的一系列脚本
+├── generated_queries/        # 保存了测试一系列开闭源模型生成的 es 查询语句
+├── generated_queries_ft/     # 保存了测试使用 ollama 调用一系列微调模型生成的 es 查询语句
+├── pics/                     # 保存图片
+├── queries_record/           # 保存了 queries_result 中查询语句的打分保存的中间文件
+├── queries_record_ft/        # 保存了 queries_result_ft 中查询语句的打分中间文件
+├── queries_result/           # 保存了 generated_queries 中查询语句的查询返回的结果文件
+├── queries_result_ft/        # 保存了 generated_queries_ft 中查询语句的查询返回的结果文件
+└── questions/                # 包含三个问题集文件
 ```
 
 **说明**
